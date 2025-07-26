@@ -52,13 +52,6 @@
             background: white;
             box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
             transition: transform 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8em;
-            color: #0066cc;
-            text-align: center;
-            font-weight: 600;
         }
 
         .logo-container:hover {
@@ -229,6 +222,13 @@
             transition: all 0.3s ease;
         }
 
+        .image-separator {
+            font-size: 20px;
+            font-weight: bold;
+            color: #444;
+            margin: 5px 0;
+        }
+
         .dashboard-image:hover {
             transform: scale(1.02);
             box-shadow: 0 15px 40px rgba(0, 102, 204, 0.3);
@@ -243,6 +243,17 @@
             background: rgba(0, 102, 204, 0.1);
             border-radius: 20px;
             margin-top: 15px;
+        }
+
+        .github-info {
+            background: rgba(0, 102, 204, 0.1);
+            border: 2px solid rgba(0, 102, 204, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: #004499;
+            font-size: 1.1em;
         }
 
         /* Image placeholder styling */
@@ -266,7 +277,7 @@
         }
 
         .image-placeholder::before {
-            content: '📊';
+            content: '📸';
             font-size: 3em;
             margin-bottom: 15px;
             opacity: 0.7;
@@ -274,26 +285,6 @@
 
         .image-placeholder .placeholder-text {
             padding: 0 20px;
-        }
-
-        /* Error handling for images */
-        .dashboard-image {
-            display: block;
-        }
-
-        .dashboard-image.error {
-            display: none;
-        }
-
-        .github-info {
-            background: rgba(0, 102, 204, 0.1);
-            border: 2px solid rgba(0, 102, 204, 0.3);
-            border-radius: 15px;
-            padding: 20px;
-            margin-top: 40px;
-            text-align: center;
-            color: #004499;
-            font-size: 1.1em;
         }
 
         /* Responsive Design */
@@ -400,19 +391,19 @@
             <!-- Logo Section for 4 logos -->
             <div class="logo-section">
                 <div class="logo-container">
-                    NMCP Logo
+                    <img src="NMCP.png" alt="NMCP Logo" class="logo-image">
                 </div>
                 
                 <div class="logo-container">
-                    WHO Logo
+                    <img src="WHO.png" alt="WHO Logo" class="logo-image">
                 </div>
                 
                 <div class="logo-container">
-                    CHAI Logo
+                    <img src="CHAI.png" alt="CHAI Logo" class="logo-image">
                 </div>
 
                 <div class="logo-container">
-                    ICF-SL Logo
+                    <img src="ICF-SL.jpg" alt="ICF-SL Logo" class="logo-image">
                 </div>
             </div>
             
@@ -496,370 +487,269 @@
                 <strong>Conclusion</strong><br>
                 The Malaria Program Review is not just a routine assessment; it is a strategic pivot point for NMCP to enhance impact, secure sustained funding, and ultimately achieve malaria elimination goals. 
                 With interventions like the School-Based ITN Distribution gaining traction, Sierra Leone is well-positioned to redefine its malaria control architecture with a stronger emphasis on integration, innovation, and inclusiveness.
-            </div>
-        </div>
+            </div> 
+                
+        #</div>
 
         <!-- Tab 2 -->
         <div id="tab2" class="tab-content">
             <div class="section-header">National Crude Incidence Trends</div>
+            <div class="content-grid">
+                <div class="content-row">
+                    <div class="image-container">
+                        <img src="national_crude_incidence_trend (3).png" alt="National Crude Incidence Change Map" class="dashboard-image">
+                    </div>                 
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-row">
+                    <div class="image-container">
+                        <img src="crude_incidence_trend_subplots_4x4.png" alt="National Crude Incidence Change Map" class="dashboard-image">
+                    </div>                 
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-row">
+                    <div class="image-container">
+                        <img src="district_change_overview_map.png" alt="National Crude Incidence Change Map" class="dashboard-image">
+                    </div>                 
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-row">
+                    <div class="image-container">
+                        <img src="national_crude_incidence_change_map.png" alt="National Crude Incidence Change Map" class="dashboard-image">
+                    </div>                 
+                </div>
+            </div>
+
+
             
-            <div class="content-grid">
-                <div class="content-row">
-                    <div class="row-indicator">National Crude Incidence Trend</div>
-                    <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>National Crude Incidence Trend Chart</strong><br>
-                                [Chart showing national malaria incidence trends over time]
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image-caption">National crude incidence trend analysis</div>
-                </div>
-            </div>
+        </div>
 
+        <!-- Tab 3 -->
+        <div id="tab3" class="tab-content">
+            <div class="section-header">District Change Overview Map</div>
             <div class="content-grid">
                 <div class="content-row">
-                    <div class="row-indicator">District-Level Trend Subplots (4x4 Grid)</div>
+                    <div class="row-indicator">District-Level Change Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Crude Incidence Trend Subplots</strong><br>
-                                [4x4 grid showing trends for all 16 districts]
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image-caption">Comprehensive 4x4 crude incidence trend analysis</div>
-                </div>
-            </div>
-
-            <div class="content-grid">
-                <div class="content-row">
-                    <div class="row-indicator">District Change Overview Map</div>
-                    <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>District Change Overview Map</strong><br>
-                                [Geographic visualization of changes by district]
-                            </div>
-                        </div>
+                        <img src="district_change_overview_map.png" alt="District Change Overview Map" class="dashboard-image">
                     </div>
                     <div class="image-caption">District change overview mapping and analysis</div>
                 </div>
             </div>
+        </div>
 
+        <!-- Tab 4 -->
+        <div id="tab4" class="tab-content">
+            <div class="section-header">Crude Incidence Trend Subplots</div>
             <div class="content-grid">
                 <div class="content-row">
-                    <div class="row-indicator">National Crude Incidence Change Map</div>
+                    <div class="row-indicator">4x4 Trend Analysis Overview</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>National Crude Incidence Change Map</strong><br>
-                                [National-level geographic visualization of incidence changes]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_subplots_4x4.png" alt="Crude Incidence Trend Subplots 4x4" class="dashboard-image">
                     </div>
-                    <div class="image-caption">National crude incidence change mapping</div>
+                    <div class="image-caption">Comprehensive 4x4 crude incidence trend analysis</div>
                 </div>
-            </div>
-
-            <div class="github-info">
-                <strong>Note:</strong> Image files are referenced but not currently available in this environment. 
-                To display the actual charts and maps, ensure the following image files are accessible:
-                <ul style="text-align: left; margin: 10px 0; padding-left: 20px;">
-                    <li>national_crude_incidence_trend (3).png</li>
-                    <li>crude_incidence_trend_subplots_4x4.png</li>
-                    <li>district_change_overview_map.png</li>
-                    <li>national_crude_incidence_change_map.png</li>
-                </ul>
             </div>
         </div>
 
-        <!-- Tabs 3-18 with placeholders for district-specific data -->
-        <div id="tab3" class="tab-content">
+        <!-- Tab 5 -->
+        <div id="tab5" class="tab-content">
             <div class="section-header">Kailahun District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Kailahun District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Kailahun District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Kailahun]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_KAILAHUN.png" alt="Kailahun District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Kailahun district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab4" class="tab-content">
+        <!-- Tab 6 -->
+        <div id="tab6" class="tab-content">
             <div class="section-header">Kenema District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Kenema District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Kenema District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Kenema]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_KENEMA.png" alt="Kenema District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Kenema district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab5" class="tab-content">
+        <!-- Tab 7 -->
+        <div id="tab7" class="tab-content">
             <div class="section-header">Kono District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Kono District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Kono District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Kono]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_KONO.png" alt="Kono District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Kono district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab6" class="tab-content">
+        <!-- Tab 8 -->
+        <div id="tab8" class="tab-content">
             <div class="section-header">Bombali District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Bombali District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Bombali District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Bombali]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_BOMBALI.png" alt="Bombali District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Bombali district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab7" class="tab-content">
+        <!-- Tab 9 -->
+        <div id="tab9" class="tab-content">
             <div class="section-header">Falaba District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Falaba District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Falaba District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Falaba]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_FALABA.png" alt="Falaba District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Falaba district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab8" class="tab-content">
+        <!-- Tab 10 -->
+        <div id="tab10" class="tab-content">
             <div class="section-header">Koinadugu District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Koinadugu District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Koinadugu District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Koinadugu]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_KOINADUGU.png" alt="Koinadugu District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Koinadugu district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab9" class="tab-content">
+        <!-- Tab 11 -->
+        <div id="tab11" class="tab-content">
             <div class="section-header">Tonkolili District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Tonkolili District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Tonkolili District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Tonkolili]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_TONKOLILI.png" alt="Tonkolili District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Tonkolili district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab10" class="tab-content">
+        <!-- Tab 12 -->
+        <div id="tab12" class="tab-content">
             <div class="section-header">Kambia District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Kambia District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Kambia District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Kambia]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_KAMBIA.png" alt="Kambia District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Kambia district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab11" class="tab-content">
+        <!-- Tab 13 -->
+        <div id="tab13" class="tab-content">
             <div class="section-header">Karene District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Karene District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Karene District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Karene]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_KARENE.png" alt="Karene District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Karene district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab12" class="tab-content">
+        <!-- Tab 14 -->
+        <div id="tab14" class="tab-content">
             <div class="section-header">Port Loko District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Port Loko District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Port Loko District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Port Loko]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_PORT LOKO.png" alt="Port Loko District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Port Loko district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab13" class="tab-content">
+        <!-- Tab 15 -->
+        <div id="tab15" class="tab-content">
             <div class="section-header">Bo District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Bo District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Bo District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Bo]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_BO.png" alt="Bo District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Bo district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab14" class="tab-content">
+        <!-- Tab 16 -->
+        <div id="tab16" class="tab-content">
             <div class="section-header">Bonthe District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Bonthe District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Bonthe District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Bonthe]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_BONTHE.png" alt="Bonthe District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Bonthe district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab15" class="tab-content">
+        <!-- Tab 17 -->
+        <div id="tab17" class="tab-content">
             <div class="section-header">Moyamba District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Moyamba District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Moyamba District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Moyamba]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_MOYAMBA.png" alt="Moyamba District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Moyamba district crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
 
-        <div id="tab16" class="tab-content">
+        <!-- Tab 18 -->
+        <div id="tab18" class="tab-content">
             <div class="section-header">Pujehun District Trends</div>
             <div class="content-grid">
                 <div class="content-row">
                     <div class="row-indicator">Pujehun District Analysis</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Pujehun District Crude Incidence Trend</strong><br>
-                                [District-specific trend analysis for Pujehun]
-                            </div>
-                        </div>
+                        <img src="crude_incidence_trend_PUJEHUN.png" alt="Pujehun District Crude Incidence Trend" class="dashboard-image">
                     </div>
                     <div class="image-caption">Pujehun district crude incidence trend analysis</div>
-                </div>
-            </div>
-        </div>
-
-        <div id="tab17" class="tab-content">
-            <div class="section-header">Additional Analysis 1</div>
-            <div class="content-grid">
-                <div class="content-row">
-                    <div class="row-indicator">Supplementary Analysis</div>
-                    <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Additional Analysis Chart</strong><br>
-                                [Supplementary data visualization]
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image-caption">Additional trend analysis</div>
-                </div>
-            </div>
-        </div>
-
-        <div id="tab18" class="tab-content">
-            <div class="section-header">Additional Analysis 2</div>
-            <div class="content-grid">
-                <div class="content-row">
-                    <div class="row-indicator">Final Analysis</div>
-                    <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Final Analysis Chart</strong><br>
-                                [Final data visualization]
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image-caption">Final trend analysis</div>
                 </div>
             </div>
         </div>
@@ -868,32 +758,15 @@
         <div id="conclusion" class="tab-content">
             <div class="section-header">Conclusion & Recommendations</div>
             <div class="content-text">
-                Based on the comprehensive analysis of crude incidence trends across all districts in Sierra Leone, several key patterns and insights have emerged from the Malaria Program Review.
+                The School-Based Distribution of ITNs has demonstrated significant success in achieving comprehensive coverage across Bo and Bombali districts. The strategic use of educational infrastructure has proven effective in reaching both rural and urban communities.
             </div>
-            
-            <div class="content-text">
-                <strong>Key Findings:</strong><br>
-                • Significant variations in malaria incidence trends across the 16 districts<br>
-                • Seasonal patterns consistent with transmission dynamics<br>
-                • Notable differences between urban and rural district performance<br>
-                • Evidence of intervention impact in specific geographic areas
-            </div>
-
-            <div class="content-text">
-                <strong>Strategic Recommendations:</strong><br>
-                • Implement targeted interventions in high-burden districts<br>
-                • Strengthen surveillance systems for real-time monitoring<br>
-                • Enhance cross-district coordination and resource sharing<br>
-                • Prioritize school-based distribution in areas with declining coverage<br>
-                • Develop district-specific action plans based on trend analysis
-            </div>
-
-            <div class="content-text">
-                <strong>Next Steps:</strong><br>
-                • Conduct detailed sub-district analysis for high-priority areas<br>
-                • Develop implementation timeline for recommended interventions<br>
-                • Establish monitoring and evaluation framework for tracking progress<br>
-                • Secure funding and partnership commitments for scale-up activities
+            <div class="placeholder-content">
+                <strong>Key Conclusions & Recommendations</strong><br>
+                • Lessons learned from implementation<br>
+                • Best practices and success factors<br>
+                • Challenges encountered and solutions<br>
+                • Recommendations for future distributions<br>
+                • Scale-up considerations and improvements
             </div>
         </div>
 
@@ -901,45 +774,101 @@
         <div id="acknowledgment" class="tab-content">
             <div class="section-header">Acknowledgment</div>
             <div class="content-text">
-                We extend our sincere gratitude to all partners, stakeholders, and communities who made this Malaria Program Review and analysis a success.
+                We extend our sincere gratitude to all partners, stakeholders, and communities who made this School-Based Distribution initiative a success.
             </div>
             
             <div class="content-grid">
+                <!-- Special Thanks Section -->
                 <div class="content-row">
-                    <div class="row-indicator">Special Recognition</div>
+                    <div class="row-indicator">Special Thanks to Mohamed (Left) and Musa (Right). In recognition of the relentless efforts in designing and conceptualizing the entire digitalization framework.</div>
                     <div class="image-container">
-                        <div class="image-placeholder">
-                            <div class="placeholder-text">
-                                <strong>Team Recognition</strong><br>
-                                [Photo of key team members]<br>
-                                Mohamed (Left) and Musa (Right)<br>
-                                In recognition of relentless efforts in designing and conceptualizing the entire digitalization framework
+                        <div style="
+                            background: linear-gradient(145deg, #ffffff, #f0f8ff);
+                            border: 3px solid #0066cc;
+                            border-radius: 20px;
+                            padding: 30px;
+                            box-shadow: 
+                                0 20px 40px rgba(0, 102, 204, 0.15),
+                                inset 0 2px 4px rgba(255, 255, 255, 0.9),
+                                inset 0 -2px 4px rgba(0, 102, 204, 0.1);
+                            position: relative;
+                            overflow: hidden;
+                            max-width: 600px;
+                            margin: 0 auto;
+                        ">
+                            <!-- Decorative corner elements -->
+                            <div style="
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                                width: 40px;
+                                height: 40px;
+                                background: linear-gradient(45deg, #0066cc, #004499);
+                                border-radius: 50%;
+                                opacity: 0.1;
+                            "></div>
+                            <div style="
+                                position: absolute;
+                                bottom: 10px;
+                                right: 10px;
+                                width: 60px;
+                                height: 60px;
+                                background: linear-gradient(45deg, #004499, #0066cc);
+                                border-radius: 50%;
+                                opacity: 0.1;
+                            "></div>
+                            
+                            <!-- Main content frame -->
+                            <div style="
+                                background: rgba(255, 255, 255, 0.8);
+                                border: 2px dashed #0066cc;
+                                border-radius: 15px;
+                                padding: 40px 20px;
+                                text-align: center;
+                                position: relative;
+                                z-index: 1;
+                            ">
+                                <img src="IMG-20241114-WA0017.jpg" alt="Special Thanks to Mohamed (Left) and Musa (Right). In recognition of the relentless efforts in designing and conceptualizing the entire digitalization framework." style="
+                                    max-width: 100%;
+                                    height: auto;
+                                    border-radius: 10px;
+                                    box-shadow: 0 10px 25px rgba(0, 102, 204, 0.2);
+                                    transition: all 0.3s ease;
+                                " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                
+                                <!-- Decorative ribbon -->
+                                <div style="
+                                    position: absolute;
+                                    top: -10px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    background: linear-gradient(45deg, #0066cc, #004499);
+                                    color: white;
+                                    padding: 8px 25px;
+                                    border-radius: 20px;
+                                    font-size: 0.9em;
+                                    font-weight: bold;
+                                    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+                                    z-index: 2;
+                                ">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="image-caption">Special thanks to the digitalization team</div>
+                    <div class="image-caption" style="margin-top: 25px;"></div>
                 </div>
             </div>
 
             <div class="content-text">
                 <strong>Key Partners and Collaborators:</strong><br>
-                • Ministry of Health and Sanitation (MoHS)<br>
+                • Ministry of Health and Sanitation<br>
                 • National Malaria Control Programme (NMCP)<br>
-                • World Health Organization (WHO)<br>
-                • Clinton Health Access Initiative (CHAI)<br>
-                • ICF Sierra Leone<br>
                 • President's Malaria Initiative (PMI)<br>
                 • Abt Associates<br>
                 • School administrators and teachers<br>
                 • School Quality Assurance (SQA) officers<br>
-                • Peripheral Health Unit (PHU) staff<br>
-                • Community health workers<br>
-                • District health management teams
-            </div>
-
-            <div class="content-text">
-                <strong>Special Appreciation:</strong><br>
-                This comprehensive analysis would not have been possible without the dedication of data collectors, analysts, and field teams who worked tirelessly to ensure data quality and completeness across all 16 districts of Sierra Leone.
+                • PHU staff
             </div>
         </div>
     </div>
@@ -962,21 +891,6 @@
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
         }
-
-        // Handle image loading errors
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.dashboard-image');
-            images.forEach(function(img) {
-                img.addEventListener('error', function() {
-                    this.style.display = 'none';
-                    // Create placeholder
-                    const placeholder = document.createElement('div');
-                    placeholder.className = 'image-placeholder';
-                    placeholder.innerHTML = '<div class="placeholder-text"><strong>Image Not Available</strong><br>(' + this.alt + ')</div>';
-                    this.parentNode.appendChild(placeholder);
-                });
-            });
-        });
     </script>
 </body>
 </html>
