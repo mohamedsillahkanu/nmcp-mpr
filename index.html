@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Program Review (MPR)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0066cc 0%, #004499 50%, #ffffff 100%);
+            min-height: 100vh;
+            color: #333;
+            padding: 0;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #0066cc;
+            padding: 25px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 10px rgba(0, 102, 204, 0.1);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .logo-container {
+            width: 140px;
+            height: 90px;
+            border: 2px solid #0066cc;
+            border-radius: 12px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: translateY(-3px);
+        }
+
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 8px;
+        }
+
+        .title-section {
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 3em;
+            color: #0066cc;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0, 102, 204, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            color: #004499;
+            font-weight: 400;
+        }
+
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 15px 40px rgba(0, 102, 204, 0.2);
+            border: 1px solid rgba(0, 102, 204, 0.2);
+        }
+
+        /* Tab Navigation */
+        .tab-navigation {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 3px solid #0066cc;
+            margin-bottom: 40px;
+            gap: 5px;
+        }
+
+        .tab-button {
+            background: rgba(0, 102, 204, 0.1);
+            border: none;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            color: #004499;
+            border-radius: 10px 10px 0 0;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            margin-bottom: -3px;
+            position: relative;
+        }
+
+        .tab-button:hover {
+            background: rgba(0, 102, 204, 0.2);
+            color: #0066cc;
+        }
+
+        .tab-button.active {
+            background: #0066cc;
+            color: white;
+            border-bottom: 3px solid #0066cc;
+            transform: translateY(3px);
+        }
+
+        /* Collapsible Tab Button */
+        .tab-toggle-btn {
+            background: #004499;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 68, 153, 0.3);
+        }
+
+        .tab-toggle-btn:hover {
+            background: #0066cc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+        }
+
+        .tab-navigation.collapsed {
+            display: none;
+        }
+
+        /* Default collapsed state for sections */
+        .section-content {
+            background: rgba(255, 255, 255, 0.95);
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            padding: 0;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+            padding: 20px;
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Content Sections */
+        .section-header {
+            color: #0066cc;
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 102, 204, 0.1);
+            border-radius: 15px;
+            border-left: 5px solid #0066cc;
+        }
+
+        /* Collapsible Sections */
+        .collapsible-section {
+            margin-bottom: 30px;
+            border: 2px solid rgba(0, 102, 204, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.1);
+        }
+
+        .section-toggle {
+            background: linear-gradient(135deg, #0066cc, #004499);
+            color: white;
+            border: none;
+            padding: 20px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1.3em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-toggle:hover {
+            background: linear-gradient(135deg, #004499, #0066cc);
+        }
+
+        .section-toggle::after {
+            content: '▼';
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        .section-toggle.collapsed::after {
+            transform: rotate(-90deg);
+        }
+
+        .section-content {
+            background: rgba(255, 255, 255, 0.95);
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            padding: 0;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+            padding: 20px;
+        }
+
+        .content-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .placeholder-content {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 102, 204, 0.05);
+            border-radius: 15px;
+            border: 2px dashed #0066cc;
+            color: #004499;
+            font-size: 1.2em;
+        }
+
+        /* Dashboard Content */
+        .content-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .content-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .row-indicator {
+            color: #0066cc;
+            font-weight: 700;
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 15px 30px;
+            background: rgba(0, 102, 204, 0.1);
+            border-radius: 25px;
+            border: 2px solid rgba(0, 102, 204, 0.3);
+        }
+
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 102, 204, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .image-separator {
+            font-size: 20px;
+            font-weight: bold;
+            color: #444;
+            margin: 5px 0;
+        }
+
+        .dashboard-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 102, 204, 0.3);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 1.1em;
+            color: #004499;
+            font-weight: 600;
+            padding: 10px 20px;
+            background: rgba(0, 102, 204, 0.1);
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+
+        .github-info {
+            background: rgba(0, 102, 204, 0.1);
+            border: 2px solid rgba(0, 102, 204, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: #004499;
+            font-size: 1.1em;
+        }
+
+        /* Image placeholder styling */
+        .image-placeholder {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+            border: 3px dashed #0066cc;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #0066cc;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-placeholder::before {
+            content: '📸';
+            font-size: 3em;
+            margin-bottom: 15px;
+            opacity: 0.7;
+        }
+
+        .image-placeholder .placeholder-text {
+            padding: 0 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.2em;
+            }
+            
+            .subtitle {
+                font-size: 1.2em;
+            }
+            
+            .logo-section {
+                justify-content: center;
+            }
+            
+            .logo-container {
+                width: 120px;
+                height: 80px;
+            }
+            
+            .dashboard-container {
+                padding: 30px;
+            }
+
+            .tab-navigation {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                border-radius: 10px;
+                margin-bottom: 5px;
+                padding: 12px 20px;
+                font-size: 0.9em;
+            }
+
+            .tab-button.active {
+                transform: none;
+            }
+
+            .content-grid {
+                gap: 35px;
+            }
+
+            .row-indicator {
+                font-size: 1.1em;
+                padding: 12px 20px;
+            }
+
+            .image-placeholder {
+                height: 300px;
+                font-size: 1em;
+            }
+
+            .image-placeholder::before {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-section {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .logo-container {
+                width: 140px;
+                height: 90px;
+            }
+
+            .main-title {
+                font-size: 1.8em;
+            }
+
+            .dashboard-container {
+                padding: 20px;
+            }
+
+            .row-indicator {
+                font-size: 1em;
+                padding: 10px 15px;
+            }
+
+            .image-caption {
+                font-size: 1em;
+            }
+
+            .tab-button {
+                padding: 10px 15px;
+                font-size: 0.8em;
+            }
+
+            .image-placeholder {
+                height: 250px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <!-- Logo Section for 4 logos -->
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img src="NMCP.png" alt="NMCP Logo" class="logo-image">
+                </div>
+                
+                <div class="logo-container">
+                    <img src="WHO.png" alt="WHO Logo" class="logo-image">
+                </div>
+                
+                <div class="logo-container">
+                    <img src="CHAI.png" alt="CHAI Logo" class="logo-image">
+                </div>
+
+                <div class="logo-container">
+                    <img src="ICF-SL.jpg" alt="ICF-SL Logo" class="logo-image">
+                </div>
+            </div>
+            
+            <!-- Title Section -->
+            <div class="title-section">
+                <h1 class="main-title">Malaria Program Review (MPR)</h1>
+                <h2 class="subtitle">Presentation</h2>
+                <h3 class="subtitle">by</h3>
+                <h2 class="subtitle">Musa Sillah Kanu (SME, NMCP-SL)</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <!-- Tab Toggle Button -->
+        <button class="tab-toggle-btn" onclick="toggleTabs()">☰ Toggle Navigation Tabs</button>
+        
+        <!-- Tab Navigation -->
+        <div class="tab-navigation collapsed" id="tabNavigation">
+            <button class="tab-button active" onclick="openTab(event, 'overview')">Overview</button>
+            <button class="tab-button" onclick="openTab(event, 'tab2')">Crude Incidence</button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">Tab 3</button>
+            <button class="tab-button" onclick="openTab(event, 'tab4')">Tab 4</button>
+            <button class="tab-button" onclick="openTab(event, 'tab5')">Tab 5</button>
+            <button class="tab-button" onclick="openTab(event, 'tab6')">Tab 6</button>
+            <button class="tab-button" onclick="openTab(event, 'tab7')">Tab 7</button>
+            <button class="tab-button" onclick="openTab(event, 'tab8')">Tab 8</button>
+            <button class="tab-button" onclick="openTab(event, 'tab9')">Tab 9</button>
+            <button class="tab-button" onclick="openTab(event, 'tab10')">Tab 10</button>
+            <button class="tab-button" onclick="openTab(event, 'tab11')">Tab 11</button>
+            <button class="tab-button" onclick="openTab(event, 'tab12')">Tab 12</button>
+            <button class="tab-button" onclick="openTab(event, 'tab13')">Tab 13</button>
+            <button class="tab-button" onclick="openTab(event, 'tab14')">Tab 14</button>
+            <button class="tab-button" onclick="openTab(event, 'tab15')">Tab 15</button>
+            <button class="tab-button" onclick="openTab(event, 'tab16')">Tab 16</button>
+            <button class="tab-button" onclick="openTab(event, 'tab17')">Tab 17</button>
+            <button class="tab-button" onclick="openTab(event, 'tab18')">Tab 18</button>
+            <button class="tab-button" onclick="openTab(event, 'conclusion')">Conclusion & Recommendation</button>
+            <button class="tab-button" onclick="openTab(event, 'acknowledgment')">Acknowledgment</button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div id="overview" class="tab-content active">
+            <div class="section-header">Overview</div>
+            
+            <!-- Collapsible Section 1 -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    Malaria Program Review (MPR) Introduction
+                </button>
+                <div class="section-content">
+                    <div class="content-text">
+                        <strong>Malaria Program Review (MPR) for the National Malaria Control Programme</strong><br>
+                        The Malaria Program Review (MPR) is a comprehensive, country-led assessment designed to evaluate the performance, relevance, and impact of all aspects of a national malaria response. 
+                        For the National Malaria Control Programme (NMCP) in Sierra Leone, the MPR is a critical opportunity to reflect on progress, identify gaps, and re-align priorities with the evolving malaria epidemiology, global best practices, and national health goals.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsible Section 2 -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    Purpose of the MPR
+                </button>
+                <div class="section-content">
+                    <div class="content-text">
+                        <strong>Purpose of the MPR</strong><br>
+                        The main purpose of the MPR is to ensure that the malaria program remains efficient, effective, and results-oriented. It supports evidence-based planning and strengthens program accountability, coordination, and resource allocation. 
+                        The MPR also prepares the groundwork for the development of new strategic plans and funding proposals to partners such as the Global Fund and PMI.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsible Section 3 -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    Key Focus Areas of the Review
+                </button>
+                <div class="section-content">
+                    <div class="content-text">
+                        <strong>Key Focus Areas of the Review</strong><br>
+                        • <strong>Prevention Strategies:</strong> Evaluation of long-lasting insecticidal net (LLIN) mass campaigns, routine distribution through antenatal clinics (ANC) and immunization platforms (EPI), and School-Based Distribution (SBD). Assessment of Indoor Residual Spraying (IRS) coverage and impact where implemented.<br>
+                        • <strong>Case Management and Diagnosis:</strong> Availability and use of rapid diagnostic tests (RDTs) and microscopy in health facilities, timely access to quality-assured antimalarial drugs, and training/supervision of health workers on treatment guidelines.<br>
+                        • <strong>Surveillance, Monitoring, and Evaluation:</strong> Review of data collection, reporting, and use of DHIS2; assessment of test positivity rates, incidence, and mortality trends; and evaluation of community-based surveillance.<br>
+                        • <strong>Community Engagement and Social Behaviour Change:</strong> Effectiveness of SBCC strategies, community ownership, and the role of SBD in empowering school children as malaria prevention champions.<br>
+                        • <strong>Programme Governance and Coordination:</strong> Review of institutional capacity, partnerships between MoHS and MBSSE, and financing mechanisms for malaria interventions.<br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsible Section 4 -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    Relevance of School-Based ITN Distribution
+                </button>
+                <div class="section-content">
+                    <div class="content-text">
+                        <strong>Relevance of School-Based ITN Distribution in the MPR</strong><br>
+                        The School-Based Distribution (SBD) of Insecticide-Treated Nets (ITNs) is a promising intervention that addresses the challenge of maintaining universal ITN coverage between mass campaigns. 
+                        Its integration into the MPR highlights considerations such as:<br>
+                        • <strong>Coverage and Equity:</strong> Assessment of SBD coverage in classes 1, 3, and 5, including marginalized groups.<br>
+                        • <strong>Partnerships:</strong> Operational collaboration between health and education sectors.<br>
+                        • <strong>Outcomes:</strong> Usage rates, knowledge of ITN care, and its impact on malaria morbidity among school-age children.<br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsible Section 5 -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    Expected Benefits & Conclusion
+                </button>
+                <div class="section-content">
+                    <div class="content-text">
+                        <strong>Expected Benefits of the Review</strong><br>
+                        • Provide an evidence base to validate SBD as an effective strategy for achieving universal ITN coverage.<br>
+                        • Identify best practices and challenges in current malaria interventions to inform future programming.<br>
+                        • Strengthen inter-ministerial collaboration for sustained delivery of integrated services.<br>
+                        • Guide the development of a new malaria strategic plan (2026–2030), incorporating innovative, equitable, and data-driven strategies.<br>
+                    </div>
+                    
+                    <div class="content-text">
+                        <strong>Conclusion</strong><br>
+                        The Malaria Program Review is not just a routine assessment; it is a strategic pivot point for NMCP to enhance impact, secure sustained funding, and ultimately achieve malaria elimination goals. 
+                        With interventions like the School-Based ITN Distribution gaining traction, Sierra Leone is well-positioned to redefine its malaria control architecture with a stronger emphasis on integration, innovation, and inclusiveness.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2 - Enhanced Crude Incidence -->
+        <div id="tab2" class="tab-content">
+            <div class="section-header">Crude Incidence Analysis</div>
+            
+            <!-- National Overview Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    📊 National Overview and Subplots
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="row-indicator">National Crude Incidence Trend</div>
+                            <div class="image-container">
+                                <img src="national_crude_incidence_trend (3).png" alt="National Crude Incidence Trend" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">National-level crude incidence trend analysis over time</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="row-indicator">Crude Incidence Subplots (4x4 Grid)</div>
+                            <div class="image-container">
+                                <img src="crude_incidence_trend_subplots_4x4.png" alt="Crude Incidence Subplots 4x4" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Comprehensive 4x4 grid showing crude incidence trends by district</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="row-indicator">District Change Overview Map</div>
+                            <div class="image-container">
+                                <img src="district_change_overview_map.png" alt="District Change Overview Map" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Geographic visualization of district-level changes in crude incidence</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="row-indicator">National Crude Incidence Change Map</div>
+                            <div class="image-container">
+                                <img src="national_crude_incidence_change_map.png" alt="National Crude Incidence Change Map" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">National geographic representation of crude incidence changes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual District Plots Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Trend Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="row-indicator">Eastern Province Districts</div>
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_KAILAHUN.png" alt="Kailahun" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Kailahun District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_KENEMA.png" alt="Kenema" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Kenema District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_KONO.png" alt="Kono" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Kono District Crude Incidence Trend</div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row-indicator">Northern Province Districts</div>
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_BOMBALI.png" alt="Bombali" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Bombali District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_FALABA.png" alt="Falaba" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Falaba District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_KOINADUGU.png" alt="Koinadugu" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Koinadugu District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_TONKOLILI.png" alt="Tonkolili" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Tonkolili District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_KAMBIA.png" alt="Kambia" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Kambia District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_KARENE.png" alt="Karene" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Karene District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_PORT LOKO.png" alt="Port Loko" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Port Loko District Crude Incidence Trend</div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row-indicator">Southern Province Districts</div>
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_BO.png" alt="Bo" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Bo District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_BONTHE.png" alt="Bonthe" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Bonthe District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_MOYAMBA.png" alt="Moyamba" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Moyamba District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_PUJEHUN.png" alt="Pujehun" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Pujehun District Crude Incidence Trend</div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row-indicator">Western Area Districts</div>
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_WESTERN RURAL.png" alt="Western Rural" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Western Rural District Crude Incidence Trend</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_trend_WESTERN URBAN.png" alt="Western Urban" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">Western Urban District Crude Incidence Trend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHIE Subplots Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    📈 CHIE Subplots by District
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="row-indicator">Eastern Province CHIE Analysis</div>
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_KAILAHUN.png" alt="CHIE Kailahun" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Kailahun District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_KENEMA.png" alt="CHIE Kenema" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Kenema District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_KONO.png" alt="CHIE Kono" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Kono District</div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row-indicator">Northern Province CHIE Analysis</div>
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_BOMBALI.png" alt="CHIE Bombali" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Bombali District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_FALABA.png" alt="CHIE Falaba" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Falaba District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_KOINADUGU.png" alt="CHIE Koinadugu" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Koinadugu District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_TONKOLILI.png" alt="CHIE Tonkolili" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Tonkolili District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_KAMBIA.png" alt="CHIE Kambia" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Kambia District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_KARENE.png" alt="CHIE Karene" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Karene District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_PORT LOKO.png" alt="CHIE Port Loko" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Port Loko District</div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row-indicator">Southern Province CHIE Analysis</div>
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_BO.png" alt="CHIE Bo" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Bo District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_BONTHE.png" alt="CHIE Bonthe" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Bonthe District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_MOYAMBA.png" alt="CHIE Moyamba" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Moyamba District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_PUJEHUN.png" alt="CHIE Pujehun" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Pujehun District</div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row-indicator">Western Area CHIE Analysis</div>
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_WESTERN RURAL.png" alt="CHIE Western Rural" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Western Rural District</div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="plots/crude_incidence_CHIE_subplots_WESTERN URBAN.png" alt="CHIE Western Urban" class="dashboard-image">
+                            </div>
+                            <div class="image-caption">CHIE Analysis - Western Urban District</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 3 -->
+        <div id="tab3" class="tab-content">
+            <div class="section-header">District Change Overview Map</div>
+            <div class="content-grid">
+                <div class="content-row">
+                    <div class="row-indicator">District-Level Change Analysis</div>
+                    <div class="image-container">
+                        <img src="district_change_overview_map.png" alt="District Change Overview Map" class="dashboard-image">
+                    </div>
+                    <div class="image-caption">District change overview mapping and analysis</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other tabs remain the same... -->
+        <!-- Tab 4 -->
+        <div id="tab4" class="tab-content">
+            <div class="section-header">Crude Incidence Trend Subplots</div>
+            <div class="content-grid">
+                <div class="content-row">
+                    <div class="row-indicator">4x4 Trend Analysis Overview</div>
+                    <div class="image-container">
+                        <img src="crude_incidence_trend_subplots_4x4.png" alt="Crude Incidence Trend Subplots 4x4" class="dashboard-image">
+                    </div>
+                    <div class="image-caption">Comprehensive 4x4 crude incidence trend analysis</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Remaining tabs (5-18) with placeholders -->
+        <div id="tab5" class="tab-content">
+            <div class="section-header">Tab 5 Content</div>
+            <div class="placeholder-content">Tab 5 content will be added here</div>
+        </div>
+
+        <div id="tab6" class="tab-content">
+            <div class="section-header">Tab 6 Content</div>
+            <div class="placeholder-content">Tab 6 content will be added here</div>
+        </div>
+
+        <div id="tab7" class="tab-content">
+            <div class="section-header">Tab 7 Content</div>
+            <div class="placeholder-content">Tab 7 content will be added here</div>
+        </div>
+
+        <div id="tab8" class="tab-content">
+            <div class="section-header">Tab 8 Content</div>
+            <div class="placeholder-content">Tab 8 content will be added here</div>
+        </div>
+
+        <div id="tab9" class="tab-content">
+            <div class="section-header">Tab 9 Content</div>
+            <div class="placeholder-content">Tab 9 content will be added here</div>
+        </div>
+
+        <div id="tab10" class="tab-content">
+            <div class="section-header">Tab 10 Content</div>
+            <div class="placeholder-content">Tab 10 content will be added here</div>
+        </div>
+
+        <div id="tab11" class="tab-content">
+            <div class="section-header">Tab 11 Content</div>
+            <div class="placeholder-content">Tab 11 content will be added here</div>
+        </div>
+
+        <div id="tab12" class="tab-content">
+            <div class="section-header">Tab 12 Content</div>
+            <div class="placeholder-content">Tab 12 content will be added here</div>
+        </div>
+
+        <div id="tab13" class="tab-content">
+            <div class="section-header">Tab 13 Content</div>
+            <div class="placeholder-content">Tab 13 content will be added here</div>
+        </div>
+
+        <div id="tab14" class="tab-content">
+            <div class="section-header">Tab 14 Content</div>
+            <div class="placeholder-content">Tab 14 content will be added here</div>
+        </div>
+
+        <div id="tab15" class="tab-content">
+            <div class="section-header">Tab 15 Content</div>
+            <div class="placeholder-content">Tab 15 content will be added here</div>
+        </div>
+
+        <div id="tab16" class="tab-content">
+            <div class="section-header">Tab 16 Content</div>
+            <div class="placeholder-content">Tab 16 content will be added here</div>
+        </div>
+
+        <div id="tab17" class="tab-content">
+            <div class="section-header">Tab 17 Content</div>
+            <div class="placeholder-content">Tab 17 content will be added here</div>
+        </div>
+
+        <div id="tab18" class="tab-content">
+            <div class="section-header">Tab 18 Content</div>
+            <div class="placeholder-content">Tab 18 content will be added here</div>
+        </div>
+
+        <!-- Conclusion & Recommendation -->
+        <div id="conclusion" class="tab-content">
+            <div class="section-header">Conclusion & Recommendations</div>
+            <div class="content-text">
+                The School-Based Distribution of ITNs has demonstrated significant success in achieving comprehensive coverage across Bo and Bombali districts. The strategic use of educational infrastructure has proven effective in reaching both rural and urban communities.
+            </div>
+            <div class="placeholder-content">
+                <strong>Key Conclusions & Recommendations</strong><br>
+                • Lessons learned from implementation<br>
+                • Best practices and success factors<br>
+                • Challenges encountered and solutions<br>
+                • Recommendations for future distributions<br>
+                • Scale-up considerations and improvements
+            </div>
+        </div>
+
+        <!-- Acknowledgment -->
+        <div id="acknowledgment" class="tab-content">
+            <div class="section-header">Acknowledgment</div>
+            <div class="content-text">
+                We extend our sincere gratitude to all partners, stakeholders, and communities who made this School-Based Distribution initiative a success.
+            </div>
+            
+            <div class="content-grid">
+                <!-- Special Thanks Section -->
+                <div class="content-row">
+                    <div class="row-indicator">Special Thanks to Mohamed (Left) and Musa (Right). In recognition of the relentless efforts in designing and conceptualizing the entire digitalization framework.</div>
+                    <div class="image-container">
+                        <div style="
+                            background: linear-gradient(145deg, #ffffff, #f0f8ff);
+                            border: 3px solid #0066cc;
+                            border-radius: 20px;
+                            padding: 30px;
+                            box-shadow: 
+                                0 20px 40px rgba(0, 102, 204, 0.15),
+                                inset 0 2px 4px rgba(255, 255, 255, 0.9),
+                                inset 0 -2px 4px rgba(0, 102, 204, 0.1);
+                            position: relative;
+                            overflow: hidden;
+                            max-width: 600px;
+                            margin: 0 auto;
+                        ">
+                            <!-- Decorative corner elements -->
+                            <div style="
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                                width: 40px;
+                                height: 40px;
+                                background: linear-gradient(45deg, #0066cc, #004499);
+                                border-radius: 50%;
+                                opacity: 0.1;
+                            "></div>
+                            <div style="
+                                position: absolute;
+                                bottom: 10px;
+                                right: 10px;
+                                width: 60px;
+                                height: 60px;
+                                background: linear-gradient(45deg, #004499, #0066cc);
+                                border-radius: 50%;
+                                opacity: 0.1;
+                            "></div>
+                            
+                            <!-- Main content frame -->
+                            <div style="
+                                background: rgba(255, 255, 255, 0.8);
+                                border: 2px dashed #0066cc;
+                                border-radius: 15px;
+                                padding: 40px 20px;
+                                text-align: center;
+                                position: relative;
+                                z-index: 1;
+                            ">
+                                <img src="IMG-20241114-WA0017.jpg" alt="Special Thanks to Mohamed (Left) and Musa (Right). In recognition of the relentless efforts in designing and conceptualizing the entire digitalization framework." style="
+                                    max-width: 100%;
+                                    height: auto;
+                                    border-radius: 10px;
+                                    box-shadow: 0 10px 25px rgba(0, 102, 204, 0.2);
+                                    transition: all 0.3s ease;
+                                " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                
+                                <!-- Decorative ribbon -->
+                                <div style="
+                                    position: absolute;
+                                    top: -10px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    background: linear-gradient(45deg, #0066cc, #004499);
+                                    color: white;
+                                    padding: 8px 25px;
+                                    border-radius: 20px;
+                                    font-size: 0.9em;
+                                    font-weight: bold;
+                                    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+                                    z-index: 2;
+                                ">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-caption" style="margin-top: 25px;"></div>
+                </div>
+            </div>
+
+            <div class="content-text">
+                <strong>Key Partners and Collaborators:</strong><br>
+                • Ministry of Health and Sanitation<br>
+                • National Malaria Control Programme (NMCP)<br>
+                • President's Malaria Initiative (PMI)<br>
+                • Abt Associates<br>
+                • School administrators and teachers<br>
+                • School Quality Assurance (SQA) officers<br>
+                • PHU staff
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Hide all tab contents
+            var tabcontents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active");
+            }
+            
+            // Remove active class from all tab buttons
+            var tabbuttons = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+            
+            // Show the selected tab content and mark button as active
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        function toggleTabs() {
+            var tabNav = document.getElementById("tabNavigation");
+            tabNav.classList.toggle("collapsed");
+        }
+
+        function toggleSection(button) {
+            var content = button.nextElementSibling;
+            var isCollapsed = content.classList.contains("expanded");
+            
+            if (isCollapsed) {
+                content.classList.remove("expanded");
+                button.classList.add("collapsed");
+            } else {
+                content.classList.add("expanded");
+                button.classList.remove("collapsed");
+            }
+        }
+
+        // Initialize all sections as collapsed by default
+        document.addEventListener('DOMContentLoaded', function() {
+            var sections = document.querySelectorAll('.section-content');
+            var buttons = document.querySelectorAll('.section-toggle');
+            
+            sections.forEach(function(section) {
+                section.classList.remove('expanded');
+            });
+            
+            buttons.forEach(function(button) {
+                button.classList.add('collapsed');
+            });
+        });
+    </script>
+</body>
+</html>
