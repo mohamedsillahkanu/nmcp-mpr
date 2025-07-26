@@ -164,7 +164,7 @@
         }
 
         .section-content.expanded {
-            max-height: 2000px;
+            max-height: 4000px;
             padding: 20px;
         }
 
@@ -276,7 +276,6 @@
             align-items: center;
             gap: 50px;
             margin-top: 40px;
-            padding: 20px;
         }
 
         .content-row {
@@ -284,7 +283,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
-            max-width: 800px;
+            max-width: 1200px;
         }
 
         .row-indicator {
@@ -308,6 +307,7 @@
 
         .dashboard-image {
             max-width: 100%;
+            width: 100%;
             height: auto;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 102, 204, 0.2);
@@ -638,11 +638,11 @@
                 <div class="section-content">
                     <div class="content-grid">
                         <div class="content-row">
-                           
+                            <div class="row-indicator">National Crude Incidence Trend</div>
                             <div class="image-container">
                                 <img src="national_crude_incidence_trend (3).png" alt="National Crude Incidence Trend" class="dashboard-image">
                             </div>
-                           
+                            <div class="image-caption">National-level crude incidence trend analysis over time</div>
                         </div>
                         
                         <div class="content-row">
@@ -1161,6 +1161,10 @@
             // Show the selected tab content and mark button as active
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
+            
+            // Auto-collapse navigation after tab selection
+            var tabNav = document.getElementById("tabNavigation");
+            tabNav.classList.add("collapsed");
         }
 
         function toggleTabs() {
