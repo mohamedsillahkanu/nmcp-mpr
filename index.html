@@ -164,7 +164,7 @@
         }
 
         .section-content.expanded {
-            max-height: 4000px;
+            max-height: none;
             padding: 20px;
         }
 
@@ -244,7 +244,7 @@
         }
 
         .section-content.expanded {
-            max-height: 2000px;
+            max-height: none;
             padding: 20px;
         }
 
@@ -276,6 +276,7 @@
             align-items: center;
             gap: 30px;
             margin-top: 40px;
+            min-height: auto;
         }
 
         .content-row {
@@ -284,12 +285,15 @@
             align-items: center;
             width: 100%;
             max-width: 1200px;
+            min-height: auto;
         }
 
         .image-container {
             width: 100%;
             display: flex;
             justify-content: center;
+            min-height: auto;
+            overflow: visible;
         }
 
         .dashboard-image {
@@ -299,6 +303,7 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 102, 204, 0.2);
             transition: all 0.3s ease;
+            display: block;
         }
 
         .dashboard-image:hover {
@@ -602,7 +607,19 @@
                             <div class="image-container">
                                 <img src="crude_incidence_trend_subplots_4x4.png" alt="Crude Incidence Subplots 4x4" class="dashboard-image">
                             </div>
-                        </div>                      
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="district_change_overview_map.png" alt="District Change Overview Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="national_crude_incidence_change_map.png" alt="National Crude Incidence Change Map" class="dashboard-image">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
