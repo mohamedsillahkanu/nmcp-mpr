@@ -451,7 +451,7 @@
                 </div>
                 
                 <div class="logo-container">
-                    <img src="CHAI2.png" alt="CHAI Logo" class="logo-image">
+                    <img src="CHAI.png" alt="CHAI Logo" class="logo-image">
                 </div>
 
                 <div class="logo-container">
@@ -477,11 +477,11 @@
         <div class="tab-navigation collapsed" id="tabNavigation">
             <button class="tab-button active" onclick="openTab(event, 'overview')">Overview</button>
             <button class="tab-button" onclick="openTab(event, 'tab2')">Crude Incidence</button>
-            <button class="tab-button" onclick="openTab(event, 'tab3')">Tab 3</button>
-            <button class="tab-button" onclick="openTab(event, 'tab4')">Tab 4</button>
-            <button class="tab-button" onclick="openTab(event, 'tab5')">Tab 5</button>
-            <button class="tab-button" onclick="openTab(event, 'tab6')">Tab 6</button>
-            <button class="tab-button" onclick="openTab(event, 'tab7')">Tab 7</button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">Suspected</button>
+            <button class="tab-button" onclick="openTab(event, 'tab4')">Tested</button>
+            <button class="tab-button" onclick="openTab(event, 'tab5')">Confirm</button>
+            <button class="tab-button" onclick="openTab(event, 'tab6')">Treated</button>
+            <button class="tab-button" onclick="openTab(event, 'tab7')">Presumed Cases</button>
             <button class="tab-button" onclick="openTab(event, 'tab8')">Tab 8</button>
             <button class="tab-button" onclick="openTab(event, 'tab9')">Tab 9</button>
             <button class="tab-button" onclick="openTab(event, 'tab10')">Tab 10</button>
@@ -730,6 +730,112 @@
                 </div>
             </div>
 
+            <!-- Individual District Maps Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Maps Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_KAILAHUN.png" alt="Kailahun Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_KENEMA.png" alt="Kenema Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_KONO.png" alt="Kono Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_BOMBALI.png" alt="Bombali Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_FALABA.png" alt="Falaba Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_KOINADUGU.png" alt="Koinadugu Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_TONKOLILI.png" alt="Tonkolili Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_KAMBIA.png" alt="Kambia Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_KARENE.png" alt="Karene Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_PORT LOKO.png" alt="Port Loko Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_BO.png" alt="Bo Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_BONTHE.png" alt="Bonthe Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_MOYAMBA.png" alt="Moyamba Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_PUJEHUN.png" alt="Pujehun Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_WESTERN RURAL.png" alt="Western Rural Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="crude_incidence_map_WESTERN URBAN.png" alt="Western Urban Map" class="dashboard-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- CHIE Subplots Section -->
             <div class="collapsible-section">
                 <button class="section-toggle collapsed" onclick="toggleSection(this)">
@@ -839,11 +945,250 @@
 
         <!-- Tab 3 -->
         <div id="tab3" class="tab-content">
-            <div class="section-header">District Change Overview Map</div>
-            <div class="content-grid">
-                <div class="content-row">
-                    <div class="image-container">
-                        <img src="district_change_overview_map.png" alt="District Change Overview Map" class="dashboard-image">
+            <div class="section-header">Tab 3 Analysis</div>
+            
+            <!-- National Overview Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    📊 National Overview and Subplots
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="national_tab3_trend.png" alt="National Tab 3 Trend" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_subplots_4x4.png" alt="Tab 3 Subplots 4x4" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_change_overview_map.png" alt="Tab 3 Change Overview Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="national_tab3_change_map.png" alt="National Tab 3 Change Map" class="dashboard-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual District Trends Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Trend Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_KAILAHUN.png" alt="Kailahun" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_KENEMA.png" alt="Kenema" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_KONO.png" alt="Kono" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_BOMBALI.png" alt="Bombali" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_FALABA.png" alt="Falaba" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_KOINADUGU.png" alt="Koinadugu" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_TONKOLILI.png" alt="Tonkolili" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_KAMBIA.png" alt="Kambia" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_KARENE.png" alt="Karene" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_PORT LOKO.png" alt="Port Loko" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_BO.png" alt="Bo" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_BONTHE.png" alt="Bonthe" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_MOYAMBA.png" alt="Moyamba" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_PUJEHUN.png" alt="Pujehun" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_WESTERN RURAL.png" alt="Western Rural" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_trend_WESTERN URBAN.png" alt="Western Urban" class="dashboard-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual District Maps Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Maps Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_KAILAHUN.png" alt="Kailahun Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_KENEMA.png" alt="Kenema Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_KONO.png" alt="Kono Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_BOMBALI.png" alt="Bombali Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_FALABA.png" alt="Falaba Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_KOINADUGU.png" alt="Koinadugu Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_TONKOLILI.png" alt="Tonkolili Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_KAMBIA.png" alt="Kambia Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_KARENE.png" alt="Karene Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_PORT LOKO.png" alt="Port Loko Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_BO.png" alt="Bo Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_BONTHE.png" alt="Bonthe Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_MOYAMBA.png" alt="Moyamba Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_PUJEHUN.png" alt="Pujehun Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_WESTERN RURAL.png" alt="Western Rural Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab3_map_WESTERN URBAN.png" alt="Western Urban Map" class="dashboard-image">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -851,25 +1196,529 @@
 
         <!-- Tab 4 -->
         <div id="tab4" class="tab-content">
-            <div class="section-header">Crude Incidence Trend Subplots</div>
-            <div class="content-grid">
-                <div class="content-row">
-                    <div class="image-container">
-                        <img src="crude_incidence_trend_subplots_4x4.png" alt="Crude Incidence Trend Subplots 4x4" class="dashboard-image">
+            <div class="section-header">Tab 4 Analysis</div>
+            
+            <!-- National Overview Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    📊 National Overview and Subplots
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="national_tab4_trend.png" alt="National Tab 4 Trend" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_subplots_4x4.png" alt="Tab 4 Subplots 4x4" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_change_overview_map.png" alt="Tab 4 Change Overview Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="national_tab4_change_map.png" alt="National Tab 4 Change Map" class="dashboard-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual District Trends Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Trend Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_KAILAHUN.png" alt="Kailahun" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_KENEMA.png" alt="Kenema" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_KONO.png" alt="Kono" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_BOMBALI.png" alt="Bombali" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_FALABA.png" alt="Falaba" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_KOINADUGU.png" alt="Koinadugu" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_TONKOLILI.png" alt="Tonkolili" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_KAMBIA.png" alt="Kambia" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_KARENE.png" alt="Karene" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_PORT LOKO.png" alt="Port Loko" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_BO.png" alt="Bo" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_BONTHE.png" alt="Bonthe" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_MOYAMBA.png" alt="Moyamba" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_PUJEHUN.png" alt="Pujehun" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_WESTERN RURAL.png" alt="Western Rural" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_trend_WESTERN URBAN.png" alt="Western Urban" class="dashboard-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual District Maps Section -->
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Maps Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_KAILAHUN.png" alt="Kailahun Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_KENEMA.png" alt="Kenema Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_KONO.png" alt="Kono Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_BOMBALI.png" alt="Bombali Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_FALABA.png" alt="Falaba Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_KOINADUGU.png" alt="Koinadugu Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_TONKOLILI.png" alt="Tonkolili Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_KAMBIA.png" alt="Kambia Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_KARENE.png" alt="Karene Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_PORT LOKO.png" alt="Port Loko Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_BO.png" alt="Bo Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_BONTHE.png" alt="Bonthe Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_MOYAMBA.png" alt="Moyamba Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_PUJEHUN.png" alt="Pujehun Map" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_WESTERN RURAL.png" alt="Western Rural Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab4_map_WESTERN URBAN.png" alt="Western Urban Map" class="dashboard-image">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Remaining tabs (5-18) with placeholders -->
+        <!-- Remaining tabs (5-18) with comprehensive structure -->
         <div id="tab5" class="tab-content">
-            <div class="section-header">Tab 5 Content</div>
-            <div class="placeholder-content">Tab 5 content will be added here</div>
+            <div class="section-header">Tab 5 Analysis</div>
+            
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    📊 National Overview and Subplots
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="national_tab5_trend.png" alt="National Tab 5 Trend" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_subplots_4x4.png" alt="Tab 5 Subplots 4x4" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_change_overview_map.png" alt="Tab 5 Change Overview Map" class="dashboard-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Trend Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_KAILAHUN.png" alt="Kailahun" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_KENEMA.png" alt="Kenema" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_KONO.png" alt="Kono" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_BOMBALI.png" alt="Bombali" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_FALABA.png" alt="Falaba" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_KOINADUGU.png" alt="Koinadugu" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_TONKOLILI.png" alt="Tonkolili" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_KAMBIA.png" alt="Kambia" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_KARENE.png" alt="Karene" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_PORT LOKO.png" alt="Port Loko" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_BO.png" alt="Bo" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_BONTHE.png" alt="Bonthe" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_MOYAMBA.png" alt="Moyamba" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_PUJEHUN.png" alt="Pujehun" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_WESTERN RURAL.png" alt="Western Rural" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_trend_WESTERN URBAN.png" alt="Western Urban" class="dashboard-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Maps Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_KAILAHUN.png" alt="Kailahun Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_KENEMA.png" alt="Kenema Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_KONO.png" alt="Kono Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_BOMBALI.png" alt="Bombali Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_FALABA.png" alt="Falaba Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_KOINADUGU.png" alt="Koinadugu Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_TONKOLILI.png" alt="Tonkolili Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_KAMBIA.png" alt="Kambia Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_KARENE.png" alt="Karene Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_PORT LOKO.png" alt="Port Loko Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_BO.png" alt="Bo Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_BONTHE.png" alt="Bonthe Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_MOYAMBA.png" alt="Moyamba Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_PUJEHUN.png" alt="Pujehun Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_WESTERN RURAL.png" alt="Western Rural Map" class="dashboard-image">
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="image-container">
+                                <img src="tab5_map_WESTERN URBAN.png" alt="Western Urban Map" class="dashboard-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="tab6" class="tab-content">
-            <div class="section-header">Tab 6 Content</div>
-            <div class="placeholder-content">Tab 6 content will be added here</div>
+            <div class="section-header">Tab 6 Analysis</div>
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    📊 National Overview and Subplots
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row"><div class="image-container"><img src="national_tab6_trend.png" alt="National Tab 6 Trend" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_subplots_4x4.png" alt="Tab 6 Subplots 4x4" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_change_overview_map.png" alt="Tab 6 Change Overview Map" class="dashboard-image"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Trend Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_KAILAHUN.png" alt="Kailahun" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_KENEMA.png" alt="Kenema" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_KONO.png" alt="Kono" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_BOMBALI.png" alt="Bombali" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_FALABA.png" alt="Falaba" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_KOINADUGU.png" alt="Koinadugu" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_TONKOLILI.png" alt="Tonkolili" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_KAMBIA.png" alt="Kambia" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_KARENE.png" alt="Karene" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_PORT LOKO.png" alt="Port Loko" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_BO.png" alt="Bo" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_BONTHE.png" alt="Bonthe" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_MOYAMBA.png" alt="Moyamba" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_PUJEHUN.png" alt="Pujehun" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_WESTERN RURAL.png" alt="Western Rural" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_trend_WESTERN URBAN.png" alt="Western Urban" class="dashboard-image"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapsible-section">
+                <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                    🗺️ Individual District Maps Analysis
+                </button>
+                <div class="section-content">
+                    <div class="content-grid">
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_KAILAHUN.png" alt="Kailahun Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_KENEMA.png" alt="Kenema Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_KONO.png" alt="Kono Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_BOMBALI.png" alt="Bombali Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_FALABA.png" alt="Falaba Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_KOINADUGU.png" alt="Koinadugu Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_TONKOLILI.png" alt="Tonkolili Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_KAMBIA.png" alt="Kambia Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_KARENE.png" alt="Karene Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_PORT LOKO.png" alt="Port Loko Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_BO.png" alt="Bo Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_BONTHE.png" alt="Bonthe Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_MOYAMBA.png" alt="Moyamba Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_PUJEHUN.png" alt="Pujehun Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_WESTERN RURAL.png" alt="Western Rural Map" class="dashboard-image"></div></div>
+                        <div class="content-row"><div class="image-container"><img src="tab6_map_WESTERN URBAN.png" alt="Western Urban Map" class="dashboard-image"></div></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="tab7" class="tab-content">
