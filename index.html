@@ -274,7 +274,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 50px;
+            gap: 30px;
             margin-top: 40px;
         }
 
@@ -286,23 +286,10 @@
             max-width: 1200px;
         }
 
-        .row-indicator {
-            color: #0066cc;
-            font-weight: 700;
-            font-size: 1.3em;
-            margin-bottom: 30px;
-            text-align: center;
-            padding: 15px 30px;
-            background: rgba(0, 102, 204, 0.1);
-            border-radius: 25px;
-            border: 2px solid rgba(0, 102, 204, 0.3);
-        }
-
         .image-container {
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
         }
 
         .dashboard-image {
@@ -314,27 +301,9 @@
             transition: all 0.3s ease;
         }
 
-        .image-separator {
-            font-size: 20px;
-            font-weight: bold;
-            color: #444;
-            margin: 5px 0;
-        }
-
         .dashboard-image:hover {
             transform: scale(1.02);
             box-shadow: 0 15px 40px rgba(0, 102, 204, 0.3);
-        }
-
-        .image-caption {
-            text-align: center;
-            font-size: 1.1em;
-            color: #004499;
-            font-weight: 600;
-            padding: 10px 20px;
-            background: rgba(0, 102, 204, 0.1);
-            border-radius: 20px;
-            margin-top: 15px;
         }
 
         .github-info {
@@ -418,12 +387,7 @@
             }
 
             .content-grid {
-                gap: 35px;
-            }
-
-            .row-indicator {
-                font-size: 1.1em;
-                padding: 12px 20px;
+                gap: 25px;
             }
 
             .image-placeholder {
@@ -454,15 +418,6 @@
 
             .dashboard-container {
                 padding: 20px;
-            }
-
-            .row-indicator {
-                font-size: 1em;
-                padding: 10px 15px;
-            }
-
-            .image-caption {
-                font-size: 1em;
             }
 
             .tab-button {
@@ -638,35 +593,27 @@
                 <div class="section-content">
                     <div class="content-grid">
                         <div class="content-row">
-                            <div class="row-indicator">National Crude Incidence Trend</div>
                             <div class="image-container">
                                 <img src="national_crude_incidence_trend (3).png" alt="National Crude Incidence Trend" class="dashboard-image">
                             </div>
-                            <div class="image-caption">National-level crude incidence trend analysis over time</div>
                         </div>
                         
                         <div class="content-row">
-                            <div class="row-indicator">Crude Incidence Subplots (4x4 Grid)</div>
                             <div class="image-container">
                                 <img src="crude_incidence_trend_subplots_4x4.png" alt="Crude Incidence Subplots 4x4" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Comprehensive 4x4 grid showing crude incidence trends by district</div>
                         </div>
                         
                         <div class="content-row">
-                            <div class="row-indicator">District Change Overview Map</div>
                             <div class="image-container">
                                 <img src="district_change_overview_map.png" alt="District Change Overview Map" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Geographic visualization of district-level changes in crude incidence</div>
                         </div>
                         
                         <div class="content-row">
-                            <div class="row-indicator">National Crude Incidence Change Map</div>
                             <div class="image-container">
                                 <img src="national_crude_incidence_change_map.png" alt="National Crude Incidence Change Map" class="dashboard-image">
                             </div>
-                            <div class="image-caption">National geographic representation of crude incidence changes</div>
                         </div>
                     </div>
                 </div>
@@ -680,119 +627,99 @@
                 <div class="section-content">
                     <div class="content-grid">
                         <div class="content-row">
-                            <div class="row-indicator">Eastern Province Districts</div>
                             <div class="image-container">
                                 <img src="crude_incidence_trend_KAILAHUN.png" alt="Kailahun" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Kailahun District Crude Incidence Trend</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_KENEMA.png" alt="Kenema" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Kenema District Crude Incidence Trend</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_KONO.png" alt="Kono" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Kono District Crude Incidence Trend</div>
                         </div>
 
                         <div class="content-row">
-                            <div class="row-indicator">Northern Province Districts</div>
                             <div class="image-container">
                                 <img src="crude_incidence_trend_BOMBALI.png" alt="Bombali" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Bombali District Crude Incidence Trend</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_FALABA.png" alt="Falaba" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Falaba District Crude Incidence Trend</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_KOINADUGU.png" alt="Koinadugu" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Koinadugu District Crude Incidence Trend</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_TONKOLILI.png" alt="Tonkolili" class="dashboard-image">
                             </div>
-                         
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_KAMBIA.png" alt="Kambia" class="dashboard-image">
                             </div>
-                       
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_KARENE.png" alt="Karene" class="dashboard-image">
                             </div>
-                          
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_PORT LOKO.png" alt="Port Loko" class="dashboard-image">
                             </div>
-                          
                         </div>
 
                         <div class="content-row">
-                            <div class="row-indicator">Southern Province Districts</div>
                             <div class="image-container">
                                 <img src="crude_incidence_trend_BO.png" alt="Bo" class="dashboard-image">
                             </div>
-                           
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_BONTHE.png" alt="Bonthe" class="dashboard-image">
                             </div>
-                         
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_MOYAMBA.png" alt="Moyamba" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Moyamba District Crude Incidence Trend</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_PUJEHUN.png" alt="Pujehun" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Pujehun District Crude Incidence Trend</div>
                         </div>
 
                         <div class="content-row">
-                            <div class="row-indicator">Western Area Districts</div>
                             <div class="image-container">
                                 <img src="crude_incidence_trend_WESTERN RURAL.png" alt="Western Rural" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Western Rural District Crude Incidence Trend</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_trend_WESTERN URBAN.png" alt="Western Urban" class="dashboard-image">
                             </div>
-                            <div class="image-caption">Western Urban District Crude Incidence Trend</div>
                         </div>
                     </div>
                 </div>
@@ -806,119 +733,99 @@
                 <div class="section-content">
                     <div class="content-grid">
                         <div class="content-row">
-                            <div class="row-indicator">Eastern Province CHIE Analysis</div>
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_KAILAHUN.png" alt="CHIE Kailahun" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Kailahun District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_KENEMA.png" alt="CHIE Kenema" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Kenema District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_KONO.png" alt="CHIE Kono" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Kono District</div>
                         </div>
 
                         <div class="content-row">
-                            <div class="row-indicator">Northern Province CHIE Analysis</div>
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_BOMBALI.png" alt="CHIE Bombali" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Bombali District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_FALABA.png" alt="CHIE Falaba" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Falaba District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_KOINADUGU.png" alt="CHIE Koinadugu" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Koinadugu District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_TONKOLILI.png" alt="CHIE Tonkolili" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Tonkolili District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_KAMBIA.png" alt="CHIE Kambia" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Kambia District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_KARENE.png" alt="CHIE Karene" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Karene District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_PORT LOKO.png" alt="CHIE Port Loko" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Port Loko District</div>
                         </div>
 
                         <div class="content-row">
-                            <div class="row-indicator">Southern Province CHIE Analysis</div>
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_BO.png" alt="CHIE Bo" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Bo District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_BONTHE.png" alt="CHIE Bonthe" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Bonthe District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_MOYAMBA.png" alt="CHIE Moyamba" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Moyamba District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_PUJEHUN.png" alt="CHIE Pujehun" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Pujehun District</div>
                         </div>
 
                         <div class="content-row">
-                            <div class="row-indicator">Western Area CHIE Analysis</div>
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_WESTERN RURAL.png" alt="CHIE Western Rural" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Western Rural District</div>
                         </div>
                         
                         <div class="content-row">
                             <div class="image-container">
                                 <img src="crude_incidence_CHIE_subplots_WESTERN URBAN.png" alt="CHIE Western Urban" class="dashboard-image">
                             </div>
-                            <div class="image-caption">CHIE Analysis - Western Urban District</div>
                         </div>
                     </div>
                 </div>
@@ -930,26 +837,21 @@
             <div class="section-header">District Change Overview Map</div>
             <div class="content-grid">
                 <div class="content-row">
-                    <div class="row-indicator">District-Level Change Analysis</div>
                     <div class="image-container">
                         <img src="district_change_overview_map.png" alt="District Change Overview Map" class="dashboard-image">
                     </div>
-                    <div class="image-caption">District change overview mapping and analysis</div>
                 </div>
             </div>
         </div>
 
-        <!-- Other tabs remain the same... -->
         <!-- Tab 4 -->
         <div id="tab4" class="tab-content">
             <div class="section-header">Crude Incidence Trend Subplots</div>
             <div class="content-grid">
                 <div class="content-row">
-                    <div class="row-indicator">4x4 Trend Analysis Overview</div>
                     <div class="image-container">
                         <img src="crude_incidence_trend_subplots_4x4.png" alt="Crude Incidence Trend Subplots 4x4" class="dashboard-image">
                     </div>
-                    <div class="image-caption">Comprehensive 4x4 crude incidence trend analysis</div>
                 </div>
             </div>
         </div>
@@ -1051,7 +953,6 @@
             <div class="content-grid">
                 <!-- Special Thanks Section -->
                 <div class="content-row">
-                    <div class="row-indicator">Special Thanks to Mohamed (Left) and Musa (Right). In recognition of the relentless efforts in designing and conceptualizing the entire digitalization framework.</div>
                     <div class="image-container">
                         <div style="
                             background: linear-gradient(145deg, #ffffff, #f0f8ff);
@@ -1099,35 +1000,16 @@
                                 position: relative;
                                 z-index: 1;
                             ">
-                                <img src="IMG-20241114-WA0017.jpg" alt="Special Thanks to Mohamed (Left) and Musa (Right). In recognition of the relentless efforts in designing and conceptualizing the entire digitalization framework." style="
+                                <img src="IMG-20241114-WA0017.jpg" alt="Team Photo" style="
                                     max-width: 100%;
                                     height: auto;
                                     border-radius: 10px;
                                     box-shadow: 0 10px 25px rgba(0, 102, 204, 0.2);
                                     transition: all 0.3s ease;
                                 " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                                
-                                <!-- Decorative ribbon -->
-                                <div style="
-                                    position: absolute;
-                                    top: -10px;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                    background: linear-gradient(45deg, #0066cc, #004499);
-                                    color: white;
-                                    padding: 8px 25px;
-                                    border-radius: 20px;
-                                    font-size: 0.9em;
-                                    font-weight: bold;
-                                    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
-                                    z-index: 2;
-                                ">
-                                    
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="image-caption" style="margin-top: 25px;"></div>
                 </div>
             </div>
 
