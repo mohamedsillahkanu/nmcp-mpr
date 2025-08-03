@@ -73,22 +73,22 @@
       "type": "mixed_content",
       "sections": [
         {
-          "title": "📊 HF and CHW interactive map",
+          "title": "HF and CHW interactive map",
           "type": "interactive_links",
           "links": [
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/sierra_leone_health_facilities_complete%20(2).html",
-              "text": "🗺️ View National Map for HFs and CHWs Distribution",
+              "text": "🗺️ National Map",
               "description": "National level interactive map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bo%20(24).html",
-              "text": "🗺️ View Bo District Map for HFs and CHWs Distribution",
+              "text": "🗺️ Bo District Map",
               "description": "Bo District interactive map"
             },
             {
-              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bombali%20().html",
-              "text": "🗺️ View Bombali District Map for HFs and CHWs Distribution",
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bombali%20(1).html",
+              "text": "🗺️ Bombali District Map",
               "description": "Bombali District interactive map"
             }
           ]
