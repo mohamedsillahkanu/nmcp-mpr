@@ -1,0 +1,519 @@
+{
+  "dashboard_config": {
+    "title": "Malaria Program Review (MPR)",
+    "subtitle": "Analysis and System Design",
+    "organization": "Informatics Consultancy Firm Sierra Leone (ICF-SL)",
+    "tagline": "A local firm with international standards",
+    "logos": [
+      { "src": "NMCP.png", "alt": "NMCP Logo" },
+      { "src": "WHO.png", "alt": "WHO Logo" },
+      { "src": "CHAI2.png", "alt": "CHAI Logo" },
+      { "src": "ICF-SL.jpg", "alt": "ICF-SL Logo" }
+    ]
+  },
+  "tabs": {
+    "overview": {
+      "title": "Overview",
+      "type": "collapsible_sections",
+      "sections": [
+        {
+          "title": "Malaria Program Review (MPR) Introduction",
+          "content": "The Malaria Program Review (MPR) is a comprehensive, country-led assessment designed to evaluate the performance, relevance, and impact of all aspects of a national malaria response. For the National Malaria Control Programme (NMCP) in Sierra Leone, the MPR is a critical opportunity to reflect on progress, identify gaps, and re-align priorities with the evolving malaria epidemiology, global best practices, and national health goals."
+        },
+        {
+          "title": "Purpose of the MPR",
+          "content": "The main purpose of the MPR is to ensure that the malaria program remains efficient, effective, and results-oriented. It supports evidence-based planning and strengthens program accountability, coordination, and resource allocation. The MPR also prepares the groundwork for the development of new strategic plans and funding proposals to partners such as the Global Fund and PMI."
+        },
+        {
+          "title": "Key Focus Areas of the Review",
+          "content": "• <strong>Prevention Strategies:</strong> Evaluation of long-lasting insecticidal net (LLIN) mass campaigns, routine distribution through antenatal clinics (ANC) and immunization platforms (EPI), and School-Based Distribution (SBD). Assessment of Indoor Residual Spraying (IRS) coverage and impact where implemented.<br>• <strong>Case Management and Diagnosis:</strong> Availability and use of rapid diagnostic tests (RDTs) and microscopy in health facilities, timely access to quality-assured antimalarial drugs, and training/supervision of health workers on treatment guidelines.<br>• <strong>Surveillance, Monitoring, and Evaluation:</strong> Review of data collection, reporting, and use of DHIS2; assessment of test positivity rates, incidence, and mortality trends; and evaluation of community-based surveillance.<br>• <strong>Community Engagement and Social Behaviour Change:</strong> Effectiveness of SBCC strategies, community ownership, and the role of SBD in empowering school children as malaria prevention champions.<br>• <strong>Programme Governance and Coordination:</strong> Review of institutional capacity, partnerships between MoHS and MBSSE, and financing mechanisms for malaria interventions."
+        },
+        {
+          "title": "Relevance of School-Based ITN Distribution",
+          "content": "The School-Based Distribution (SBD) of Insecticide-Treated Nets (ITNs) is a promising intervention that addresses the challenge of maintaining universal ITN coverage between mass campaigns. Its integration into the MPR highlights considerations such as:<br>• <strong>Coverage and Equity:</strong> Assessment of SBD coverage in classes 1, 3, and 5, including marginalized groups.<br>• <strong>Partnerships:</strong> Operational collaboration between health and education sectors.<br>• <strong>Outcomes:</strong> Usage rates, knowledge of ITN care, and its impact on malaria morbidity among school-age children."
+        },
+        {
+          "title": "Expected Benefits & Conclusion",
+          "content": "<strong>Expected Benefits of the Review</strong><br>• Provide an evidence base to validate SBD as an effective strategy for achieving universal ITN coverage.<br>• Identify best practices and challenges in current malaria interventions to inform future programming.<br>• Strengthen inter-ministerial collaboration for sustained delivery of integrated services.<br>• Guide the development of a new malaria strategic plan (2026–2030), incorporating innovative, equitable, and data-driven strategies.<br><br><strong>Conclusion</strong><br>The Malaria Program Review is not just a routine assessment; it is a strategic pivot point for NMCP to enhance impact, secure sustained funding, and ultimately achieve malaria elimination goals. With interventions like the School-Based ITN Distribution gaining traction, Sierra Leone is well-positioned to redefine its malaria control architecture with a stronger emphasis on integration, innovation, and inclusiveness."
+        }
+      ]
+    },
+    "tab2": {
+      "title": "Impact Indicators",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "📊 Impact Indicators",
+          "images": [
+            { "src": "case incidence.png", "alt": "National Crude Incidence Trend" },
+            { "src": "Cases per 10000 population.png", "alt": "Cases per 10,000 Population" },
+            { "src": "test positivity rate.png", "alt": "Test Positivity Rate" },
+            { "src": "mortality.png", "alt": "Mortality Trends" },
+            { "src": "Inpatient death.png", "alt": "Inpatient Deaths" },
+            { "src": "cases_presume.png", "alt": "Presumed Cases" }
+          ]
+        },
+        {
+          "title": "📊 National Overview and Subplots",
+          "images": [
+            { "src": "national_crude_incidence_trend (3).png", "alt": "National Crude Incidence Trend" },
+            { "src": "crude_incidence_trend_subplots_4x4.png", "alt": "Crude Incidence Subplots 4x4" },
+            { "src": "district_change_overview_map.png", "alt": "District Change Overview Map" },
+            { "src": "national_crude_incidence_change_map.png", "alt": "National Crude Incidence Change Map" }
+          ]
+        },
+        {
+          "title": "🗺️ Individual District Analysis",
+          "placeholder": "Individual district trend charts and maps for all 16 districts are available. Each district includes trend analysis and geographical mapping."
+        }
+      ]
+    },
+    "tab3": {
+      "title": "Suspected",
+      "type": "mixed_content",
+      "sections": [
+        {
+          "title": "📊 HF and CHW interactive map",
+          "type": "interactive_links",
+          "links": [
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/sierra_leone_health_facilities_complete%20(2).html",
+              "text": "🗺️ View National Map for HFs and CHWs Distribution",
+              "description": "National level interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bo%20(24).html",
+              "text": "🗺️ View Bo District Map for HFs and CHWs Distribution",
+              "description": "Bo District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bombali%20().html",
+              "text": "🗺️ View Bombali District Map for HFs and CHWs Distribution",
+              "description": "Bombali District interactive map"
+            }
+          ]
+        },
+        {
+          "title": "📊 National Overview",
+          "placeholder": "National suspected cases trends and analysis will be displayed here."
+        },
+        {
+          "title": "🗺️ District-Level Analysis",
+          "placeholder": "District-level suspected cases analysis and mapping."
+        }
+      ]
+    },
+    "tab4": {
+      "title": "Tested",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "📊 National Testing Overview",
+          "images": [
+            { "src": "national_testing_trends.png", "alt": "National Testing Trends" },
+            { "src": "testing_coverage_map.png", "alt": "Testing Coverage Map" },
+            { "src": "diagnostic_methods.png", "alt": "Diagnostic Methods Distribution" }
+          ]
+        },
+        {
+          "title": "🏥 Health Facility Performance",
+          "images": [
+            { "src": "hf_testing_performance.png", "alt": "Health Facility Testing Performance" },
+            { "src": "rdt_vs_microscopy.png", "alt": "RDT vs Microscopy Usage" }
+          ]
+        },
+        {
+          "title": "🗺️ District-Level Testing Analysis",
+          "placeholder": "District-level testing analysis and performance metrics for all 16 districts."
+        }
+      ]
+    },
+    "tab5": {
+      "title": "Confirmed",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "📊 Confirmed Cases Overview",
+          "images": [
+            { "src": "confirmed_cases_trends.png", "alt": "Confirmed Cases Trends" },
+            { "src": "confirmation_rates.png", "alt": "Confirmation Rates by District" },
+            { "src": "age_group_confirmed.png", "alt": "Confirmed Cases by Age Group" }
+          ]
+        },
+        {
+          "title": "🎯 Diagnostic Accuracy",
+          "images": [
+            { "src": "diagnostic_accuracy.png", "alt": "Diagnostic Accuracy Metrics" },
+            { "src": "false_positive_rates.png", "alt": "False Positive Rates" }
+          ]
+        },
+        {
+          "title": "🗺️ Geographic Distribution",
+          "placeholder": "Geographic distribution of confirmed cases across all districts with seasonal analysis."
+        }
+      ]
+    },
+    "tab6": {
+      "title": "Treated",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "💊 Treatment Overview",
+          "images": [
+            { "src": "treatment_trends.png", "alt": "Treatment Trends" },
+            { "src": "artemether_lumefantrine.png", "alt": "Artemether-Lumefantrine Usage" },
+            { "src": "severe_malaria_treatment.png", "alt": "Severe Malaria Treatment" }
+          ]
+        },
+        {
+          "title": "⏱️ Treatment Timeliness",
+          "images": [
+            { "src": "treatment_delays.png", "alt": "Treatment Delays Analysis" },
+            { "src": "same_day_treatment.png", "alt": "Same Day Treatment Rates" }
+          ]
+        },
+        {
+          "title": "🎯 Treatment Outcomes",
+          "placeholder": "Treatment effectiveness, cure rates, and follow-up analysis across districts."
+        }
+      ]
+    },
+    "tab7": {
+      "title": "Presumed Cases",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "📊 Presumed Cases Analysis",
+          "images": [
+            { "src": "presumed_cases_trends.png", "alt": "Presumed Cases Trends" },
+            { "src": "presumed_vs_tested.png", "alt": "Presumed vs Tested Ratio" },
+            { "src": "presumed_treatment.png", "alt": "Presumed Cases Treatment" }
+          ]
+        },
+        {
+          "title": "🎯 Testing Gaps",
+          "images": [
+            { "src": "testing_gaps.png", "alt": "Testing Gaps Analysis" },
+            { "src": "community_level_presumed.png", "alt": "Community Level Presumed Cases" }
+          ]
+        },
+        {
+          "title": "📈 Improvement Strategies",
+          "placeholder": "Strategies to reduce presumed cases through improved testing access and diagnostic capacity."
+        }
+      ]
+    },
+    "tab8": {
+      "title": "Prevention",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "🛡️ ITN Distribution and Coverage",
+          "images": [
+            { "src": "itn_coverage_trends.png", "alt": "ITN Coverage Trends" },
+            { "src": "mass_campaign_coverage.png", "alt": "Mass Campaign Coverage" },
+            { "src": "school_based_distribution.png", "alt": "School-Based Distribution" }
+          ]
+        },
+        {
+          "title": "🏠 Indoor Residual Spraying",
+          "images": [
+            { "src": "irs_coverage.png", "alt": "IRS Coverage" },
+            { "src": "irs_effectiveness.png", "alt": "IRS Effectiveness" }
+          ]
+        },
+        {
+          "title": "👥 Community Engagement",
+          "placeholder": "Community engagement strategies, behavior change communication, and prevention education programs."
+        }
+      ]
+    },
+    "tab9": {
+      "title": "Community Health",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "👩‍⚕️ CHW Performance",
+          "images": [
+            { "src": "chw_performance.png", "alt": "CHW Performance Metrics" },
+            { "src": "chw_coverage.png", "alt": "CHW Coverage Areas" },
+            { "src": "community_case_management.png", "alt": "Community Case Management" }
+          ]
+        },
+        {
+          "title": "📱 Digital Health Tools",
+          "images": [
+            { "src": "digital_tools_usage.png", "alt": "Digital Tools Usage" },
+            { "src": "mobile_reporting.png", "alt": "Mobile Reporting Systems" }
+          ]
+        },
+        {
+          "title": "🤝 Community Ownership",
+          "placeholder": "Community ownership initiatives, local leadership engagement, and sustainability measures."
+        }
+      ]
+    },
+    "tab10": {
+      "title": "Supply Chain",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "📦 Commodity Availability",
+          "images": [
+            { "src": "commodity_availability.png", "alt": "Commodity Availability" },
+            { "src": "stockout_analysis.png", "alt": "Stockout Analysis" },
+            { "src": "rdt_availability.png", "alt": "RDT Availability" }
+          ]
+        },
+        {
+          "title": "🚚 Distribution Efficiency",
+          "images": [
+            { "src": "distribution_network.png", "alt": "Distribution Network" },
+            { "src": "lead_times.png", "alt": "Supply Lead Times" }
+          ]
+        },
+        {
+          "title": "📊 Inventory Management",
+          "placeholder": "Inventory management systems, forecasting accuracy, and supply chain optimization strategies."
+        }
+      ]
+    },
+    "tab11": {
+      "title": "Training",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "🎓 Healthcare Worker Training",
+          "images": [
+            { "src": "training_coverage.png", "alt": "Training Coverage" },
+            { "src": "competency_assessment.png", "alt": "Competency Assessment" },
+            { "src": "refresher_training.png", "alt": "Refresher Training" }
+          ]
+        },
+        {
+          "title": "📚 Training Effectiveness",
+          "images": [
+            { "src": "knowledge_retention.png", "alt": "Knowledge Retention" },
+            { "src": "skill_improvement.png", "alt": "Skill Improvement" }
+          ]
+        },
+        {
+          "title": "🔄 Continuous Learning",
+          "placeholder": "Continuous professional development, mentorship programs, and capacity building initiatives."
+        }
+      ]
+    },
+    "tab12": {
+      "title": "Surveillance",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "📊 DHIS2 Performance",
+          "images": [
+            { "src": "dhis2_completeness.png", "alt": "DHIS2 Completeness" },
+            { "src": "data_quality.png", "alt": "Data Quality Metrics" },
+            { "src": "reporting_timeliness.png", "alt": "Reporting Timeliness" }
+          ]
+        },
+        {
+          "title": "🔍 Surveillance Indicators",
+          "images": [
+            { "src": "surveillance_indicators.png", "alt": "Key Surveillance Indicators" },
+            { "src": "outbreak_detection.png", "alt": "Outbreak Detection" }
+          ]
+        },
+        {
+          "title": "📈 Data Utilization",
+          "placeholder": "Data utilization for decision making, feedback mechanisms, and surveillance system strengthening."
+        }
+      ]
+    },
+    "tab13": {
+      "title": "Quality Assurance",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "✅ Quality Control Measures",
+          "images": [
+            { "src": "quality_indicators.png", "alt": "Quality Indicators" },
+            { "src": "supervision_coverage.png", "alt": "Supervision Coverage" },
+            { "src": "performance_standards.png", "alt": "Performance Standards" }
+          ]
+        },
+        {
+          "title": "🎯 Performance Monitoring",
+          "images": [
+            { "src": "performance_dashboard.png", "alt": "Performance Dashboard" },
+            { "src": "improvement_trends.png", "alt": "Quality Improvement Trends" }
+          ]
+        },
+        {
+          "title": "🔧 Continuous Improvement",
+          "placeholder": "Quality improvement initiatives, corrective action plans, and performance enhancement strategies."
+        }
+      ]
+    },
+    "tab14": {
+      "title": "Innovation",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "💡 Digital Health Innovations",
+          "images": [
+            { "src": "digital_innovations.png", "alt": "Digital Health Innovations" },
+            { "src": "mobile_health.png", "alt": "Mobile Health Solutions" },
+            { "src": "ai_applications.png", "alt": "AI Applications" }
+          ]
+        },
+        {
+          "title": "🚀 Technology Adoption",
+          "images": [
+            { "src": "technology_adoption.png", "alt": "Technology Adoption Rates" },
+            { "src": "innovation_impact.png", "alt": "Innovation Impact Assessment" }
+          ]
+        },
+        {
+          "title": "🔬 Research and Development",
+          "placeholder": "Research initiatives, pilot programs, and innovative intervention development."
+        }
+      ]
+    },
+    "tab15": {
+      "title": "Partnerships",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "🤝 Multi-sectoral Partnerships",
+          "images": [
+            { "src": "partnership_network.png", "alt": "Partnership Network" },
+            { "src": "collaboration_matrix.png", "alt": "Collaboration Matrix" },
+            { "src": "stakeholder_engagement.png", "alt": "Stakeholder Engagement" }
+          ]
+        },
+        {
+          "title": "🌍 International Cooperation",
+          "images": [
+            { "src": "international_support.png", "alt": "International Support" },
+            { "src": "regional_initiatives.png", "alt": "Regional Initiatives" }
+          ]
+        },
+        {
+          "title": "🎯 Partnership Effectiveness",
+          "placeholder": "Partnership assessment, coordination mechanisms, and collaborative impact evaluation."
+        }
+      ]
+    },
+    "tab16": {
+      "title": "Financing",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "💰 Budget Analysis",
+          "images": [
+            { "src": "budget_allocation.png", "alt": "Budget Allocation" },
+            { "src": "funding_sources.png", "alt": "Funding Sources" },
+            { "src": "expenditure_trends.png", "alt": "Expenditure Trends" }
+          ]
+        },
+        {
+          "title": "📊 Resource Efficiency",
+          "images": [
+            { "src": "cost_effectiveness.png", "alt": "Cost Effectiveness" },
+            { "src": "resource_allocation.png", "alt": "Resource Allocation" }
+          ]
+        },
+        {
+          "title": "🎯 Sustainability Planning",
+          "placeholder": "Financial sustainability strategies, domestic resource mobilization, and funding gap analysis."
+        }
+      ]
+    },
+    "tab17": {
+      "title": "Equity",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "⚖️ Equity Analysis",
+          "images": [
+            { "src": "equity_indicators.png", "alt": "Equity Indicators" },
+            { "src": "access_disparities.png", "alt": "Access Disparities" },
+            { "src": "vulnerable_populations.png", "alt": "Vulnerable Populations" }
+          ]
+        },
+        {
+          "title": "🎯 Targeted Interventions",
+          "images": [
+            { "src": "targeted_programs.png", "alt": "Targeted Programs" },
+            { "src": "equity_improvements.png", "alt": "Equity Improvements" }
+          ]
+        },
+        {
+          "title": "📈 Progress Monitoring",
+          "placeholder": "Equity monitoring systems, disaggregated data analysis, and inclusive programming strategies."
+        }
+      ]
+    },
+    "tab18": {
+      "title": "Sustainability",
+      "type": "image_gallery",
+      "sections": [
+        {
+          "title": "🌱 Sustainability Assessment",
+          "images": [
+            { "src": "sustainability_indicators.png", "alt": "Sustainability Indicators" },
+            { "src": "program_resilience.png", "alt": "Program Resilience" },
+            { "src": "institutional_capacity.png", "alt": "Institutional Capacity" }
+          ]
+        },
+        {
+          "title": "📋 Strategic Planning",
+          "images": [
+            { "src": "strategic_roadmap.png", "alt": "Strategic Roadmap" },
+            { "src": "transition_planning.png", "alt": "Transition Planning" }
+          ]
+        },
+        {
+          "title": "🔮 Future Outlook",
+          "placeholder": "Long-term sustainability planning, transition strategies, and elimination pathway development."
+        }
+      ]
+    },
+    "conclusion": {
+      "title": "Conclusion & Recommendation",
+      "type": "collapsible_sections",
+      "sections": [
+        {
+          "title": "📋 Key Findings and Conclusions",
+          "content": "The Malaria Program Review has revealed significant achievements in malaria control efforts across Sierra Leone, while also identifying critical areas for improvement and future focus."
+        },
+        {
+          "title": "🎯 Strategic Recommendations",
+          "content": "<strong>Priority Recommendations:</strong><br>• Strengthen integrated vector management approaches<br>• Enhance community engagement and ownership<br>• Improve data quality and utilization<br>• Scale-up innovative interventions like School-Based Distribution<br>• Strengthen health system capacity and resilience"
+        },
+        {
+          "title": "🚀 Implementation Roadmap",
+          "content": "<strong>Next Steps for 2025-2030:</strong><br>• Develop comprehensive implementation guidelines<br>• Establish monitoring and evaluation frameworks<br>• Secure sustainable financing mechanisms<br>• Build partnerships for program sustainability<br>• Prepare for malaria elimination phase"
+        }
+      ]
+    },
+    "acknowledgment": {
+      "title": "Acknowledgment",
+      "type": "mixed_content",
+      "sections": [
+        {
+          "title": "🤝 Partners and Collaborators",
+          "content": "<strong>Key Partners and Collaborators:</strong><br>• Ministry of Health and Sanitation<br>• National Malaria Control Programme (NMCP)<br>• President's Malaria Initiative (PMI)<br>• World Health Organization (WHO)<br>• Clinton Health Access Initiative (CHAI)<br>• Abt Associates<br>• School administrators and teachers<br>• School Quality Assurance (SQA) officers<br>• PHU staff and community health workers"
+        },
+        {
+          "title": "📸 Team Recognition",
+          "type": "image",
+          "image": { "src": "IMG-20241114-WA0017.jpg", "alt": "Team Photo" }
+        },
+        {
+          "title": "🙏 Special Thanks",
+          "content": "We extend our sincere gratitude to all stakeholders who contributed to the success of this Malaria Program Review. Special recognition goes to the communities, health workers, and education sector partners who made this comprehensive analysis possible.<br><br><em>Together, we are building a malaria-free Sierra Leone.</em>"
+        }
+      ]
+    }
+  }
+}
