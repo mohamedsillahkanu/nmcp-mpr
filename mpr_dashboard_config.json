@@ -69,11 +69,11 @@
       ]
     },
     "tab3": {
-      "title": "CHW/HF Distribution",
+      "title": "HF Interactive Maps",
       "type": "mixed_content",
       "sections": [
         {
-          "title": "HF and CHW interactive map",
+          "title": "Health Facilities and CHW Interactive Maps",
           "type": "interactive_links",
           "links": [
             {
@@ -92,10 +92,15 @@
               "description": "Bombali District interactive map"
             }   
           ]
-        },
+        }
+      ]
+    },
+    "tab3b": {
+      "title": "CHW Distribution",
+      "type": "image_gallery",
+      "sections": [
         {
           "title": "District CHW Distribution Maps",
-          "type": "image_gallery",
           "images": [
             { "src": "Coordinates CHW/MOYAMBA_district_chiefdoms.png", "alt": "Moyamba District CHW Distribution" },
             { "src": "Coordinates CHW/BO_district_chiefdoms.png", "alt": "Bo District CHW Distribution" },
