@@ -38,7 +38,7 @@
         }
       ]
     },
-    "tab2": {
+    "impact_indicators": {
       "title": "Impact Indicators",
       "type": "image_gallery",
       "sections": [
@@ -68,7 +68,7 @@
         }
       ]
     },
-    "tab3": {
+    "hf_chw_interactive": {
       "title": "HF/CHW Interactive Maps",
       "type": "mixed_content",
       "sections": [
@@ -134,10 +134,10 @@
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_moyamba.html",
               "text": "Moyamba District Map",
-              "description": "Karene District interactive map"
+              "description": "Moyamba District interactive map"
             },
             {
-              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kenema.html",
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_port_loko.html",
               "text": "Port Loko District Map",
               "description": "Port Loko District interactive map"
             },
@@ -151,21 +151,21 @@
               "text": "Tonkolili District Map",
               "description": "Tonkolili District interactive map"
             },
-             {
+            {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_rural.html",
               "text": "Western Rural District Map",
-              "description": "Pujehun District interactive map"
+              "description": "Western Rural District interactive map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_urban.html",
               "text": "Western Urban District Map",
-              "description": "Tonkolili District interactive map"
+              "description": "Western Urban District interactive map"
             }            
           ]
         }
       ]
     },
-    "tab3b": {
+    "hf_chw_distribution": {
       "title": "HF/CHW Distribution",
       "type": "image_gallery",
       "sections": [
@@ -192,8 +192,8 @@
         }
       ]
     },
-    "tab4": {
-      "title": "Crude incidence",
+    "crude_incidence": {
+      "title": "Crude Incidence",
       "type": "image_gallery",
       "sections": [
         {
@@ -217,8 +217,8 @@
         }
       ]
     },
-    "tab5": {
-      "title": "Adjusted1 incidence",
+    "adjusted1_incidence": {
+      "title": "Adjusted1 Incidence",
       "type": "image_gallery",
       "sections": [
         {
@@ -242,8 +242,8 @@
         }
       ]
     },
-    "tab6": {
-      "title": "Adjusted2 incidence",
+    "adjusted2_incidence": {
+      "title": "Adjusted2 Incidence",
       "type": "image_gallery",
       "sections": [
         {
@@ -267,12 +267,12 @@
         }
       ]
     },
-    "tab7": {
+    "comparative_analysis": {
       "title": "Comparative Analysis",
       "type": "image_gallery",
       "sections": [
         {
-          "title": "Incidence Comparative analysis",
+          "title": "Incidence Comparative Analysis",
           "images": [
             {
               "src": "KAILAHUN_trends_2021-2024.png",
@@ -337,13 +337,12 @@
             {
               "src": "WESTERN_URBAN_trends_2021-2024.png",
               "alt": "Western Urban District Incidence Trends by Chiefdom (2021-2024)"
-            },
+            }
           ]
-        },
-        
+        }
       ]
     },
-    "tab8": {
+    "test_positivity_rate": {
       "title": "Test Positivity Rate",
       "type": "image_gallery",
       "sections": [
@@ -368,7 +367,7 @@
         }
       ]
     },
-    "tab9": {
+    "community_health": {
       "title": "Community Health",
       "type": "image_gallery",
       "sections": [
@@ -393,7 +392,7 @@
         }
       ]
     },
-    "tab10": {
+    "supply_chain": {
       "title": "Supply Chain",
       "type": "image_gallery",
       "sections": [
@@ -418,7 +417,7 @@
         }
       ]
     },
-    "tab11": {
+    "training": {
       "title": "Training",
       "type": "image_gallery",
       "sections": [
@@ -443,7 +442,7 @@
         }
       ]
     },
-    "tab12": {
+    "surveillance": {
       "title": "Surveillance",
       "type": "image_gallery",
       "sections": [
@@ -468,7 +467,7 @@
         }
       ]
     },
-    "tab13": {
+    "quality_assurance": {
       "title": "Quality Assurance",
       "type": "image_gallery",
       "sections": [
@@ -493,7 +492,7 @@
         }
       ]
     },
-    "tab14": {
+    "innovation": {
       "title": "Innovation",
       "type": "image_gallery",
       "sections": [
@@ -518,7 +517,7 @@
         }
       ]
     },
-    "tab15": {
+    "partnerships": {
       "title": "Partnerships",
       "type": "image_gallery",
       "sections": [
@@ -543,7 +542,7 @@
         }
       ]
     },
-    "tab16": {
+    "financing": {
       "title": "Financing",
       "type": "image_gallery",
       "sections": [
@@ -568,7 +567,7 @@
         }
       ]
     },
-    "tab17": {
+    "equity": {
       "title": "Equity",
       "type": "image_gallery",
       "sections": [
@@ -593,7 +592,7 @@
         }
       ]
     },
-    "tab18": {
+    "sustainability": {
       "title": "Sustainability",
       "type": "image_gallery",
       "sections": [
