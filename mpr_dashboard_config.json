@@ -69,7 +69,7 @@
       ]
     },
     "tab3": {
-      "title": "HF Interactive Maps",
+      "title": "HF/CHW Interactive Maps",
       "type": "mixed_content",
       "sections": [
         {
@@ -96,7 +96,7 @@
       ]
     },
     "tab3b": {
-      "title": "CHW Distribution",
+      "title": "HF/CHW Distribution",
       "type": "image_gallery",
       "sections": [
         {
