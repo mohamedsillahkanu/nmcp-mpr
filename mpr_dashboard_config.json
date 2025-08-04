@@ -268,28 +268,79 @@
       ]
     },
     "tab7": {
-      "title": "Adjusted3 incidence",
+      "title": "Comparative Analysis",
       "type": "image_gallery",
       "sections": [
         {
-          "title": "Presumed Cases Analysis",
+          "title": "Incidence Comparative analysis",
           "images": [
-            { "src": "presumed_cases_trends.png", "alt": "Presumed Cases Trends" },
-            { "src": "presumed_vs_tested.png", "alt": "Presumed vs Tested Ratio" },
-            { "src": "presumed_treatment.png", "alt": "Presumed Cases Treatment" }
+            {
+              "src": "KAILAHUN_trends_2021-2024.png",
+              "alt": "Kailahun District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "KENEMA_trends_2021-2024.png",
+              "alt": "Kenema District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "KONO_trends_2021-2024.png",
+              "alt": "Kono District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "BOMBALI_trends_2021-2024.png",
+              "alt": "Bombali District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "FALABA_trends_2021-2024.png",
+              "alt": "Falaba District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "KOINADUGU_trends_2021-2024.png",
+              "alt": "Koinadugu District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "TONKOLILI_trends_2021-2024.png",
+              "alt": "Tonkolili District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "KAMBIA_trends_2021-2024.png",
+              "alt": "Kambia District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "KARENE_trends_2021-2024.png",
+              "alt": "Karene District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "PORT_LOKO_trends_2021-2024.png",
+              "alt": "Port Loko District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "BO_trends_2021-2024.png",
+              "alt": "Bo District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "BONTHE_trends_2021-2024.png",
+              "alt": "Bonthe District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "MOYAMBA_trends_2021-2024.png",
+              "alt": "Moyamba District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "PUJEHUN_trends_2021-2024.png",
+              "alt": "Pujehun District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "WESTERN_RURAL_trends_2021-2024.png",
+              "alt": "Western Rural District Incidence Trends by Chiefdom (2021-2024)"
+            },
+            {
+              "src": "WESTERN_URBAN_trends_2021-2024.png",
+              "alt": "Western Urban District Incidence Trends by Chiefdom (2021-2024)"
+            },
           ]
         },
-        {
-          "title": "Fever prevalence",
-          "images": [
-            { "src": "testing_gaps.png", "alt": "Testing Gaps Analysis" },
-            { "src": "community_level_presumed.png", "alt": "Community Level Presumed Cases" }
-          ]
-        },
-        {
-          "title": "Improvement Strategies",
-          "placeholder": "Strategies to reduce presumed cases through improved testing access and diagnostic capacity."
-        }
+        
       ]
     },
     "tab8": {
