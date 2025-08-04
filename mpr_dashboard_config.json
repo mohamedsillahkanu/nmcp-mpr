@@ -43,7 +43,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "📊 Impact Indicators",
+          "title": "Impact Indicators",
           "images": [
             { "src": "case incidence.png", "alt": "National Crude Incidence Trend" },
             { "src": "Cases per 10000 population.png", "alt": "Cases per 10,000 Population" },
@@ -54,7 +54,7 @@
           ]
         },
         {
-          "title": "📊 National Overview and Subplots",
+          "title": "National Overview and Subplots",
           "images": [
             { "src": "national_crude_incidence_trend (3).png", "alt": "National Crude Incidence Trend" },
             { "src": "crude_incidence_trend_subplots_4x4.png", "alt": "Crude Incidence Subplots 4x4" },
@@ -63,7 +63,7 @@
           ]
         },
         {
-          "title": "🗺️ Individual District Analysis",
+          "title": "Individual District Analysis",
           "placeholder": "Individual district trend charts and maps for all 16 districts are available. Each district includes trend analysis and geographical mapping."
         }
       ]
@@ -78,22 +78,43 @@
           "links": [
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/sierra_leone_health_facilities_complete%20(2).html",
-              "text": "🗺️ National Map",
+              "text": "National Map",
               "description": "National level interactive map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bo%20(24).html",
-              "text": "🗺️ Bo District Map",
+              "text": "Bo District Map",
               "description": "Bo District interactive map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bombali%20(1).html",
-              "text": "🗺️ Bombali District Map",
+              "text": "Bombali District Map",
               "description": "Bombali District interactive map"
             }   
           ]
+        },
+        {
+          "title": "District CHW Distribution Maps",
+          "type": "image_gallery",
+          "images": [
+            { "src": "Coordinates CHW/MOYAMBA_district_chiefdoms.png", "alt": "Moyamba District CHW Distribution" },
+            { "src": "Coordinates CHW/BO_district_chiefdoms.png", "alt": "Bo District CHW Distribution" },
+            { "src": "Coordinates CHW/BONTHE_district_chiefdoms.png", "alt": "Bonthe District CHW Distribution" },
+            { "src": "Coordinates CHW/PUJEHUN_district_chiefdoms.png", "alt": "Pujehun District CHW Distribution" },
+            { "src": "Coordinates CHW/KAMBIA_district_chiefdoms.png", "alt": "Kambia District CHW Distribution" },
+            { "src": "Coordinates CHW/KARENE_district_chiefdoms.png", "alt": "Karene District CHW Distribution" },
+            { "src": "Coordinates CHW/PORT LOKO_district_chiefdoms.png", "alt": "Port Loko District CHW Distribution" },
+            { "src": "Coordinates CHW/KAILAHUN_district_chiefdoms.png", "alt": "Kailahun District CHW Distribution" },
+            { "src": "Coordinates CHW/KENEMA_district_chiefdoms.png", "alt": "Kenema District CHW Distribution" },
+            { "src": "Coordinates CHW/KONO_district_chiefdoms.png", "alt": "Kono District CHW Distribution" },
+            { "src": "Coordinates CHW/BOMBALI_district_chiefdoms.png", "alt": "Bombali District CHW Distribution" },
+            { "src": "Coordinates CHW/KOINADUGU_district_chiefdoms.png", "alt": "Koinadugu District CHW Distribution" },
+            { "src": "Coordinates CHW/FALABA_district_chiefdoms.png", "alt": "Falaba District CHW Distribution" },
+            { "src": "Coordinates CHW/TONKOLILI_district_chiefdoms.png", "alt": "Tonkolili District CHW Distribution" },
+            { "src": "Coordinates CHW/WESTERN URBAN_district_chiefdoms.png", "alt": "Western Urban District CHW Distribution" },
+            { "src": "Coordinates CHW/WESTERN RURAL_district_chiefdoms.png", "alt": "Western Rural District CHW Distribution" }
+          ]
         }
-      
       ]
     },
     "tab4": {
@@ -101,35 +122,22 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "📊 National Testing Overview",
+          "title": "National Testing Overview",
           "images": [
-            { "src": "Coordinates CHW/MOYAMBA_district_chiefdoms.png", "alt": "National Testing Trends" },
-            { "src": "Coordinates CHW/BO_district_chiefdoms.png", "alt": "Testing Coverage Map" },
-            { "src": "Coordinates CHW/BONTHE_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
-            { "src": "Coordinates CHW/PUJEHUN_district_chiefdoms.png", "alt": "National Testing Trends" },
-            { "src": "Coordinates CHW/KAMBIA_district_chiefdoms.png", "alt": "Testing Coverage Map" },
-            { "src": "Coordinates CHW/KARENE_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
-            { "src": "Coordinates CHW/PORT LOKO_district_chiefdoms.png", "alt": "National Testing Trends" },
-            { "src": "Coordinates CHW/KAILAHUN_district_chiefdoms.png", "alt": "Testing Coverage Map" },
-            { "src": "Coordinates CHW/KENEMA_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
-            { "src": "Coordinates CHW/KONO_district_chiefdoms.png", "alt": "National Testing Trends" },
-            { "src": "Coordinates CHW/BOMBALI_district_chiefdoms.png", "alt": "Testing Coverage Map" },
-            { "src": "Coordinates CHW/KOINADUGU_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
-            { "src": "Coordinates CHW/FALABA_district_chiefdoms.png", "alt": "National Testing Trends" },
-            { "src": "Coordinates CHW/TONKOLILI_district_chiefdoms.png", "alt": "Testing Coverage Map" },
-            { "src": "Coordinates CHW/WESTERN URBAN_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
-            { "src": "Coordinates CHW/WESTERN RURAL_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" }
+            { "src": "national_testing_trends.png", "alt": "National Testing Trends" },
+            { "src": "testing_coverage_map.png", "alt": "Testing Coverage Map" },
+            { "src": "diagnostic_methods.png", "alt": "Diagnostic Methods Distribution" }
           ]
         },
         {
-          "title": "🏥 Health Facility Performance",
+          "title": "Health Facility Performance",
           "images": [
             { "src": "hf_testing_performance.png", "alt": "Health Facility Testing Performance" },
             { "src": "rdt_vs_microscopy.png", "alt": "RDT vs Microscopy Usage" }
           ]
         },
         {
-          "title": "🗺️ District-Level Testing Analysis",
+          "title": "District-Level Testing Analysis",
           "placeholder": "District-level testing analysis and performance metrics for all 16 districts."
         }
       ]
@@ -139,7 +147,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "📊 Confirmed Cases Overview",
+          "title": "Confirmed Cases Overview",
           "images": [
             { "src": "confirmed_cases_trends.png", "alt": "Confirmed Cases Trends" },
             { "src": "confirmation_rates.png", "alt": "Confirmation Rates by District" },
@@ -147,14 +155,14 @@
           ]
         },
         {
-          "title": "🎯 Diagnostic Accuracy",
+          "title": "Diagnostic Accuracy",
           "images": [
             { "src": "diagnostic_accuracy.png", "alt": "Diagnostic Accuracy Metrics" },
             { "src": "false_positive_rates.png", "alt": "False Positive Rates" }
           ]
         },
         {
-          "title": "🗺️ Geographic Distribution",
+          "title": "Geographic Distribution",
           "placeholder": "Geographic distribution of confirmed cases across all districts with seasonal analysis."
         }
       ]
@@ -164,7 +172,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "💊 Treatment Overview",
+          "title": "Treatment Overview",
           "images": [
             { "src": "treatment_trends.png", "alt": "Treatment Trends" },
             { "src": "artemether_lumefantrine.png", "alt": "Artemether-Lumefantrine Usage" },
@@ -172,14 +180,14 @@
           ]
         },
         {
-          "title": "⏱️ Treatment Timeliness",
+          "title": "Treatment Timeliness",
           "images": [
             { "src": "treatment_delays.png", "alt": "Treatment Delays Analysis" },
             { "src": "same_day_treatment.png", "alt": "Same Day Treatment Rates" }
           ]
         },
         {
-          "title": "🎯 Treatment Outcomes",
+          "title": "Treatment Outcomes",
           "placeholder": "Treatment effectiveness, cure rates, and follow-up analysis across districts."
         }
       ]
@@ -189,7 +197,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "📊 Presumed Cases Analysis",
+          "title": "Presumed Cases Analysis",
           "images": [
             { "src": "presumed_cases_trends.png", "alt": "Presumed Cases Trends" },
             { "src": "presumed_vs_tested.png", "alt": "Presumed vs Tested Ratio" },
@@ -197,14 +205,14 @@
           ]
         },
         {
-          "title": "🎯 Testing Gaps",
+          "title": "Testing Gaps",
           "images": [
             { "src": "testing_gaps.png", "alt": "Testing Gaps Analysis" },
             { "src": "community_level_presumed.png", "alt": "Community Level Presumed Cases" }
           ]
         },
         {
-          "title": "📈 Improvement Strategies",
+          "title": "Improvement Strategies",
           "placeholder": "Strategies to reduce presumed cases through improved testing access and diagnostic capacity."
         }
       ]
@@ -214,7 +222,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "🛡️ ITN Distribution and Coverage",
+          "title": "ITN Distribution and Coverage",
           "images": [
             { "src": "itn_coverage_trends.png", "alt": "ITN Coverage Trends" },
             { "src": "mass_campaign_coverage.png", "alt": "Mass Campaign Coverage" },
@@ -222,14 +230,14 @@
           ]
         },
         {
-          "title": "🏠 Indoor Residual Spraying",
+          "title": "Indoor Residual Spraying",
           "images": [
             { "src": "irs_coverage.png", "alt": "IRS Coverage" },
             { "src": "irs_effectiveness.png", "alt": "IRS Effectiveness" }
           ]
         },
         {
-          "title": "👥 Community Engagement",
+          "title": "Community Engagement",
           "placeholder": "Community engagement strategies, behavior change communication, and prevention education programs."
         }
       ]
@@ -239,7 +247,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "👩‍⚕️ CHW Performance",
+          "title": "CHW Performance",
           "images": [
             { "src": "chw_performance.png", "alt": "CHW Performance Metrics" },
             { "src": "chw_coverage.png", "alt": "CHW Coverage Areas" },
@@ -247,14 +255,14 @@
           ]
         },
         {
-          "title": "📱 Digital Health Tools",
+          "title": "Digital Health Tools",
           "images": [
             { "src": "digital_tools_usage.png", "alt": "Digital Tools Usage" },
             { "src": "mobile_reporting.png", "alt": "Mobile Reporting Systems" }
           ]
         },
         {
-          "title": "🤝 Community Ownership",
+          "title": "Community Ownership",
           "placeholder": "Community ownership initiatives, local leadership engagement, and sustainability measures."
         }
       ]
@@ -264,7 +272,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "📦 Commodity Availability",
+          "title": "Commodity Availability",
           "images": [
             { "src": "commodity_availability.png", "alt": "Commodity Availability" },
             { "src": "stockout_analysis.png", "alt": "Stockout Analysis" },
@@ -272,14 +280,14 @@
           ]
         },
         {
-          "title": "🚚 Distribution Efficiency",
+          "title": "Distribution Efficiency",
           "images": [
             { "src": "distribution_network.png", "alt": "Distribution Network" },
             { "src": "lead_times.png", "alt": "Supply Lead Times" }
           ]
         },
         {
-          "title": "📊 Inventory Management",
+          "title": "Inventory Management",
           "placeholder": "Inventory management systems, forecasting accuracy, and supply chain optimization strategies."
         }
       ]
@@ -289,7 +297,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "🎓 Healthcare Worker Training",
+          "title": "Healthcare Worker Training",
           "images": [
             { "src": "training_coverage.png", "alt": "Training Coverage" },
             { "src": "competency_assessment.png", "alt": "Competency Assessment" },
@@ -297,14 +305,14 @@
           ]
         },
         {
-          "title": "📚 Training Effectiveness",
+          "title": "Training Effectiveness",
           "images": [
             { "src": "knowledge_retention.png", "alt": "Knowledge Retention" },
             { "src": "skill_improvement.png", "alt": "Skill Improvement" }
           ]
         },
         {
-          "title": "🔄 Continuous Learning",
+          "title": "Continuous Learning",
           "placeholder": "Continuous professional development, mentorship programs, and capacity building initiatives."
         }
       ]
@@ -314,7 +322,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "📊 DHIS2 Performance",
+          "title": "DHIS2 Performance",
           "images": [
             { "src": "dhis2_completeness.png", "alt": "DHIS2 Completeness" },
             { "src": "data_quality.png", "alt": "Data Quality Metrics" },
@@ -322,14 +330,14 @@
           ]
         },
         {
-          "title": "🔍 Surveillance Indicators",
+          "title": "Surveillance Indicators",
           "images": [
             { "src": "surveillance_indicators.png", "alt": "Key Surveillance Indicators" },
             { "src": "outbreak_detection.png", "alt": "Outbreak Detection" }
           ]
         },
         {
-          "title": "📈 Data Utilization",
+          "title": "Data Utilization",
           "placeholder": "Data utilization for decision making, feedback mechanisms, and surveillance system strengthening."
         }
       ]
@@ -339,7 +347,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "✅ Quality Control Measures",
+          "title": "Quality Control Measures",
           "images": [
             { "src": "quality_indicators.png", "alt": "Quality Indicators" },
             { "src": "supervision_coverage.png", "alt": "Supervision Coverage" },
@@ -347,14 +355,14 @@
           ]
         },
         {
-          "title": "🎯 Performance Monitoring",
+          "title": "Performance Monitoring",
           "images": [
             { "src": "performance_dashboard.png", "alt": "Performance Dashboard" },
             { "src": "improvement_trends.png", "alt": "Quality Improvement Trends" }
           ]
         },
         {
-          "title": "🔧 Continuous Improvement",
+          "title": "Continuous Improvement",
           "placeholder": "Quality improvement initiatives, corrective action plans, and performance enhancement strategies."
         }
       ]
@@ -364,7 +372,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "💡 Digital Health Innovations",
+          "title": "Digital Health Innovations",
           "images": [
             { "src": "digital_innovations.png", "alt": "Digital Health Innovations" },
             { "src": "mobile_health.png", "alt": "Mobile Health Solutions" },
@@ -372,14 +380,14 @@
           ]
         },
         {
-          "title": "🚀 Technology Adoption",
+          "title": "Technology Adoption",
           "images": [
             { "src": "technology_adoption.png", "alt": "Technology Adoption Rates" },
             { "src": "innovation_impact.png", "alt": "Innovation Impact Assessment" }
           ]
         },
         {
-          "title": "🔬 Research and Development",
+          "title": "Research and Development",
           "placeholder": "Research initiatives, pilot programs, and innovative intervention development."
         }
       ]
@@ -389,7 +397,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "🤝 Multi-sectoral Partnerships",
+          "title": "Multi-sectoral Partnerships",
           "images": [
             { "src": "partnership_network.png", "alt": "Partnership Network" },
             { "src": "collaboration_matrix.png", "alt": "Collaboration Matrix" },
@@ -397,14 +405,14 @@
           ]
         },
         {
-          "title": "🌍 International Cooperation",
+          "title": "International Cooperation",
           "images": [
             { "src": "international_support.png", "alt": "International Support" },
             { "src": "regional_initiatives.png", "alt": "Regional Initiatives" }
           ]
         },
         {
-          "title": "🎯 Partnership Effectiveness",
+          "title": "Partnership Effectiveness",
           "placeholder": "Partnership assessment, coordination mechanisms, and collaborative impact evaluation."
         }
       ]
@@ -414,7 +422,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "💰 Budget Analysis",
+          "title": "Budget Analysis",
           "images": [
             { "src": "budget_allocation.png", "alt": "Budget Allocation" },
             { "src": "funding_sources.png", "alt": "Funding Sources" },
@@ -422,14 +430,14 @@
           ]
         },
         {
-          "title": "📊 Resource Efficiency",
+          "title": "Resource Efficiency",
           "images": [
             { "src": "cost_effectiveness.png", "alt": "Cost Effectiveness" },
             { "src": "resource_allocation.png", "alt": "Resource Allocation" }
           ]
         },
         {
-          "title": "🎯 Sustainability Planning",
+          "title": "Sustainability Planning",
           "placeholder": "Financial sustainability strategies, domestic resource mobilization, and funding gap analysis."
         }
       ]
@@ -439,7 +447,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "⚖️ Equity Analysis",
+          "title": "Equity Analysis",
           "images": [
             { "src": "equity_indicators.png", "alt": "Equity Indicators" },
             { "src": "access_disparities.png", "alt": "Access Disparities" },
@@ -447,14 +455,14 @@
           ]
         },
         {
-          "title": "🎯 Targeted Interventions",
+          "title": "Targeted Interventions",
           "images": [
             { "src": "targeted_programs.png", "alt": "Targeted Programs" },
             { "src": "equity_improvements.png", "alt": "Equity Improvements" }
           ]
         },
         {
-          "title": "📈 Progress Monitoring",
+          "title": "Progress Monitoring",
           "placeholder": "Equity monitoring systems, disaggregated data analysis, and inclusive programming strategies."
         }
       ]
@@ -464,7 +472,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "🌱 Sustainability Assessment",
+          "title": "Sustainability Assessment",
           "images": [
             { "src": "sustainability_indicators.png", "alt": "Sustainability Indicators" },
             { "src": "program_resilience.png", "alt": "Program Resilience" },
@@ -472,14 +480,14 @@
           ]
         },
         {
-          "title": "📋 Strategic Planning",
+          "title": "Strategic Planning",
           "images": [
             { "src": "strategic_roadmap.png", "alt": "Strategic Roadmap" },
             { "src": "transition_planning.png", "alt": "Transition Planning" }
           ]
         },
         {
-          "title": "🔮 Future Outlook",
+          "title": "Future Outlook",
           "placeholder": "Long-term sustainability planning, transition strategies, and elimination pathway development."
         }
       ]
@@ -489,15 +497,15 @@
       "type": "collapsible_sections",
       "sections": [
         {
-          "title": "📋 Key Findings and Conclusions",
+          "title": "Key Findings and Conclusions",
           "content": "The Malaria Program Review has revealed significant achievements in malaria control efforts across Sierra Leone, while also identifying critical areas for improvement and future focus."
         },
         {
-          "title": "🎯 Strategic Recommendations",
+          "title": "Strategic Recommendations",
           "content": "<strong>Priority Recommendations:</strong><br>• Strengthen integrated vector management approaches<br>• Enhance community engagement and ownership<br>• Improve data quality and utilization<br>• Scale-up innovative interventions like School-Based Distribution<br>• Strengthen health system capacity and resilience"
         },
         {
-          "title": "🚀 Implementation Roadmap",
+          "title": "Implementation Roadmap",
           "content": "<strong>Next Steps for 2025-2030:</strong><br>• Develop comprehensive implementation guidelines<br>• Establish monitoring and evaluation frameworks<br>• Secure sustainable financing mechanisms<br>• Build partnerships for program sustainability<br>• Prepare for malaria elimination phase"
         }
       ]
@@ -507,16 +515,16 @@
       "type": "mixed_content",
       "sections": [
         {
-          "title": "🤝 Partners and Collaborators",
+          "title": "Partners and Collaborators",
           "content": "<strong>Key Partners and Collaborators:</strong><br>• Ministry of Health and Sanitation<br>• National Malaria Control Programme (NMCP)<br>• President's Malaria Initiative (PMI)<br>• World Health Organization (WHO)<br>• Clinton Health Access Initiative (CHAI)<br>• Abt Associates<br>• School administrators and teachers<br>• School Quality Assurance (SQA) officers<br>• PHU staff and community health workers"
         },
         {
-          "title": "📸 Team Recognition",
+          "title": "Team Recognition",
           "type": "image",
           "image": { "src": "IMG-20241114-WA0017.jpg", "alt": "Team Photo" }
         },
         {
-          "title": "🙏 Special Thanks",
+          "title": "Special Thanks",
           "content": "We extend our sincere gratitude to all stakeholders who contributed to the success of this Malaria Program Review. Special recognition goes to the communities, health workers, and education sector partners who made this comprehensive analysis possible.<br><br><em>Together, we are building a malaria-free Sierra Leone.</em>"
         }
       ]
