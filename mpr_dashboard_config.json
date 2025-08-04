@@ -197,7 +197,7 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "District Level",
+          "title": "District Level Line Plot",
           "images": [
             { "src": "crude_incidence_trend_BO.png", "alt": "Crude Incidence Trend - Bo" },
             { "src": "crude_incidence_trend_BOMBALI.png", "alt": "Crude Incidence Trend - Bombali" },
@@ -219,15 +219,47 @@
           ]
         },
         {
-          "title": "Chiefdom Level",
+          "title": "Chiefdom Level Subplots-Line plot",
           "images": [
-            { "src": "hf_testing_performance.png", "alt": "Health Facility Testing Performance" },
-            { "src": "rdt_vs_microscopy.png", "alt": "RDT vs Microscopy Usage" }
+            { "src": "crude_incidence_CHIE_subplots_BO.png", "alt": "Crude Incidence CHIE Subplots - Bombali" },
+            { "src": "crude_incidence_CHIE_subplots_BOMBALI.png", "alt": "Crude Incidence CHIE Subplots - Bombali" },
+            { "src": "crude_incidence_CHIE_subplots_BONTHE.png", "alt": "Crude Incidence CHIE Subplots - Bonthe" },
+            { "src": "crude_incidence_CHIE_subplots_FALABA.png", "alt": "Crude Incidence CHIE Subplots - Falaba" },
+            { "src": "crude_incidence_CHIE_subplots_KAILAHUN.png", "alt": "Crude Incidence CHIE Subplots - Kailahun" },
+            { "src": "crude_incidence_CHIE_subplots_KAMBIA.png", "alt": "Crude Incidence CHIE Subplots - Kambia" },
+            { "src": "crude_incidence_CHIE_subplots_KARENE.png", "alt": "Crude Incidence CHIE Subplots - Karene" },
+            { "src": "crude_incidence_CHIE_subplots_KENEMA.png", "alt": "Crude Incidence CHIE Subplots - Kenema" },
+            { "src": "crude_incidence_CHIE_subplots_KOINADUGU.png", "alt": "Crude Incidence CHIE Subplots - Koinadugu" },
+            { "src": "crude_incidence_CHIE_subplots_KONO.png", "alt": "Crude Incidence CHIE Subplots - Kono" },
+            { "src": "crude_incidence_CHIE_subplots_MOYAMBA.png", "alt": "Crude Incidence CHIE Subplots - Moyamba" },
+            { "src": "crude_incidence_CHIE_subplots_PORT LOKO.png", "alt": "Crude Incidence CHIE Subplots - Port Loko" },
+            { "src": "crude_incidence_CHIE_subplots_PUJEHUN.png", "alt": "Crude Incidence CHIE Subplots - Pujehun" },
+            { "src": "crude_incidence_CHIE_subplots_TONKOLILI.png", "alt": "Crude Incidence CHIE Subplots - Tonkolili" },
+            { "src": "crude_incidence_CHIE_subplots_WESTERN RURAL.png", "alt": "Crude Incidence CHIE Subplots - Western Rural" },
+            { "src": "crude_incidence_CHIE_subplots_WESTERN URBAN.png", "alt": "Crude Incidence CHIE Subplots - Western Urban" }
           ]
         },
         {
-          "title": "District-Level Testing Analysis",
-          "placeholder": "District-level testing analysis and performance metrics for all 16 districts."
+          "title": "Chiefdom Level Subplots-Map",
+          "images": [        
+            { "src": "subplot_all_chiefdoms_BO.png", "alt": "All Chiefdoms Subplot - Bombali" },
+            { "src": "subplot_all_chiefdoms_BOMBALI.png", "alt": "All Chiefdoms Subplot - Bombali" },
+            { "src": "subplot_all_chiefdoms_BONTHE.png", "alt": "All Chiefdoms Subplot - Bonthe" },
+            { "src": "subplot_all_chiefdoms_FALABA.png", "alt": "All Chiefdoms Subplot - Falaba" },
+            { "src": "subplot_all_chiefdoms_KAILAHUN.png", "alt": "All Chiefdoms Subplot - Kailahun" },
+            { "src": "subplot_all_chiefdoms_KAMBIA.png", "alt": "All Chiefdoms Subplot - Kambia" },
+            { "src": "subplot_all_chiefdoms_KARENE.png", "alt": "All Chiefdoms Subplot - Karene" },
+            { "src": "subplot_all_chiefdoms_KENEMA.png", "alt": "All Chiefdoms Subplot - Kenema" },
+            { "src": "subplot_all_chiefdoms_KOINADUGU.png", "alt": "All Chiefdoms Subplot - Koinadugu" },
+            { "src": "subplot_all_chiefdoms_KONO.png", "alt": "All Chiefdoms Subplot - Kono" },
+            { "src": "subplot_all_chiefdoms_MOYAMBA.png", "alt": "All Chiefdoms Subplot - Moyamba" },
+            { "src": "subplot_all_chiefdoms_PORT LOKO.png", "alt": "All Chiefdoms Subplot - Port Loko" },
+            { "src": "subplot_all_chiefdoms_PUJEHUN.png", "alt": "All Chiefdoms Subplot - Pujehun" },
+            { "src": "subplot_all_chiefdoms_TONKOLILI.png", "alt": "All Chiefdoms Subplot - Tonkolili" },
+            { "src": "subplot_all_chiefdoms_WESTERN RURAL.png", "alt": "All Chiefdoms Subplot - Western Rural" },
+            { "src": "subplot_all_chiefdoms_WESTERN URBAN.png", "alt": "All Chiefdoms Subplot - Western Urban" }
+
+          ]
         }
       ]
     },
