@@ -110,9 +110,22 @@
         {
           "title": "📊 National Testing Overview",
           "images": [
-            { "src": "national_testing_trends.png", "alt": "National Testing Trends" },
-            { "src": "testing_coverage_map.png", "alt": "Testing Coverage Map" },
-            { "src": "diagnostic_methods.png", "alt": "Diagnostic Methods Distribution" }
+            { "src": "MOYAMBA_district_chiefdoms.png", "alt": "National Testing Trends" },
+            { "src": "BO_district_chiefdoms.png", "alt": "Testing Coverage Map" },
+            { "src": "BONTHE_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
+            { "src": "PUJEHUN_district_chiefdoms.png", "alt": "National Testing Trends" },
+            { "src": "KAMBIA_district_chiefdoms.png", "alt": "Testing Coverage Map" },
+            { "src": "KARENE_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
+            { "src": "PORT LOKO_district_chiefdoms.png", "alt": "National Testing Trends" },
+            { "src": "KAILAHUN_district_chiefdoms.png", "alt": "Testing Coverage Map" },
+            { "src": "KENEMA_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
+            { "src": "KONO_district_chiefdoms.png", "alt": "National Testing Trends" },
+            { "src": "BOMBALI_district_chiefdoms.png", "alt": "Testing Coverage Map" },
+            { "src": "KOINADUGU_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
+            { "src": "FALABA_district_chiefdoms.png", "alt": "National Testing Trends" },
+            { "src": "TONKOLILI_district_chiefdoms.png", "alt": "Testing Coverage Map" },
+            { "src": "WESTERN URBAN_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" },
+            { "src": "WESTERN RURAL_district_chiefdoms.png", "alt": "Diagnostic Methods Distribution" }
           ]
         },
         {
