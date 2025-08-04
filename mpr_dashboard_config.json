@@ -90,7 +90,77 @@
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bombali%20(1).html",
               "text": "Bombali District Map",
               "description": "Bombali District interactive map"
-            }   
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bonthe.html",
+              "text": "Bonthe District Map",
+              "description": "Bonthe District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_falaba.html",
+              "text": "Falaba District Map",
+              "description": "Falaba District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kailahun.html",
+              "text": "Kailahun District Map",
+              "description": "Kailahun District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kambia%20(1).html",
+              "text": "Kambia District Map",
+              "description": "Kambia District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_karene.html",
+              "text": "Karene District Map",
+              "description": "Karene District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kenema.html",
+              "text": "Kenema District Map",
+              "description": "Kenema District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_koinadugu.html",
+              "text": "Koinadugu District Map",
+              "description": "Koinadugu District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kono%20(1).html",
+              "text": "Kono District Map",
+              "description": "Kono District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_moyamba.html",
+              "text": "Moyamba District Map",
+              "description": "Karene District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kenema.html",
+              "text": "Port Loko District Map",
+              "description": "Port Loko District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_pujehun.html",
+              "text": "Pujehun District Map",
+              "description": "Pujehun District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_tonkolili.html",
+              "text": "Tonkolili District Map",
+              "description": "Tonkolili District interactive map"
+            },
+             {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_rural.html",
+              "text": "Western Rural District Map",
+              "description": "Pujehun District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_urban.html",
+              "text": "Western Urban District Map",
+              "description": "Tonkolili District interactive map"
+            }            
           ]
         }
       ]
