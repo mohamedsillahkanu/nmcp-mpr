@@ -92,16 +92,8 @@
               "description": "Bombali District interactive map"
             }   
           ]
-        },
-        {
-          "title": " CHW/HF",
-          "images": [
-            { "src": "Coordinates CHW/MOYAMBA_district_chiefdoms.png", "alt": "National Testing Trends" }
-        },
-        {
-          "title": "🗺️ District-Level Analysis",
-          "placeholder": "District-level suspected cases analysis and mapping."
         }
+      
       ]
     },
     "tab4": {
