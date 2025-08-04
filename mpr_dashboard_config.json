@@ -108,7 +108,7 @@
             { "src": "Coordinates CHW/PUJEHUN_district_chiefdoms.png", "alt": "Pujehun District CHW Distribution" },
             { "src": "Coordinates CHW/KAMBIA_district_chiefdoms.png", "alt": "Kambia District CHW Distribution" },
             { "src": "Coordinates CHW/KARENE_district_chiefdoms.png", "alt": "Karene District CHW Distribution" },
-            { "src": "Coordinates CHW/PORT LOKO_district_chiefdoms.png", "alt": "Port Loko District CHW Distribution" },
+            { "src": "Coordinates CHW/PORT_LOKO_district_chiefdoms.png", "alt": "Port Loko District CHW Distribution" },
             { "src": "Coordinates CHW/KAILAHUN_district_chiefdoms.png", "alt": "Kailahun District CHW Distribution" },
             { "src": "Coordinates CHW/KENEMA_district_chiefdoms.png", "alt": "Kenema District CHW Distribution" },
             { "src": "Coordinates CHW/KONO_district_chiefdoms.png", "alt": "Kono District CHW Distribution" },
@@ -116,8 +116,8 @@
             { "src": "Coordinates CHW/KOINADUGU_district_chiefdoms.png", "alt": "Koinadugu District CHW Distribution" },
             { "src": "Coordinates CHW/FALABA_district_chiefdoms.png", "alt": "Falaba District CHW Distribution" },
             { "src": "Coordinates CHW/TONKOLILI_district_chiefdoms.png", "alt": "Tonkolili District CHW Distribution" },
-            { "src": "Coordinates CHW/WESTERN URBAN_district_chiefdoms.png", "alt": "Western Urban District CHW Distribution" },
-            { "src": "Coordinates CHW/WESTERN RURAL_district_chiefdoms.png", "alt": "Western Rural District CHW Distribution" }
+            { "src": "Coordinates CHW/WESTERN_URBAN_district_chiefdoms.png", "alt": "Western Urban District CHW Distribution" },
+            { "src": "Coordinates CHW/WESTERN_RURAL_district_chiefdoms.png", "alt": "Western Rural District CHW Distribution" }
           ]
         }
       ]
