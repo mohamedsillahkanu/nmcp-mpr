@@ -193,7 +193,7 @@
       ]
     },
     "tab4": {
-      "title": "Tested",
+      "title": "Crude incidence",
       "type": "image_gallery",
       "sections": [
         {
@@ -218,7 +218,7 @@
       ]
     },
     "tab5": {
-      "title": "Confirmed",
+      "title": "Adjusted1 incidence",
       "type": "image_gallery",
       "sections": [
         {
@@ -243,7 +243,7 @@
       ]
     },
     "tab6": {
-      "title": "Treated",
+      "title": "Adjusted2 incidence",
       "type": "image_gallery",
       "sections": [
         {
@@ -268,7 +268,7 @@
       ]
     },
     "tab7": {
-      "title": "Presumed Cases",
+      "title": "Adjusted3 incidence",
       "type": "image_gallery",
       "sections": [
         {
@@ -280,7 +280,7 @@
           ]
         },
         {
-          "title": "Testing Gaps",
+          "title": "Fever prevalence",
           "images": [
             { "src": "testing_gaps.png", "alt": "Testing Gaps Analysis" },
             { "src": "community_level_presumed.png", "alt": "Community Level Presumed Cases" }
@@ -293,7 +293,7 @@
       ]
     },
     "tab8": {
-      "title": "Prevention",
+      "title": "Test Positivity Rate",
       "type": "image_gallery",
       "sections": [
         {
