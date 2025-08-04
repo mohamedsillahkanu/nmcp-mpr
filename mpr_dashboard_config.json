@@ -94,8 +94,9 @@
           ]
         },
         {
-          "title": "📊 National Overview",
-          "placeholder": "National suspected cases trends and analysis will be displayed here."
+          "title": " CHW/HF",
+          "images": [
+            { "src": "Coordinates CHW/MOYAMBA_district_chiefdoms.png", "alt": "National Testing Trends" }
         },
         {
           "title": "🗺️ District-Level Analysis",
