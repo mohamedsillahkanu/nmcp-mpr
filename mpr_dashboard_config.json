@@ -197,15 +197,29 @@
       "type": "image_gallery",
       "sections": [
         {
-          "title": "National Testing Overview",
+          "title": "District Level",
           "images": [
-            { "src": "national_testing_trends.png", "alt": "National Testing Trends" },
-            { "src": "testing_coverage_map.png", "alt": "Testing Coverage Map" },
-            { "src": "diagnostic_methods.png", "alt": "Diagnostic Methods Distribution" }
+            { "src": "crude_incidence_trend_BO.png", "alt": "Crude Incidence Trend - Bo" },
+            { "src": "crude_incidence_trend_BOMBALI.png", "alt": "Crude Incidence Trend - Bombali" },
+            { "src": "crude_incidence_trend_BONTHE.png", "alt": "Crude Incidence Trend - Bonthe" },
+            { "src": "crude_incidence_trend_FALABA.png", "alt": "Crude Incidence Trend - Falaba" },
+            { "src": "crude_incidence_trend_KAILAHUN.png", "alt": "Crude Incidence Trend - Kailahun" },
+            { "src": "crude_incidence_trend_KAMBIA.png", "alt": "Crude Incidence Trend - Kambia" },
+            { "src": "crude_incidence_trend_KARENE.png", "alt": "Crude Incidence Trend - Karene" },
+            { "src": "crude_incidence_trend_KENEMA.png", "alt": "Crude Incidence Trend - Kenema" },
+            { "src": "crude_incidence_trend_KOINADUGU.png", "alt": "Crude Incidence Trend - Koinadugu" },
+            { "src": "crude_incidence_trend_KONO.png", "alt": "Crude Incidence Trend - Kono" },
+            { "src": "crude_incidence_trend_MOYAMBA.png", "alt": "Crude Incidence Trend - Moyamba" },
+            { "src": "crude_incidence_trend_PORT LOKO.png", "alt": "Crude Incidence Trend - Port Loko" },
+            { "src": "crude_incidence_trend_PUJEHUN.png", "alt": "Crude Incidence Trend - Pujehun" },
+            { "src": "crude_incidence_trend_TONKOLILI.png", "alt": "Crude Incidence Trend - Tonkolili" },
+            { "src": "crude_incidence_trend_WESTERN RURAL.png", "alt": "Crude Incidence Trend - Western Rural" },
+            { "src": "crude_incidence_trend_WESTERN URBAN.png", "alt": "Crude Incidence Trend - Western Urban" }
+
           ]
         },
         {
-          "title": "Health Facility Performance",
+          "title": "Chiefdom Level",
           "images": [
             { "src": "hf_testing_performance.png", "alt": "Health Facility Testing Performance" },
             { "src": "rdt_vs_microscopy.png", "alt": "RDT vs Microscopy Usage" }
