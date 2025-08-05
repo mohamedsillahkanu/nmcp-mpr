@@ -1,6 +1,9 @@
 {
   "dashboard_config": {
-    "title": "Malaria Program Review (MPR)-2021-2024",
+    "title": "Malaria Program Review (MPR): 2021-2024",
+    "subtitle": "Presentation",
+    "organization": "By",
+    "tagline": "Musa Sillah Kanu (SME Lead, NMCP)",
     "logos": [
       { "src": "NMCP.png", "alt": "NMCP Logo" },
       { "src": "WHO.png", "alt": "WHO Logo" },
