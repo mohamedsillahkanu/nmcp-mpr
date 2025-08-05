@@ -1,0 +1,609 @@
+{
+  "dashboard_config": {
+    "title": "Malaria Program Review (MPR)",
+    "subtitle": "Analysis and System Design",
+    "organization": "Informatics Consultancy Firm Sierra Leone (ICF-SL)",
+    "tagline": "A local firm with international standards",
+    "logos": [
+      { "src": "NMCP.png", "alt": "NMCP Logo" },
+      { "src": "WHO.png", "alt": "WHO Logo" },
+      { "src": "CHAI2.png", "alt": "CHAI Logo" },
+      { "src": "NU logo.png", "alt": "NU Logo" },
+      { "src": "ICF-SL.jpg", "alt": "ICF-SL Logo" }
+    ]
+  },
+  "tabs": {
+    "overview": {
+      "title": "Overview",
+      "type": "collapsible_sections",
+      "sections": [
+        {
+          "title": "Malaria Program Review (MPR) Introduction",
+          "content": "The Malaria Program Review (MPR) is a comprehensive, country-led assessment designed to evaluate the performance, relevance, and impact of all aspects of a national malaria response. For the National Malaria Control Programme (NMCP) in Sierra Leone, the MPR is a critical opportunity to reflect on progress, identify gaps, and re-align priorities with the evolving malaria epidemiology, global best practices, and national health goals."
+        },
+        {
+          "title": "Purpose of the MPR",
+          "content": "The main purpose of the MPR is to ensure that the malaria program remains efficient, effective, and results-oriented. It supports evidence-based planning and strengthens program accountability, coordination, and resource allocation. The MPR also prepares the groundwork for the development of new strategic plans and funding proposals to partners such as the Global Fund and PMI."
+        },
+        {
+          "title": "Key Focus Areas of the Review",
+          "content": "• <strong>Prevention Strategies:</strong> Evaluation of long-lasting insecticidal net (LLIN) mass campaigns, routine distribution through antenatal clinics (ANC) and immunization platforms (EPI), and School-Based Distribution (SBD). Assessment of Indoor Residual Spraying (IRS) coverage and impact where implemented.<br>• <strong>Case Management and Diagnosis:</strong> Availability and use of rapid diagnostic tests (RDTs) and microscopy in health facilities, timely access to quality-assured antimalarial drugs, and training/supervision of health workers on treatment guidelines.<br>• <strong>Surveillance, Monitoring, and Evaluation:</strong> Review of data collection, reporting, and use of DHIS2; assessment of test positivity rates, incidence, and mortality trends; and evaluation of community-based surveillance.<br>• <strong>Community Engagement and Social Behaviour Change:</strong> Effectiveness of SBCC strategies, community ownership, and the role of SBD in empowering school children as malaria prevention champions.<br>• <strong>Programme Governance and Coordination:</strong> Review of institutional capacity, partnerships between MoHS and MBSSE, and financing mechanisms for malaria interventions."
+        },
+        {
+          "title": "Relevance of School-Based ITN Distribution",
+          "content": "The School-Based Distribution (SBD) of Insecticide-Treated Nets (ITNs) is a promising intervention that addresses the challenge of maintaining universal ITN coverage between mass campaigns. Its integration into the MPR highlights considerations such as:<br>• <strong>Coverage and Equity:</strong> Assessment of SBD coverage in classes 1, 3, and 5, including marginalized groups.<br>• <strong>Partnerships:</strong> Operational collaboration between health and education sectors.<br>• <strong>Outcomes:</strong> Usage rates, knowledge of ITN care, and its impact on malaria morbidity among school-age children."
+        },
+        {
+          "title": "Expected Benefits & Conclusion",
+          "content": "<strong>Expected Benefits of the Review</strong><br>• Provide an evidence base to validate SBD as an effective strategy for achieving universal ITN coverage.<br>• Identify best practices and challenges in current malaria interventions to inform future programming.<br>• Strengthen inter-ministerial collaboration for sustained delivery of integrated services.<br>• Guide the development of a new malaria strategic plan (2026–2030), incorporating innovative, equitable, and data-driven strategies.<br><br><strong>Conclusion</strong><br>The Malaria Program Review is not just a routine assessment; it is a strategic pivot point for NMCP to enhance impact, secure sustained funding, and ultimately achieve malaria elimination goals. With interventions like the School-Based ITN Distribution gaining traction, Sierra Leone is well-positioned to redefine its malaria control architecture with a stronger emphasis on integration, innovation, and inclusiveness."
+        }
+      ]    
+    },
+    "impact_indicators": {
+      "title": "Impact Indicators",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Impact Indicators",
+          "folder_path": "images/impact/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "National Overview and Subplots",
+          "folder_path": "images/national_overview/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Individual District Analysis",
+          "folder_path": "images/districts/",
+          "file_extensions": ["png", "jpg", "jpeg"],
+          "description": "Individual district trend charts and maps for all 16 districts. Each district includes trend analysis and geographical mapping."
+        }
+      ]
+    },
+    "hf_chw_interactive": {
+      "title": "HF/CHW Interactive Maps",
+      "type": "mixed_content",
+      "sections": [
+        {
+          "title": "Health Facilities and CHW Interactive Maps",
+          "type": "interactive_links",
+          "links": [
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/sierra_leone_health_facilities_complete%20(2).html",
+              "text": "National Map",
+              "description": "National level interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bo%20(24).html",
+              "text": "Bo District Map",
+              "description": "Bo District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bombali%20(1).html",
+              "text": "Bombali District Map",
+              "description": "Bombali District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bonthe.html",
+              "text": "Bonthe District Map",
+              "description": "Bonthe District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_falaba.html",
+              "text": "Falaba District Map",
+              "description": "Falaba District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kailahun.html",
+              "text": "Kailahun District Map",
+              "description": "Kailahun District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kambia%20(1).html",
+              "text": "Kambia District Map",
+              "description": "Kambia District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_karene.html",
+              "text": "Karene District Map",
+              "description": "Karene District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kenema.html",
+              "text": "Kenema District Map",
+              "description": "Kenema District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_koinadugu.html",
+              "text": "Koinadugu District Map",
+              "description": "Koinadugu District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kono%20(1).html",
+              "text": "Kono District Map",
+              "description": "Kono District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_moyamba.html",
+              "text": "Moyamba District Map",
+              "description": "Moyamba District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_port_loko.html",
+              "text": "Port Loko District Map",
+              "description": "Port Loko District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_pujehun.html",
+              "text": "Pujehun District Map",
+              "description": "Pujehun District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_tonkolili.html",
+              "text": "Tonkolili District Map",
+              "description": "Tonkolili District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_rural.html",
+              "text": "Western Rural District Map",
+              "description": "Western Rural District interactive map"
+            },
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_urban.html",
+              "text": "Western Urban District Map",
+              "description": "Western Urban District interactive map"
+            }
+          ]
+        }
+      ]
+    },
+    "hf_chw_distribution": {
+      "title": "HF/CHW Distribution",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "District CHW Distribution Maps",
+          "folder_path": "Coordinates CHW/",
+          "file_extensions": ["png", "jpg", "jpeg"],
+          "file_pattern": "*_district_chiefdoms.png"
+        }
+      ]
+    },
+    "crude_incidence": {
+      "title": "Crude Incidence",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "District Level Line Plot",
+          "folder_path": "images/crude_incidence/district_trends/",
+          "file_extensions": ["png", "jpg", "jpeg"],
+          "file_pattern": "crude_incidence_trend_*.png"
+        },
+        {
+          "title": "Chiefdom Level Subplots-Line plot",
+          "folder_path": "images/crude_incidence/chiefdom_subplots/",
+          "file_extensions": ["png", "jpg", "jpeg"],
+          "file_pattern": "crude_incidence_CHIE_subplots_*.png"
+        },
+        {
+          "title": "Chiefdom Level Subplots-Map",
+          "folder_path": "images/crude_incidence/chiefdom_maps/",
+          "file_extensions": ["png", "jpg", "jpeg"],
+          "file_pattern": "subplot_all_chiefdoms_*.png"
+        }
+      ]
+    },
+    "adjusted1_incidence": {
+      "title": "Adjusted1 Incidence Analysis",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "National Overview",
+          "folder_path": "adjusted1/national/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "District Analysis",
+          "folder_path": "adjusted1/district_overview/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Eastern Province Districts",
+          "folder_path": "adjusted1/eastern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Northern Province Districts",
+          "folder_path": "adjusted1/northern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "North West Province Districts",
+          "folder_path": "adjusted1/northwest_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Southern Province Districts",
+          "folder_path": "adjusted1/southern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Western Area Districts",
+          "folder_path": "adjusted1/western_area/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Summary & Key Insights",
+          "description": "Comprehensive analysis covering 208 chiefdoms across 16 districts (2021-2024). Adjusted1 incidence shows enhanced epidemiological patterns with improved diagnostic accuracy. Key findings reveal regional variations in malaria transmission dynamics across provinces."
+        }
+      ]
+    },
+    "adjusted2_incidence": {
+      "title": "Adjusted2 Incidence Analysis",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "National Overview",
+          "folder_path": "adjusted2/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "District Analysis",
+          "folder_path": "adjusted2/district_overview/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Eastern Province Districts",
+          "folder_path": "adjusted2/eastern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Northern Province Districts",
+          "folder_path": "adjusted2/northern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "North West Province Districts",
+          "folder_path": "adjusted2/northwest_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Southern Province Districts",
+          "folder_path": "adjusted2/southern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Western Area Districts",
+          "folder_path": "adjusted2/western_area/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Summary & Key Insights",
+          "description": "Comprehensive analysis covering 208 chiefdoms across 16 districts (2021-2024). Key findings: 55.3% of areas show decreasing incidence trends (115 chiefdoms), while 44.7% show increasing trends (93 chiefdoms). Maps use light pink for increasing incidence and blue for decreasing incidence patterns."
+        }
+      ]
+    },
+    "adjusted3_incidence": {
+      "title": "Adjusted3 Incidence Analysis",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "National Overview",
+          "folder_path": "adjusted3/national/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "District Analysis",
+          "folder_path": "adjusted3/district_overview/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Eastern Province Districts",
+          "folder_path": "adjusted3/eastern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Northern Province Districts",
+          "folder_path": "adjusted3/northern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "North West Province Districts",
+          "folder_path": "adjusted3/northwest_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Southern Province Districts",
+          "folder_path": "adjusted3/southern_province/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Western Area Districts",
+          "folder_path": "adjusted3/western_area/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Summary & Key Insights",
+          "description": "Comprehensive analysis covering 208 chiefdoms across 16 districts (2021-2024). Adjusted3 incidence provides the highest level of epidemiological refinement with advanced statistical corrections. Key findings include enhanced trend detection and improved accuracy in identifying transmission hotspots and areas of decline."
+        }
+      ]
+    },
+    "comparative_analysis": {
+      "title": "Comparative Analysis",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Incidence Comparative Analysis",
+          "folder_path": "images/comparative/",
+          "file_extensions": ["png", "jpg", "jpeg"],
+          "file_pattern": "*_trends_2021-2024.png"
+        }
+      ]
+    },
+    "test_positivity_rate": {
+      "title": "Test Positivity Rate",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "ITN Distribution and Coverage",
+          "folder_path": "images/itn_coverage/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Indoor Residual Spraying",
+          "folder_path": "images/irs/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Community Engagement",
+          "description": "Community engagement strategies, behavior change communication, and prevention education programs.",
+          "folder_path": "images/community_engagement/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "community_health": {
+      "title": "Community Health",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "CHW Performance",
+          "folder_path": "images/chw_performance/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Digital Health Tools",
+          "folder_path": "images/digital_health/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Community Ownership",
+          "description": "Community ownership initiatives, local leadership engagement, and sustainability measures.",
+          "folder_path": "images/community_ownership/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "supply_chain": {
+      "title": "Supply Chain",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Commodity Availability",
+          "folder_path": "images/supply_chain/commodities/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Distribution Efficiency",
+          "folder_path": "images/supply_chain/distribution/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Inventory Management",
+          "description": "Inventory management systems, forecasting accuracy, and supply chain optimization strategies.",
+          "folder_path": "images/supply_chain/inventory/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "training": {
+      "title": "Training",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Healthcare Worker Training",
+          "folder_path": "images/training/healthcare_workers/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Training Effectiveness",
+          "folder_path": "images/training/effectiveness/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Continuous Learning",
+          "description": "Continuous professional development, mentorship programs, and capacity building initiatives.",
+          "folder_path": "images/training/continuous_learning/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "surveillance": {
+      "title": "Surveillance",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "DHIS2 Performance",
+          "folder_path": "images/surveillance/dhis2/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Surveillance Indicators",
+          "folder_path": "images/surveillance/indicators/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Data Utilization",
+          "description": "Data utilization for decision making, feedback mechanisms, and surveillance system strengthening.",
+          "folder_path": "images/surveillance/data_utilization/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "quality_assurance": {
+      "title": "Quality Assurance",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Quality Control Measures",
+          "folder_path": "images/quality/control_measures/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Performance Monitoring",
+          "folder_path": "images/quality/performance/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Continuous Improvement",
+          "description": "Quality improvement initiatives, corrective action plans, and performance enhancement strategies.",
+          "folder_path": "images/quality/improvement/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "innovation": {
+      "title": "Innovation",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Digital Health Innovations",
+          "folder_path": "images/innovation/digital_health/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Technology Adoption",
+          "folder_path": "images/innovation/technology/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Research and Development",
+          "description": "Research initiatives, pilot programs, and innovative intervention development.",
+          "folder_path": "images/innovation/research/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "partnerships": {
+      "title": "Partnerships",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Multi-sectoral Partnerships",
+          "folder_path": "images/partnerships/multisectoral/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "International Cooperation",
+          "folder_path": "images/partnerships/international/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Partnership Effectiveness",
+          "description": "Partnership assessment, coordination mechanisms, and collaborative impact evaluation.",
+          "folder_path": "images/partnerships/effectiveness/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "financing": {
+      "title": "Financing",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Budget Analysis",
+          "folder_path": "images/financing/budget/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Resource Efficiency",
+          "folder_path": "images/financing/efficiency/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Sustainability Planning",
+          "description": "Financial sustainability strategies, domestic resource mobilization, and funding gap analysis.",
+          "folder_path": "images/financing/sustainability/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "equity": {
+      "title": "Equity",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Equity Analysis",
+          "folder_path": "images/equity/analysis/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Targeted Interventions",
+          "folder_path": "images/equity/interventions/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Progress Monitoring",
+          "description": "Equity monitoring systems, disaggregated data analysis, and inclusive programming strategies.",
+          "folder_path": "images/equity/monitoring/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "type": "folder_gallery",
+      "sections": [
+        {
+          "title": "Sustainability Assessment",
+          "folder_path": "images/sustainability/assessment/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Strategic Planning",
+          "folder_path": "images/sustainability/planning/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        },
+        {
+          "title": "Future Outlook",
+          "description": "Long-term sustainability planning, transition strategies, and elimination pathway development.",
+          "folder_path": "images/sustainability/future/",
+          "file_extensions": ["png", "jpg", "jpeg"]
+        }
+      ]
+    },
+    "conclusion": {
+      "title": "Conclusion & Recommendation",
+      "type": "collapsible_sections",
+      "sections": [
+        {
+          "title": "Key Findings and Conclusions",
+          "content": "The Malaria Program Review has revealed significant achievements in malaria control efforts across Sierra Leone, while also identifying critical areas for improvement and future focus."
+        },
+        {
+          "title": "Strategic Recommendations",
+          "content": "<strong>Priority Recommendations:</strong><br>• Strengthen integrated vector management approaches<br>• Enhance community engagement and ownership<br>• Improve data quality and utilization<br>• Scale-up innovative interventions like School-Based Distribution<br>• Strengthen health system capacity and resilience"
+        },
+        {
+          "title": "Implementation Roadmap",
+          "content": "<strong>Next Steps for 2025-2030:</strong><br>• Develop comprehensive implementation guidelines<br>• Establish monitoring and evaluation frameworks<br>• Secure sustainable financing mechanisms<br>• Strengthen partnerships and coordination<br>• Build capacity for innovative interventions<br>• Enhance data systems and surveillance<br>• Promote community ownership and engagement"
+        },
+        {
+          "title": "Future Vision",
+          "content": "<strong>Vision for 2030:</strong><br>Sierra Leone aims to achieve significant reduction in malaria burden through strengthened health systems, innovative interventions, and sustainable financing. The integration of school-based distribution and enhanced community engagement will serve as cornerstones for achieving universal coverage and moving towards elimination goals."
+        }
+      ]
+    }
+  }
+}
