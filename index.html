@@ -330,6 +330,19 @@
             padding: 20px 0;
         }
 
+        .image-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.2);
+        }
+
         .image-placeholder {
             background: rgba(0, 102, 204, 0.1);
             border: 2px dashed #0066cc;
@@ -348,6 +361,13 @@
         .folder-icon {
             font-size: 3em;
             margin-bottom: 15px;
+        }
+
+        .loading-images {
+            text-align: center;
+            padding: 40px;
+            color: #0066cc;
+            font-style: italic;
         }
 
         /* Loading state */
@@ -620,9 +640,6 @@
                     const galleryId = `gallery-${Date.now()}-${sectionIndex}`;
                     sectionContent = `
                         <div class="folder-gallery" id="${galleryId}">
-                            <div class="loading-images">
-                                Loading images from ${section.folder_path}...
-                            </div>
                         </div>
                     `;
                     
