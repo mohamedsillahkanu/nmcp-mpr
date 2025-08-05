@@ -1,9 +1,9 @@
 {
   "dashboard_config": {
     "title": "Malaria Program Review (MPR)",
-    "subtitle": "Analysis and System Design",
-    "organization": "Informatics Consultancy Firm Sierra Leone (ICF-SL)",
-    "tagline": "A local firm with international standards",
+    "subtitle": "2021-2024",
+    "organization": "National Malaria Control Programme",
+    "tagline": "Sierra Leone",
     "logos": [
       { "src": "NMCP.png", "alt": "NMCP Logo" },
       { "src": "WHO.png", "alt": "WHO Logo" },
