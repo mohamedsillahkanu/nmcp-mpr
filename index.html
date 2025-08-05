@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malaria Program Review (MPR):2021-2024</title>
+    <title>Malaria Program Review (MPR)</title>
     <style>
         * {
             margin: 0;
@@ -612,22 +612,23 @@
 
         // Generate folder gallery sections
         function generateFolderGallery(sections) {
-            return sections.map(section => {
+            return sections.map((section, sectionIndex) => {
                 let sectionContent = '';
                 
                 if (section.folder_path) {
-                    // Display placeholder for folder gallery
+                    // Create container for images that will be loaded dynamically
+                    const galleryId = `gallery-${Date.now()}-${sectionIndex}`;
                     sectionContent = `
-                        <div class="folder-gallery">
-                            <div class="image-placeholder">
-                                <div class="folder-icon">📁</div>
-                                <strong>Folder:</strong> ${section.folder_path}<br>
-                                <strong>Expected files:</strong> ${section.file_extensions ? section.file_extensions.join(', ') : 'All types'}<br>
-                                ${section.file_pattern ? `<strong>Pattern:</strong> ${section.file_pattern}<br>` : ''}
-                                ${section.description ? `<br>${section.description}` : ''}
+                        <div class="folder-gallery" id="${galleryId}">
+                            <div class="loading-images">
+                                Loading images from ${section.folder_path}...
                             </div>
                         </div>
                     `;
+                    
+                    // Queue the image loading for after the DOM is updated
+                    setTimeout(() => loadImagesFromFolder(section, galleryId), 100);
+                    
                 } else if (section.description) {
                     sectionContent = `<div class="placeholder-content">${section.description}</div>`;
                 } else {
@@ -636,7 +637,7 @@
 
                 return `
                     <div class="collapsible-section">
-                        <button class="section-toggle collapsed" onclick="toggleSection(this)">
+                        <button class="section-toggle collapsed" onclick="toggleSection(this)" data-gallery-id="${section.folder_path ? `gallery-${Date.now()}-${sectionIndex}` : ''}">
                             ${section.title}
                         </button>
                         <div class="section-content">
@@ -645,6 +646,98 @@
                     </div>
                 `;
             }).join('');
+        }
+
+        // Load images from folder
+        async function loadImagesFromFolder(section, galleryId) {
+            const galleryContainer = document.getElementById(galleryId);
+            if (!galleryContainer) return;
+
+            try {
+                const extensions = section.file_extensions || ['png', 'jpg', 'jpeg', 'gif', 'webp'];
+                const folderPath = section.folder_path.endsWith('/') ? section.folder_path : section.folder_path + '/';
+                
+                // Common image names to try
+                const commonNames = [
+                    'image', 'chart', 'graph', 'plot', 'analysis', 'overview', 'summary',
+                    'district', 'national', 'regional', 'trends', 'comparison', 'data',
+                    'map', 'visualization', 'dashboard', 'report'
+                ];
+                
+                const imageElements = [];
+                let foundImages = 0;
+
+                // Try to load images with common naming patterns
+                for (let i = 1; i <= 20; i++) {
+                    for (const ext of extensions) {
+                        // Try numbered files
+                        await tryLoadImage(`${folderPath}${i}.${ext}`, imageElements);
+                        
+                        // Try common names with numbers
+                        for (const name of commonNames) {
+                            await tryLoadImage(`${folderPath}${name}${i}.${ext}`, imageElements);
+                            await tryLoadImage(`${folderPath}${name}_${i}.${ext}`, imageElements);
+                        }
+                    }
+                }
+
+                // Try pattern-based loading if specified
+                if (section.file_pattern) {
+                    const pattern = section.file_pattern.replace(/\*/g, '');
+                    for (let i = 1; i <= 50; i++) {
+                        for (const ext of extensions) {
+                            await tryLoadImage(`${folderPath}${pattern}${i}.${ext}`, imageElements);
+                            await tryLoadImage(`${folderPath}${i}${pattern}.${ext}`, imageElements);
+                        }
+                    }
+                }
+
+                // Update gallery with found images
+                if (imageElements.length > 0) {
+                    galleryContainer.innerHTML = imageElements.join('');
+                } else {
+                    // Fallback to showing folder info if no images found
+                    galleryContainer.innerHTML = `
+                        <div class="image-placeholder">
+                            <div class="folder-icon">📁</div>
+                            <strong>Folder:</strong> ${section.folder_path}<br>
+                            <strong>Expected files:</strong> ${extensions.join(', ')}<br>
+                            ${section.file_pattern ? `<strong>Pattern:</strong> ${section.file_pattern}<br>` : ''}
+                            <br><em>No images found with common naming patterns. Please ensure images exist in the folder.</em>
+                            ${section.description ? `<br><br>${section.description}` : ''}
+                        </div>
+                    `;
+                }
+
+            } catch (error) {
+                console.error('Error loading images:', error);
+                galleryContainer.innerHTML = `
+                    <div class="image-placeholder">
+                        <div class="folder-icon">⚠️</div>
+                        <strong>Error loading images from:</strong> ${section.folder_path}<br>
+                        Please check that the folder exists and contains images.
+                    </div>
+                `;
+            }
+        }
+
+        // Try to load a single image
+        function tryLoadImage(src, imageElements) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = function() {
+                    imageElements.push(`
+                        <div class="image-item">
+                            <img src="${src}" alt="Image from ${src}" class="dashboard-image" loading="lazy">
+                        </div>
+                    `);
+                    resolve(true);
+                };
+                img.onerror = function() {
+                    resolve(false);
+                };
+                img.src = src;
+            });
         }
 
         // Generate mixed content
