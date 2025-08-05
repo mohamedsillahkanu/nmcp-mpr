@@ -289,31 +289,194 @@
         }
       ]
     },
+    
     "adjusted2_incidence": {
-      "title": "Adjusted2 Incidence",
-      "type": "image_gallery",
-      "sections": [
-        {
-          "title": "Treatment Overview",
-          "images": [
-            { "src": "treatment_trends.png", "alt": "Treatment Trends" },
-            { "src": "artemether_lumefantrine.png", "alt": "Artemether-Lumefantrine Usage" },
-            { "src": "severe_malaria_treatment.png", "alt": "Severe Malaria Treatment" }
-          ]
-        },
-        {
-          "title": "Treatment Timeliness",
-          "images": [
-            { "src": "treatment_delays.png", "alt": "Treatment Delays Analysis" },
-            { "src": "same_day_treatment.png", "alt": "Same Day Treatment Rates" }
-          ]
-        },
-        {
-          "title": "Treatment Outcomes",
-          "placeholder": "Treatment effectiveness, cure rates, and follow-up analysis across districts."
-        }
-      ]
-    },
+    "title": "Adjusted2 Incidence Analysis",
+    "type": "image_gallery",
+    "sections": [
+      {
+        "title": "National Overview",
+        "images": [
+          { 
+            "src": "adjusted2/national_adjusted2_trend_adjusted2.png", 
+            "alt": "National Adjusted2 Trend Analysis - Overall incidence patterns across Sierra Leone" 
+          }
+        ]
+      },
+      {
+        "title": "District Analysis",
+        "images": [
+          { 
+            "src": "adjusted2/district_trends_combined_4x4_adjusted2.png", 
+            "alt": "District Trends Combined 4x4 Grid - Comprehensive view of all 16 districts" 
+          },
+          { 
+            "src": "adjusted2/district_overview_adjusted2.png", 
+            "alt": "District Overview Map - Geographic distribution of incidence trends" 
+          }
+        ]
+      },
+      {
+        "title": "Eastern Province Districts",
+        "images": [
+          { 
+            "src": "adjusted2/district_map_KAILAHUN_adjusted2.png", 
+            "alt": "Kailahun District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_KAILAHUN_adjusted2.png", 
+            "alt": "Kailahun Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_KENEMA_adjusted2.png", 
+            "alt": "Kenema District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_KENEMA_adjusted2.png", 
+            "alt": "Kenema Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_KONO_adjusted2.png", 
+            "alt": "Kono District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_KONO_adjusted2.png", 
+            "alt": "Kono Chiefdom Trends - Individual chiefdom analysis" 
+          }
+        ]
+      },
+      {
+        "title": "Northern Province Districts",
+        "images": [
+          { 
+            "src": "adjusted2/district_map_BOMBALI_adjusted2.png", 
+            "alt": "Bombali District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2_subplot_chiefdoms_BOMBALI_adjusted2.png", 
+            "alt": "Bombali Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_FALABA_adjusted2.png", 
+            "alt": "Falaba District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_FALABA_adjusted2.png", 
+            "alt": "Falaba Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_KOINADUGU_adjusted2.png", 
+            "alt": "Koinadugu District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_KOINADUGU_adjusted2.png", 
+            "alt": "Koinadugu Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_TONKOLILI_adjusted2.png", 
+            "alt": "Tonkolili District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_TONKOLILI_adjusted2.png", 
+            "alt": "Tonkolili Chiefdom Trends - Individual chiefdom analysis" 
+          }
+        ]
+      },
+      {
+        "title": "North West Province Districts",
+        "images": [
+          { 
+            "src": "adjusted2/district_map_KAMBIA_adjusted2.png", 
+            "alt": "Kambia District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_KAMBIA_adjusted2.png", 
+            "alt": "Kambia Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_KARENE_adjusted2.png", 
+            "alt": "Karene District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_KARENE_adjusted2.png", 
+            "alt": "Karene Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_PORT LOKO_adjusted2.png", 
+            "alt": "Port Loko District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_PORT LOKO_adjusted2.png", 
+            "alt": "Port Loko Chiefdom Trends - Individual chiefdom analysis" 
+          }
+        ]
+      },
+      {
+        "title": "Southern Province Districts",
+        "images": [
+          { 
+            "src": "adjusted2/district_map_BO_adjusted2.png", 
+            "alt": "Bo District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_BO_adjusted2.png", 
+            "alt": "Bo Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_BONTHE_adjusted2.png", 
+            "alt": "Bonthe District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_BONTHE_adjusted2.png", 
+            "alt": "Bonthe Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_MOYAMBA_adjusted2.png", 
+            "alt": "Moyamba District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_MOYAMBA_adjusted2.png", 
+            "alt": "Moyamba Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_PUJEHUN_adjusted2.png", 
+            "alt": "Pujehun District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_PUJEHUN_adjusted2.png", 
+            "alt": "Pujehun Chiefdom Trends - Individual chiefdom analysis" 
+          }
+        ]
+      },
+      {
+        "title": "Western Area Districts",
+        "images": [
+          { 
+            "src": "adjusted2/district_map_WESTERN RURAL_adjusted2.png", 
+            "alt": "Western Rural District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_WESTERN RURAL_adjusted2.png", 
+            "alt": "Western Rural Chiefdom Trends - Individual chiefdom analysis" 
+          },
+          { 
+            "src": "adjusted2/district_map_WESTERN URBAN_adjusted2.png", 
+            "alt": "Western Urban District Map - Chiefdom-level incidence patterns" 
+          },
+          { 
+            "src": "adjusted2/subplot_chiefdoms_WESTERN URBAN_adjusted2.png", 
+            "alt": "Western Urban Chiefdom Trends - Individual chiefdom analysis" 
+          }
+        ]
+      },
+      {
+        "title": "Summary & Key Insights",
+        "placeholder": "Comprehensive analysis covering 208 chiefdoms across 16 districts (2021-2024). Key findings: 55.3% of areas show decreasing incidence trends (115 chiefdoms), while 44.7% show increasing trends (93 chiefdoms). Maps use light pink for increasing incidence and blue for decreasing incidence patterns."
+      }
+    ]
+  }
+},
+   
     "comparative_analysis": {
       "title": "Comparative Analysis",
       "type": "image_gallery",
