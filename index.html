@@ -116,6 +116,12 @@
             border: 2px solid transparent;
             margin-bottom: -3px;
             position: relative;
+            /* Modified for consistent length and alignment */
+            min-width: 180px;
+            text-align: left;
+            justify-content: flex-start;
+            display: flex;
+            align-items: center;
         }
 
         .tab-button:hover {
@@ -314,6 +320,12 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
             border: 2px solid #0066cc;
+            /* Modified for consistent length and alignment */
+            min-width: 250px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
         }
 
         .interactive-link:hover {
@@ -371,6 +383,8 @@
                 margin-bottom: 5px;
                 padding: 12px 20px;
                 font-size: 0.9em;
+                min-width: auto;
+                width: 100%;
             }
 
             .tab-button.active {
@@ -379,6 +393,13 @@
 
             .content-grid {
                 gap: 25px;
+            }
+
+            .interactive-link {
+                min-width: auto;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
             }
         }
 
@@ -620,7 +641,7 @@
                 
                 if (section.type === 'interactive_links' && section.links) {
                     const linksHTML = section.links.map(link => `
-                        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="interactive-link">
+                        <a href="${link.url}" class="interactive-link">
                             ${link.text}
                         </a>
                     `).join('');
