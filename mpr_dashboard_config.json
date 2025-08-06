@@ -161,6 +161,12 @@
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_urban.html",
               "text": "Western Urban District Map",
               "description": "Western Urban District interactive map"
+            },
+
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/incidence.html",
+              "text": "Incidence",
+              "description": "Incidence"
             }
           ]
         }
