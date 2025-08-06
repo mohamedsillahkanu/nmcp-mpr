@@ -200,7 +200,7 @@
         {
           "title": "District Level Line Plot",
           "images": [
-            { "src": "crude/national_crude_incidence.png", "alt": "Crude Incidence Trend - Bombali" },
+            { "src": "crude/national_trend_crude_incidence.png", "alt": "Crude Incidence Trend - Bombali" },
             { "src": "crude/districts_combined_overview_crude_incidence.png", "alt": "Crude Incidence Trend - Bombali" },
             { "src": "crude/district_BOMBALI_crude_incidence.png", "alt": "Crude Incidence Trend - Bombali" },
             { "src": "crude/district_BOMBALI_crude_incidence.png", "alt": "Crude Incidence Trend - Bombali" },
