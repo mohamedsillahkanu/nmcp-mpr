@@ -202,7 +202,7 @@
           "type": "interactive_links",
           "links": [
             {
-              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/incidence_line_plots.html",
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/incidence.html",
               "text": "Incidence Line Plots",
               "description": "Interactive incidence trends line plots"
             }
@@ -213,7 +213,7 @@
           "type": "interactive_links",
           "links": [
             {
-              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/incidence.html",
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/incidence_maps.html",
               "text": "Incidence Maps",
               "description": "Interactive incidence trends maps"
             }
