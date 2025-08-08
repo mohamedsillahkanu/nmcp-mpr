@@ -223,74 +223,115 @@
     },
     "comparative_analysis": {
       "title": "Comparative Analysis",
-      "type": "image_gallery",
+      "type": "mixed_content",
       "sections": [
         {
-          "title": "Incidence Comparative Analysis",
-          "images": [
+          "title": "Comparative Analysis (Line Plots - Set 1)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "KAILAHUN_trends_2021-2024.png",
-              "alt": "Kailahun District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 1",
+              "description": "Interactive comparative analysis line plots for first set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 2)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "KENEMA_trends_2021-2024.png",
-              "alt": "Kenema District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 2",
+              "description": "Interactive comparative analysis line plots for second set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 3)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "KONO_trends_2021-2024.png",
-              "alt": "Kono District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 3",
+              "description": "Interactive comparative analysis line plots for third set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 4)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "BOMBALI_trends_2021-2024.png",
-              "alt": "Bombali District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 4",
+              "description": "Interactive comparative analysis line plots for fourth set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 5)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "FALABA_trends_2021-2024.png",
-              "alt": "Falaba District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 5",
+              "description": "Interactive comparative analysis line plots for fifth set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 6)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "KOINADUGU_trends_2021-2024.png",
-              "alt": "Koinadugu District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 6",
+              "description": "Interactive comparative analysis line plots for sixth set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 7)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "TONKOLILI_trends_2021-2024.png",
-              "alt": "Tonkolili District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 7",
+              "description": "Interactive comparative analysis line plots for seventh set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 8)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "KAMBIA_trends_2021-2024.png",
-              "alt": "Kambia District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 8",
+              "description": "Interactive comparative analysis line plots for eighth set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 9)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "KARENE_trends_2021-2024.png",
-              "alt": "Karene District Incidence Trends by Chiefdom (2021-2024)"
-            },
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 9",
+              "description": "Interactive comparative analysis line plots for ninth set of indicators"
+            }
+          ]
+        },
+        {
+          "title": "Comparative Analysis (Line Plots - Set 10)",
+          "type": "interactive_links",
+          "links": [
             {
-              "src": "PORT_LOKO_trends_2021-2024.png",
-              "alt": "Port Loko District Incidence Trends by Chiefdom (2021-2024)"
-            },
-            {
-              "src": "BO_trends_2021-2024.png",
-              "alt": "Bo District Incidence Trends by Chiefdom (2021-2024)"
-            },
-            {
-              "src": "BONTHE_trends_2021-2024.png",
-              "alt": "Bonthe District Incidence Trends by Chiefdom (2021-2024)"
-            },
-            {
-              "src": "MOYAMBA_trends_2021-2024.png",
-              "alt": "Moyamba District Incidence Trends by Chiefdom (2021-2024)"
-            },
-            {
-              "src": "PUJEHUN_trends_2021-2024.png",
-              "alt": "Pujehun District Incidence Trends by Chiefdom (2021-2024)"
-            },
-            {
-              "src": "WESTERN_RURAL_trends_2021-2024.png",
-              "alt": "Western Rural District Incidence Trends by Chiefdom (2021-2024)"
-            },
-            {
-              "src": "WESTERN_URBAN_trends_2021-2024.png",
-              "alt": "Western Urban District Incidence Trends by Chiefdom (2021-2024)"
+              "url": "#",
+              "text": "Comparative Analysis Line Plots - Set 10",
+              "description": "Interactive comparative analysis line plots for tenth set of indicators"
             }
           ]
         }
