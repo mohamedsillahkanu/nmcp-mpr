@@ -230,8 +230,8 @@
           "type": "interactive_links",
           "links": [
             {
-              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/allout_trend_analysis_report.html",
-              "text": "Comparative Analysis Line Plots - Set 1",
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/allout_trend_analysis_report.html",
+              "text": "All outpatient visits",
               "description": "ALL outpatient visits"
             }
           ]
