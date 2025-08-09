@@ -241,9 +241,9 @@
           "type": "interactive_links",
           "links": [
             {
-              "url": "#",
-              "text": "Comparative Analysis Line Plots - Set 2",
-              "description": "Interactive comparative analysis line plots for second set of indicators"
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/suspected_cases_analysis_report.html",
+              "text": "Suspected Malaria Cases",
+              "description": "Suspected Malaria Cases"
             }
           ]
         },
