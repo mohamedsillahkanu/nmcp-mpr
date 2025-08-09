@@ -345,24 +345,19 @@
     },
     
     "conclusion": {
-      "title": "Conclusion & Recommendation",
-      "type": "collapsible_sections",
+      "title": "Summary Indicators",
+      "type": "mixed_content",
       "sections": [
         {
-          "title": "Key Findings and Conclusions",
-          "content": "The Malaria Program Review has revealed significant achievements in malaria control efforts across Sierra Leone, while also identifying critical areas for improvement and future focus."
-        },
-        {
-          "title": "Strategic Recommendations",
-          "content": "<strong>Priority Recommendations:</strong><br>• Strengthen integrated vector management approaches<br>• Enhance community engagement and ownership<br>• Improve data quality and utilization<br>• Scale-up innovative interventions like School-Based Distribution<br>• Strengthen health system capacity and resilience"
-        },
-        {
-          "title": "Implementation Roadmap",
-          "content": "<strong>Next Steps for 2025-2030:</strong><br>• Develop comprehensive implementation guidelines<br>• Establish monitoring and evaluation frameworks<br>• Secure sustainable financing mechanisms<br>• Strengthen partnerships and coordination<br>• Build capacity for innovative interventions<br>• Enhance data systems and surveillance<br>• Promote community ownership and engagement"
-        },
-        {
-          "title": "Future Vision",
-          "content": "<strong>Vision for 2030:</strong><br>Sierra Leone aims to achieve significant reduction in malaria burden through strengthened health systems, innovative interventions, and sustainable financing. The integration of school-based distribution and enhanced community engagement will serve as cornerstones for achieving universal coverage and moving towards elimination goals."
+          "title": "Summary Indicators",
+          "type": "interactive_links",
+          "links": [
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/Summary_district_chiefdom.html",
+              "text": "Summary Indicators",
+              "description": "Summary Indicators"
+            }  
+          ]
         }
       ]
     }
