@@ -245,7 +245,6 @@
               "text": "Suspected Malaria Cases",
               "description": "Suspected Malaria Cases"
             },
-
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/suspected_cases_analysis_report_percentage.html",
               "text": "Proportion of Suspected Malaria Cases",
@@ -343,20 +342,30 @@
         }
       ]
     },
-    
     "conclusion": {
       "title": "Summary Indicators",
       "type": "mixed_content",
       "sections": [
         {
           "title": "Summary Indicators",
-          "type": "interactive_links",
+          "type": "interactive_links", 
           "links": [
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/Summary_district_chiefdom.html",
               "text": "Summary Indicators",
               "description": "Summary Indicators"
-            }  
+            }
+          ]
+        },
+        {
+          "title": "Summary (Detail)",
+          "type": "interactive_links", 
+          "links": [
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/excel_only_map.html",
+              "text": "Summary (Detail)",
+              "description": "Summary (Detail)"
+            }
           ]
         }
       ]
