@@ -356,18 +356,7 @@
               "description": "Summary Indicators"
             }
           ]
-        },
-        {
-          "title": "Summary (Detail)",
-          "type": "interactive_links", 
-          "links": [
-            {
-              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/excel_only_map.html",
-              "text": "Summary (Detail)",
-              "description": "Summary (Detail)"
-            }
-          ]
-        }
+        }      
       ]
     }
   }
