@@ -330,13 +330,13 @@
           ]
         },
         {
-          "title": "Comparative Analysis (Line Plots - Set 10)",
+          "title": "Incidence Rate Comparison",
           "type": "interactive_links",
           "links": [
             {
-              "url": "#",
-              "text": "Comparative Analysis Line Plots - Set 10",
-              "description": "Interactive comparative analysis line plots for tenth set of indicators"
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/Incidence_comparative.html",
+              "text": "Incidence Rate Comparison",
+              "description": "Incidence Rate Comparison"
             }
           ]
         }
