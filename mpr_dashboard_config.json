@@ -257,7 +257,7 @@
           "type": "interactive_links",
           "links": [
             {
-              "url": "#",
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/window_analysis.html",
               "text": "Comparative Analysis Line Plots - Set 3",
               "description": "Interactive comparative analysis line plots for third set of indicators"
             }
