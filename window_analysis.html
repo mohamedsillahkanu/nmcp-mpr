@@ -10,112 +10,162 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #f5f7fa;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            min-height: 100vh;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             background: white;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(25, 118, 210, 0.2);
+            border: 1px solid rgba(25, 118, 210, 0.1);
         }
         h1 {
-            color: #2c3e50;
+            color: #1565c0;
             text-align: center;
-            border-bottom: 3px solid #3498db;
+            border-bottom: 3px solid #2196f3;
             padding-bottom: 15px;
+            margin-bottom: 30px;
         }
         h2 {
-            color: #34495e;
-            margin-top: 30px;
-            padding: 10px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border-radius: 5px;
+            margin-top: 30px;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
         }
         h3 {
-            color: #2980b9;
-            border-left: 4px solid #3498db;
+            color: #1565c0;
+            border-left: 4px solid #2196f3;
             padding-left: 15px;
+            background: linear-gradient(135deg, #f3f9ff 0%, #e8f4fd 100%);
+            padding: 10px 15px;
+            border-radius: 5px;
         }
         .data-table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
             font-size: 14px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.15);
         }
         .data-table th {
-            background: #34495e;
+            background: linear-gradient(135deg, #1565c0 0%, #1976d2 100%);
             color: white;
-            padding: 12px 8px;
+            padding: 15px 12px;
             text-align: center;
             font-weight: bold;
         }
         .data-table td {
-            padding: 10px 8px;
+            padding: 12px 10px;
             text-align: center;
-            border: 1px solid #ddd;
+            border: 1px solid #e3f2fd;
         }
         .data-table tr:nth-child(even) {
-            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #f8fbff 0%, #f3f9ff 100%);
+        }
+        .data-table tr:nth-child(odd) {
+            background: white;
         }
         .data-table tr:hover {
-            background-color: #e3f2fd;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            transform: translateY(-1px);
+            transition: all 0.2s ease;
         }
         .highlight {
-            background-color: #fff3cd !important;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%) !important;
             font-weight: bold;
             border: 2px solid #ffc107 !important;
         }
         .max-value {
-            background-color: #d4edda !important;
-            color: #155724;
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%) !important;
+            color: #2e7d32;
             font-weight: bold;
-            border: 2px solid #28a745 !important;
+            border: 2px solid #4caf50 !important;
         }
         .formula {
-            background: #f8f9fa;
-            padding: 15px;
-            border-left: 4px solid #17a2b8;
-            margin: 15px 0;
+            background: linear-gradient(135deg, #f3f9ff 0%, #e8f4fd 100%);
+            padding: 20px;
+            border-left: 4px solid #2196f3;
+            margin: 20px 0;
             font-family: 'Courier New', monospace;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
         }
         .example-box {
-            background: #e8f5e8;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border: 1px solid #c3e6c3;
+            background: linear-gradient(135deg, #f3f9ff 0%, #e8f4fd 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border: 1px solid #bbdefb;
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.1);
         }
         .monthly-data {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            gap: 5px;
-            margin: 15px 0;
+            gap: 8px;
+            margin: 20px 0;
         }
         .month-cell {
-            padding: 8px;
+            padding: 10px 6px;
             text-align: center;
-            background: #ecf0f1;
-            border: 1px solid #bdc3c7;
-            border-radius: 4px;
+            background: white;
+            border: 1px solid #bbdefb;
+            border-radius: 6px;
             font-size: 12px;
+            transition: all 0.2s ease;
+        }
+        .month-cell:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(25, 118, 210, 0.2);
         }
         .month-header {
-            background: #3498db;
+            background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
             color: white;
             font-weight: bold;
         }
-        .summary-table {
-            background: #f1f8ff;
-            padding: 20px;
-            border-radius: 8px;
+        .method-tabs {
+            display: flex;
             margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.2);
         }
-        .window-highlight {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
-            border: 2px solid #e91e63;
+        .tab-button {
+            flex: 1;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1565c0;
+            transition: all 0.3s ease;
+            border-right: 1px solid #90caf9;
+        }
+        .tab-button:last-child {
+            border-right: none;
+        }
+        .tab-button.active {
+            background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+        }
+        .tab-button:hover:not(.active) {
+            background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%);
+            transform: translateY(-1px);
+        }
+        .method-content {
+            display: none;
+        }
+        .method-content.active {
+            display: block;
         }
     </style>
 </head>
@@ -124,48 +174,251 @@
         <h1>Seasonality Analysis: Complete Window Examples</h1>
         
         <div class="example-box">
-            <h3>Sample Data for District_A (Monthly Means 2018-2023, excluding 2020)</h3>
-            <div class="monthly-data">
-                <div class="month-cell month-header">Jan</div>
-                <div class="month-cell month-header">Feb</div>
-                <div class="month-cell month-header">Mar</div>
-                <div class="month-cell month-header">Apr</div>
-                <div class="month-cell month-header">May</div>
-                <div class="month-cell month-header">Jun</div>
-                <div class="month-cell month-header">Jul</div>
-                <div class="month-cell month-header">Aug</div>
-                <div class="month-cell month-header">Sep</div>
-                <div class="month-cell month-header">Oct</div>
-                <div class="month-cell month-header">Nov</div>
-                <div class="month-cell month-header">Dec</div>
-                
-                <div class="month-cell">42.4</div>
-                <div class="month-cell">48.8</div>
-                <div class="month-cell">35.2</div>
-                <div class="month-cell">28.1</div>
-                <div class="month-cell">45.3</div>
-                <div class="month-cell">67.2</div>
-                <div class="month-cell">89.4</div>
-                <div class="month-cell">92.1</div>
-                <div class="month-cell">78.6</div>
-                <div class="month-cell">56.3</div>
-                <div class="month-cell">51.2</div>
-                <div class="month-cell">63.1</div>
+            <h3>Sample Data for District_A</h3>
+            
+            <div class="method-tabs">
+                <button class="tab-button active" onclick="switchMethod('average')">Method 1: Average</button>
+                <button class="tab-button" onclick="switchMethod('median')">Method 2: Median</button>
             </div>
-            <div class="formula">
-                <strong>Annual Total:</strong> 42.4 + 48.8 + 35.2 + 28.1 + 45.3 + 67.2 + 89.4 + 92.1 + 78.6 + 56.3 + 51.2 + 63.1 = <strong>697.7</strong>
+
+            <div id="average-method" class="method-content active">
+                <h4>Raw Data by Year:</h4>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>2023</th>
+                            <th>2024</th>
+                            <th>Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Jan</td><td>39.5</td><td>45.3</td><td>42.4</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Feb</td><td>44.0</td><td>53.6</td><td>48.8</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Mar</td><td>35.2</td><td>35.2</td><td>35.2</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Apr</td><td>27.4</td><td>28.8</td><td>28.1</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">May</td><td>44.4</td><td>46.2</td><td>45.3</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Jun</td><td>66.8</td><td>67.6</td><td>67.2</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Jul</td><td>89.5</td><td>89.3</td><td>89.4</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Aug</td><td>89.5</td><td>94.7</td><td>92.1</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Sep</td><td>77.6</td><td>79.6</td><td>78.6</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Oct</td><td>56.7</td><td>55.9</td><td>56.3</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Nov</td><td>51.5</td><td>50.9</td><td>51.2</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Dec</td><td>59.2</td><td>67.0</td><td>63.1</td></tr>
+                        <tr style="background: #f3f9ff; font-weight: bold;"><td><strong>TOTAL</strong></td><td><strong>681.3</strong></td><td><strong>714.1</strong></td><td><strong>697.7</strong></td></tr>
+                    </tbody>
+                </table>
+                
+                <h4>Monthly Means (2023-2024):</h4>
+                <div class="monthly-data">
+                    <div class="month-cell month-header">Jan</div>
+                    <div class="month-cell month-header">Feb</div>
+                    <div class="month-cell month-header">Mar</div>
+                    <div class="month-cell month-header">Apr</div>
+                    <div class="month-cell month-header">May</div>
+                    <div class="month-cell month-header">Jun</div>
+                    <div class="month-cell month-header">Jul</div>
+                    <div class="month-cell month-header">Aug</div>
+                    <div class="month-cell month-header">Sep</div>
+                    <div class="month-cell month-header">Oct</div>
+                    <div class="month-cell month-header">Nov</div>
+                    <div class="month-cell month-header">Dec</div>
+                    
+                    <div class="month-cell">42.4</div>
+                    <div class="month-cell">48.8</div>
+                    <div class="month-cell">35.2</div>
+                    <div class="month-cell">28.1</div>
+                    <div class="month-cell">45.3</div>
+                    <div class="month-cell">67.2</div>
+                    <div class="month-cell">89.4</div>
+                    <div class="month-cell">92.1</div>
+                    <div class="month-cell">78.6</div>
+                    <div class="month-cell">56.3</div>
+                    <div class="month-cell">51.2</div>
+                    <div class="month-cell">63.1</div>
+                </div>
+                <div class="formula">
+                    <strong>Calculation Example (January):</strong> (39.5 + 45.3) ÷ 2 = 84.8 ÷ 2 = <strong>42.4</strong><br>
+                    <strong>Annual Total:</strong> 42.4 + 48.8 + 35.2 + 28.1 + 45.3 + 67.2 + 89.4 + 92.1 + 78.6 + 56.3 + 51.2 + 63.1 = <strong>697.7</strong>
+                </div>
+            </div>
+
+            <div id="median-method" class="method-content">
+                <h4>Raw Data by Year:</h4>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>2023</th>
+                            <th>2024</th>
+                            <th>Median</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Jan</td><td>39.5</td><td>45.3</td><td>42.4</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Feb</td><td>44.0</td><td>53.6</td><td>48.8</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Mar</td><td>35.2</td><td>35.2</td><td>35.2</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Apr</td><td>27.4</td><td>28.8</td><td>28.1</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">May</td><td>44.4</td><td>46.2</td><td>45.3</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Jun</td><td>66.8</td><td>67.6</td><td>67.2</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Jul</td><td>89.5</td><td>89.3</td><td>89.4</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Aug</td><td>89.5</td><td>94.7</td><td>92.1</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Sep</td><td>77.6</td><td>79.6</td><td>78.6</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Oct</td><td>56.7</td><td>55.9</td><td>56.3</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Nov</td><td>51.5</td><td>50.9</td><td>51.2</td></tr>
+                        <tr><td style="background: #1976d2; color: white; font-weight: bold;">Dec</td><td>59.2</td><td>67.0</td><td>63.1</td></tr>
+                        <tr style="background: #f3f9ff; font-weight: bold;"><td><strong>TOTAL</strong></td><td><strong>681.3</strong></td><td><strong>714.1</strong></td><td><strong>697.7</strong></td></tr>
+                    </tbody>
+                </table>
+                
+                <h4>Monthly Medians (2023-2024):</h4>
+                <div class="monthly-data">
+                    <div class="month-cell month-header">Jan</div>
+                    <div class="month-cell month-header">Feb</div>
+                    <div class="month-cell month-header">Mar</div>
+                    <div class="month-cell month-header">Apr</div>
+                    <div class="month-cell month-header">May</div>
+                    <div class="month-cell month-header">Jun</div>
+                    <div class="month-cell month-header">Jul</div>
+                    <div class="month-cell month-header">Aug</div>
+                    <div class="month-cell month-header">Sep</div>
+                    <div class="month-cell month-header">Oct</div>
+                    <div class="month-cell month-header">Nov</div>
+                    <div class="month-cell month-header">Dec</div>
+                    
+                    <div class="month-cell">42.4</div>
+                    <div class="month-cell">48.8</div>
+                    <div class="month-cell">35.2</div>
+                    <div class="month-cell">28.1</div>
+                    <div class="month-cell">45.3</div>
+                    <div class="month-cell">67.2</div>
+                    <div class="month-cell">89.4</div>
+                    <div class="month-cell">92.1</div>
+                    <div class="month-cell">78.6</div>
+                    <div class="month-cell">56.3</div>
+                    <div class="month-cell">51.2</div>
+                    <div class="month-cell">63.1</div>
+                </div>
+                <div class="formula">
+                    <strong>Calculation Example (January):</strong> Median of [39.5, 45.3] = (39.5 + 45.3) ÷ 2 = <strong>42.4</strong><br>
+                    <strong>Note:</strong> With only 2 values, median = average. Results identical for this dataset.<br>
+                    <strong>Annual Total:</strong> 42.4 + 48.8 + 35.2 + 28.1 + 45.3 + 67.2 + 89.4 + 92.1 + 78.6 + 56.3 + 51.2 + 63.1 = <strong>697.7</strong>
+                </div>
             </div>
         </div>
 
-        <h2>4-Month Window Analysis</h2>
+        <h2>3-Month Window Analysis</h2>
         
-        <h3>Step 1: Calculate Window Sums (4-Month Windows)</h3>
+        <h3>Step 1: Calculate Window Sums (3-Month Windows)</h3>
         <table class="data-table">
             <thead>
                 <tr>
                     <th>Window ID</th>
                     <th>Start Month</th>
-                    <th>End Month</th>
+                    <th>Months Included</th>
+                    <th>Calculation</th>
+                    <th>Sum</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3M_Mar</td>
+                    <td>3</td>
+                    <td>Mar, Apr, May</td>
+                    <td>35.2 + 28.1 + 45.3</td>
+                    <td>108.6</td>
+                    <td>15.6%</td>
+                </tr>
+                <tr>
+                    <td>3M_Apr</td>
+                    <td>4</td>
+                    <td>Apr, May, Jun</td>
+                    <td>28.1 + 45.3 + 67.2</td>
+                    <td>140.6</td>
+                    <td>20.2%</td>
+                </tr>
+                <tr>
+                    <td>3M_May</td>
+                    <td>5</td>
+                    <td>May, Jun, Jul</td>
+                    <td>45.3 + 67.2 + 89.4</td>
+                    <td>201.9</td>
+                    <td>28.9%</td>
+                </tr>
+                <tr>
+                    <td>3M_Jun</td>
+                    <td>6</td>
+                    <td>Jun, Jul, Aug</td>
+                    <td>67.2 + 89.4 + 92.1</td>
+                    <td>248.7</td>
+                    <td>35.6%</td>
+                </tr>
+                <tr class="max-value">
+                    <td>3M_Jul</td>
+                    <td>7</td>
+                    <td>Jul, Aug, Sep</td>
+                    <td>89.4 + 92.1 + 78.6</td>
+                    <td>260.1</td>
+                    <td>37.3%</td>
+                </tr>
+                <tr>
+                    <td>3M_Aug</td>
+                    <td>8</td>
+                    <td>Aug, Sep, Oct</td>
+                    <td>92.1 + 78.6 + 56.3</td>
+                    <td>227.0</td>
+                    <td>32.5%</td>
+                </tr>
+                <tr>
+                    <td>3M_Sep</td>
+                    <td>9</td>
+                    <td>Sep, Oct, Nov</td>
+                    <td>78.6 + 56.3 + 51.2</td>
+                    <td>186.1</td>
+                    <td>26.7%</td>
+                </tr>
+                <tr>
+                    <td>3M_Oct</td>
+                    <td>10</td>
+                    <td>Oct, Nov, Dec</td>
+                    <td>56.3 + 51.2 + 63.1</td>
+                    <td>170.6</td>
+                    <td>24.4%</td>
+                </tr>
+                <tr>
+                    <td>3M_Nov</td>
+                    <td>11</td>
+                    <td>Nov, Dec, Jan</td>
+                    <td>51.2 + 63.1 + 42.4</td>
+                    <td>156.7</td>
+                    <td>22.5%</td>
+                </tr>
+                <tr>
+                    <td>3M_Dec</td>
+                    <td>12</td>
+                    <td>Dec, Jan, Feb</td>
+                    <td>63.1 + 42.4 + 48.8</td>
+                    <td>154.3</td>
+                    <td>22.1%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="formula">
+            <strong>Percentage Calculation Example (3M_Jul):</strong><br>
+            Percentage = (Window Sum / Annual Total) × 100<br>
+            Percentage = (260.1 / 697.7) × 100 = <strong>37.3%</strong>
+        </div>
+
+        <h2>4-Month Window Analysis</h2>
+        
+        <h3>Step 2: Calculate Window Sums (4-Month Windows)</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Window ID</th>
+                    <th>Start Month</th>
                     <th>Months Included</th>
                     <th>Calculation</th>
                     <th>Sum</th>
@@ -176,7 +429,6 @@
                 <tr>
                     <td>4M_Mar</td>
                     <td>3</td>
-                    <td>6</td>
                     <td>Mar, Apr, May, Jun</td>
                     <td>35.2 + 28.1 + 45.3 + 67.2</td>
                     <td>175.8</td>
@@ -185,7 +437,6 @@
                 <tr>
                     <td>4M_Apr</td>
                     <td>4</td>
-                    <td>7</td>
                     <td>Apr, May, Jun, Jul</td>
                     <td>28.1 + 45.3 + 67.2 + 89.4</td>
                     <td>230.0</td>
@@ -194,7 +445,6 @@
                 <tr>
                     <td>4M_May</td>
                     <td>5</td>
-                    <td>8</td>
                     <td>May, Jun, Jul, Aug</td>
                     <td>45.3 + 67.2 + 89.4 + 92.1</td>
                     <td>294.0</td>
@@ -203,7 +453,6 @@
                 <tr class="max-value">
                     <td>4M_Jun</td>
                     <td>6</td>
-                    <td>9</td>
                     <td>Jun, Jul, Aug, Sep</td>
                     <td>67.2 + 89.4 + 92.1 + 78.6</td>
                     <td>327.3</td>
@@ -212,7 +461,6 @@
                 <tr>
                     <td>4M_Jul</td>
                     <td>7</td>
-                    <td>10</td>
                     <td>Jul, Aug, Sep, Oct</td>
                     <td>89.4 + 92.1 + 78.6 + 56.3</td>
                     <td>316.4</td>
@@ -221,7 +469,6 @@
                 <tr>
                     <td>4M_Aug</td>
                     <td>8</td>
-                    <td>11</td>
                     <td>Aug, Sep, Oct, Nov</td>
                     <td>92.1 + 78.6 + 56.3 + 51.2</td>
                     <td>278.2</td>
@@ -230,7 +477,6 @@
                 <tr>
                     <td>4M_Sep</td>
                     <td>9</td>
-                    <td>12</td>
                     <td>Sep, Oct, Nov, Dec</td>
                     <td>78.6 + 56.3 + 51.2 + 63.1</td>
                     <td>249.2</td>
@@ -239,7 +485,6 @@
                 <tr>
                     <td>4M_Oct</td>
                     <td>10</td>
-                    <td>13</td>
                     <td>Oct, Nov, Dec, Jan</td>
                     <td>56.3 + 51.2 + 63.1 + 42.4</td>
                     <td>213.0</td>
@@ -248,7 +493,6 @@
                 <tr>
                     <td>4M_Nov</td>
                     <td>11</td>
-                    <td>14</td>
                     <td>Nov, Dec, Jan, Feb</td>
                     <td>51.2 + 63.1 + 42.4 + 48.8</td>
                     <td>205.5</td>
@@ -257,7 +501,6 @@
                 <tr>
                     <td>4M_Dec</td>
                     <td>12</td>
-                    <td>15</td>
                     <td>Dec, Jan, Feb, Mar</td>
                     <td>63.1 + 42.4 + 48.8 + 35.2</td>
                     <td>189.5</td>
@@ -274,13 +517,12 @@
 
         <h2>5-Month Window Analysis</h2>
         
-        <h3>Step 2: Calculate Window Sums (5-Month Windows)</h3>
+        <h3>Step 3: Calculate Window Sums (5-Month Windows)</h3>
         <table class="data-table">
             <thead>
                 <tr>
                     <th>Window ID</th>
                     <th>Start Month</th>
-                    <th>End Month</th>
                     <th>Months Included</th>
                     <th>Calculation</th>
                     <th>Sum</th>
@@ -291,7 +533,6 @@
                 <tr>
                     <td>5M_Mar</td>
                     <td>3</td>
-                    <td>7</td>
                     <td>Mar, Apr, May, Jun, Jul</td>
                     <td>35.2 + 28.1 + 45.3 + 67.2 + 89.4</td>
                     <td>265.2</td>
@@ -300,7 +541,6 @@
                 <tr>
                     <td>5M_Apr</td>
                     <td>4</td>
-                    <td>8</td>
                     <td>Apr, May, Jun, Jul, Aug</td>
                     <td>28.1 + 45.3 + 67.2 + 89.4 + 92.1</td>
                     <td>322.1</td>
@@ -309,7 +549,6 @@
                 <tr>
                     <td>5M_May</td>
                     <td>5</td>
-                    <td>9</td>
                     <td>May, Jun, Jul, Aug, Sep</td>
                     <td>45.3 + 67.2 + 89.4 + 92.1 + 78.6</td>
                     <td>372.6</td>
@@ -318,7 +557,6 @@
                 <tr class="max-value">
                     <td>5M_Jun</td>
                     <td>6</td>
-                    <td>10</td>
                     <td>Jun, Jul, Aug, Sep, Oct</td>
                     <td>67.2 + 89.4 + 92.1 + 78.6 + 56.3</td>
                     <td>383.6</td>
@@ -327,7 +565,6 @@
                 <tr>
                     <td>5M_Jul</td>
                     <td>7</td>
-                    <td>11</td>
                     <td>Jul, Aug, Sep, Oct, Nov</td>
                     <td>89.4 + 92.1 + 78.6 + 56.3 + 51.2</td>
                     <td>367.6</td>
@@ -336,7 +573,6 @@
                 <tr>
                     <td>5M_Aug</td>
                     <td>8</td>
-                    <td>12</td>
                     <td>Aug, Sep, Oct, Nov, Dec</td>
                     <td>92.1 + 78.6 + 56.3 + 51.2 + 63.1</td>
                     <td>341.3</td>
@@ -345,7 +581,6 @@
                 <tr>
                     <td>5M_Sep</td>
                     <td>9</td>
-                    <td>13</td>
                     <td>Sep, Oct, Nov, Dec, Jan</td>
                     <td>78.6 + 56.3 + 51.2 + 63.1 + 42.4</td>
                     <td>291.6</td>
@@ -354,7 +589,6 @@
                 <tr>
                     <td>5M_Oct</td>
                     <td>10</td>
-                    <td>14</td>
                     <td>Oct, Nov, Dec, Jan, Feb</td>
                     <td>56.3 + 51.2 + 63.1 + 42.4 + 48.8</td>
                     <td>261.8</td>
@@ -363,7 +597,6 @@
                 <tr>
                     <td>5M_Nov</td>
                     <td>11</td>
-                    <td>15</td>
                     <td>Nov, Dec, Jan, Feb, Mar</td>
                     <td>51.2 + 63.1 + 42.4 + 48.8 + 35.2</td>
                     <td>240.7</td>
@@ -372,7 +605,6 @@
                 <tr>
                     <td>5M_Dec</td>
                     <td>12</td>
-                    <td>16</td>
                     <td>Dec, Jan, Feb, Mar, Apr</td>
                     <td>63.1 + 42.4 + 48.8 + 35.2 + 28.1</td>
                     <td>217.6</td>
@@ -424,7 +656,43 @@
                     </tr>
                 </tbody>
             </table>
+            
+            <div class="formula">
+                <strong>Note on Methods:</strong><br>
+                • <strong>Method 1 (Average):</strong> Results shown above - works well with normal distributions<br>
+                • <strong>Method 2 (Median):</strong> With only 2 years of data, median = average for all months<br>
+                • <strong>Recommendation:</strong> Use median when you have 3+ years with potential outliers
+            </div>
         </div>
+
+        .summary-table {
+            background: linear-gradient(135deg, #f3f9ff 0%, #e8f4fd 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border: 1px solid #bbdefb;
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.1);
+        }
+
+        <script>
+            function switchMethod(method) {
+                // Hide all method contents
+                document.querySelectorAll('.method-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Remove active class from all tab buttons
+                document.querySelectorAll('.tab-button').forEach(button => {
+                    button.classList.remove('active');
+                });
+                
+                // Show selected method content
+                document.getElementById(method + '-method').classList.add('active');
+                
+                // Add active class to clicked button
+                event.target.classList.add('active');
+            }
+        </script>
 
         <h2>Key Insights</h2>
         
