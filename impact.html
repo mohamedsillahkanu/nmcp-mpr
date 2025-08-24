@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Indicators Trend Analysis Report</title>
+    <style>
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f6f9;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 1px solid #e3e8ed;
+        }
+        h1 {
+            color: #1e3a8a;
+            text-align: center;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+        h2 {
+            color: white;
+            background-color: #2563eb;
+            margin: 40px -30px 30px -30px;
+            padding: 20px 30px;
+            font-size: 1.6em;
+            font-weight: 500;
+            border-left: 5px solid #1d4ed8;
+            scroll-margin-top: 80px;
+        }
+        h3 {
+            color: #1e3a8a;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #bfdbfe;
+            padding-bottom: 8px;
+            scroll-margin-top: 80px;
+        }
+        
+        /* Enhanced Navigation Menu Styles */
+        .section-nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+            max-width: 300px;
+            min-width: 60px;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .nav-header {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 12px 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            user-select: none;
+        }
+
+        .nav-toggle {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+            line-height: 1;
+        }
+
+        .nav-toggle.expanded {
+            transform: rotate(180deg);
+        }
+
+        .nav-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: white;
+        }
+
+        .nav-content.expanded {
+            max-height: 800px;
+            padding: 10px 0;
+        }
+
+        .nav-main-item {
+            display: block;
+            color: #2563eb;
+            text-decoration: none;
+            padding: 8px 15px;
+            font-size: 13px;
+            font-weight: 600;
+            border-bottom: 1px solid #f1f5f9;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .nav-main-item:hover {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+        }
+
+        .nav-main-item.active {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            border-left: 4px solid #2563eb;
+        }
+
+        .nav-sub-item {
+            display: block;
+            color: #64748b;
+            text-decoration: none;
+            padding: 6px 25px;
+            font-size: 12px;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .nav-sub-item:hover {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding-left: 30px;
+        }
+
+        .nav-sub-item.active {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            font-weight: 600;
+            border-left: 3px solid #2563eb;
+        }
+
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #2563eb, #60a5fa);
+            z-index: 1001;
+            transition: width 0.3s ease;
+        }
+
+        /* Chart Styles */
+        .chart-container {
+            background-color: #fafbfc;
+            border: 1px solid #e3e8ed;
+            border-radius: 6px;
+            margin: 25px 0;
+            padding: 20px;
+        }
+
+        .chart-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+            font-size: 1.1em;
+            background-color: #eff6ff;
+            padding: 12px;
+            border-radius: 4px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .chart-svg {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #d1d9e0;
+            border-radius: 4px;
+            background: white;
+        }
+
+        .scaling-notice {
+            background-color: #fef3c7;
+            border: 2px solid #f59e0b;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #92400e;
+            font-weight: 500;
+        }
+
+        .stats-box {
+            background-color: #eff6ff;
+            border: 2px solid #2563eb;
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        @media (max-width: 768px) {
+            .section-nav {
+                top: 10px;
+                right: 10px;
+                max-width: 250px;
+            }
+            .container {
+                padding: 15px;
+                margin: 0 10px;
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <div class="section-nav" id="sectionNav">
+        <div class="nav-header" onclick="toggleNav()">
+            <span class="nav-title">Navigation</span>
+            <span class="nav-toggle" id="navToggle">▼</span>
+        </div>
+        <div class="nav-content" id="navContent">
+            <a href="#overview" class="nav-main-item" onclick="scrollToSection('overview')">Overview</a>
+            <a href="#indicator-1" class="nav-sub-item" onclick="scrollToSection('indicator-1')">1. Malaria Incidence</a>
+            <a href="#indicator-2" class="nav-sub-item" onclick="scrollToSection('indicator-2')">2. Malaria Admissions</a>
+            <a href="#indicator-3" class="nav-sub-item" onclick="scrollToSection('indicator-3')">3. Test Positivity Rate</a>
+            <a href="#indicator-4" class="nav-sub-item" onclick="scrollToSection('indicator-4')">4. Proportion of Admissions</a>
+            <a href="#indicator-5" class="nav-sub-item" onclick="scrollToSection('indicator-5')">5. Reported Cases</a>
+            <a href="#indicator-6" class="nav-sub-item" onclick="scrollToSection('indicator-6')">6. Inpatient Deaths</a>
+            <a href="#indicator-7" class="nav-sub-item" onclick="scrollToSection('indicator-7')">7. Malaria Mortality</a>
+            <a href="#indicator-8" class="nav-sub-item" onclick="scrollToSection('indicator-8')">8. Proportion of Deaths</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Impact Indicators Trend Analysis Report (2021-2024)<br><small>Malaria Prevention and Control</small></h1>
+
+        <div id="overview" class="section">
+            <h2>Overview</h2>
+            <div class="scaling-notice">
+                <strong>Individual Scaling:</strong> Each chart uses its own optimized Y-axis scale for better visualization.
+                <br><strong>Data Source:</strong> HMIS (Health Management Information System)
+                <br><strong>Structure:</strong> Target vs Achieved values with variance calculations
+                <br><strong>Period:</strong> 2021 (Baseline) through 2024
+            </div>
+        </div>
+
+        <!-- Indicator 1: Malaria Incidence -->
+        <div id="indicator-1" class="chart-container">
+            <div class="chart-title">1. Malaria case incidence: number and rate per 1000 people per year</div>
+            <svg class="chart-svg" id="chart-1"></svg>
+        </div>
+
+        <!-- Indicator 2: Malaria Admissions -->
+        <div id="indicator-2" class="chart-container">
+            <div class="chart-title">2. Malaria admissions: number and rate per 10,000 persons per year</div>
+            <svg class="chart-svg" id="chart-2"></svg>
+        </div>
+
+        <!-- Indicator 3: Test Positivity Rate -->
+        <div id="indicator-3" class="chart-container">
+            <div class="chart-title">3. Malaria test positivity rate (%)</div>
+            <svg class="chart-svg" id="chart-3"></svg>
+        </div>
+
+        <!-- Indicator 4: Proportion of Admissions -->
+        <div id="indicator-4" class="chart-container">
+            <div class="chart-title">4. Proportion of admissions for malaria (%)</div>
+            <svg class="chart-svg" id="chart-4"></svg>
+        </div>
+
+        <!-- Indicator 5: Reported Cases -->
+        <div id="indicator-5" class="chart-container">
+            <div class="chart-title">5. Reported malaria cases (presumed and confirmed)</div>
+            <svg class="chart-svg" id="chart-5"></svg>
+        </div>
+
+        <!-- Indicator 6: Inpatient Deaths -->
+        <div id="indicator-6" class="chart-container">
+            <div class="chart-title">6. Inpatient malaria deaths per year: rate per 100,000 persons per year</div>
+            <svg class="chart-svg" id="chart-6"></svg>
+        </div>
+
+        <!-- Indicator 7: Malaria Mortality -->
+        <div id="indicator-7" class="chart-container">
+            <div class="chart-title">7. Malaria mortality: number and rate per 100,000 persons per year</div>
+            <svg class="chart-svg" id="chart-7"></svg>
+        </div>
+
+        <!-- Indicator 8: Proportion of Deaths -->
+        <div id="indicator-8" class="chart-container">
+            <div class="chart-title">8. Proportion of inpatient deaths due to malaria (%)</div>
+            <svg class="chart-svg" id="chart-8"></svg>
+        </div>
+
+        <div class="stats-box">
+            <h3>Analysis Complete!</h3>
+            <p><strong>8 Impact Indicators analyzed</strong></p>
+            <p><strong>Period:</strong> 2021-2024 (4 years)</p>
+            <p><strong>Focus:</strong> Target vs Achieved performance with variance analysis</p>
+        </div>
+    </div>
+
+    <script>
+        // Impact Indicators Data from Excel
+        const impactIndicators = [
+            {
+                name: 'Malaria case incidence: number and rate per 1000 people per year',
+                data: [
+                    { year: 2021, target: 298, achieved: 267 },
+                    { year: 2022, target: 293, achieved: 239 },
+                    { year: 2023, target: 288, achieved: 309 },
+                    { year: 2024, target: 283, achieved: 239 }
+                ],
+                yAxisLabel: 'Cases per 1000 people',
+                isPercentage: false
+            },
+            {
+                name: 'Malaria admissions: number and rate per 10,000 persons per year',
+                data: [
+                    { year: 2021, target: 50, achieved: 42 },
+                    { year: 2022, target: 49.1, achieved: 47 },
+                    { year: 2023, target: 47.9, achieved: 51 },
+                    { year: 2024, target: 46.5, achieved: 36 }
+                ],
+                yAxisLabel: 'Admissions per 10,000 persons',
+                isPercentage: false
+            },
+            {
+                name: 'Malaria test positivity rate',
+                data: [
+                    { year: 2021, target: 59.3, achieved: 63.7 },
+                    { year: 2022, target: 58.2, achieved: 63.2 },
+                    { year: 2023, target: 56.7, achieved: 66.0 },
+                    { year: 2024, target: 55.0, achieved: 64.3 }
+                ],
+                yAxisLabel: 'Percentage (%)',
+                isPercentage: true
+            },
+            {
+                name: 'Proportion of admissions for malaria',
+                data: [
+                    { year: 2021, target: 37.7, achieved: 26.0 },
+                    { year: 2022, target: 37.0, achieved: 30.1 },
+                    { year: 2023, target: 36.0, achieved: 32.1 },
+                    { year: 2024, target: 35.0, achieved: 26.7 }
+                ],
+                yAxisLabel: 'Percentage (%)',
+                isPercentage: true
+            },
+            {
+                name: 'Reported malaria cases (presumed and confirmed)',
+                data: [
+                    { year: 2021, target: 2396120, achieved: 1960651 },
+                    { year: 2022, target: 2383957, achieved: 1814487 },
+                    { year: 2023, target: 2371794, achieved: 2448239 },
+                    { year: 2024, target: 2359631, achieved: 1953931 }
+                ],
+                yAxisLabel: 'Number of cases',
+                isPercentage: false,
+                isLargeNumbers: true
+            },
+            {
+                name: 'Inpatient malaria deaths per year: rate per 100,000 persons per year',
+                data: [
+                    { year: 2021, target: 17.6, achieved: 17.0 },
+                    { year: 2022, target: 17.2, achieved: 18.0 },
+                    { year: 2023, target: 16.8, achieved: 18.0 },
+                    { year: 2024, target: 16.3, achieved: 19.0 }
+                ],
+                yAxisLabel: 'Deaths per 100,000 persons',
+                isPercentage: false
+            },
+            {
+                name: 'Malaria mortality: number and rate per 100,000 persons per year',
+                data: [
+                    { year: 2021, target: 35, achieved: 28 },
+                    { year: 2022, target: 34, achieved: 33 },
+                    { year: 2023, target: 33, achieved: 30 },
+                    { year: 2024, target: 32, achieved: 27 }
+                ],
+                yAxisLabel: 'Deaths per 100,000 persons',
+                isPercentage: false
+            },
+            {
+                name: 'Proportion of inpatient deaths due to malaria',
+                data: [
+                    { year: 2021, target: 37.7, achieved: 27.2 },
+                    { year: 2022, target: 37.0, achieved: 30.9 },
+                    { year: 2023, target: 36.0, achieved: 28.2 },
+                    { year: 2024, target: 35.0, achieved: 33.0 }
+                ],
+                yAxisLabel: 'Percentage (%)',
+                isPercentage: true
+            }
+        ];
+
+        // Function to create individual charts
+        function createChart(indicatorData, chartId) {
+            const margin = { top: 40, right: 80, bottom: 60, left: 80 };
+            const width = 800 - margin.left - margin.right;
+            const height = 400 - margin.top - margin.bottom;
+
+            // Clear any existing content
+            d3.select(`#${chartId}`).selectAll("*").remove();
+
+            const svg = d3.select(`#${chartId}`)
+                .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const data = indicatorData.data;
+
+            // Calculate individual Y-axis scale
+            const allValues = data.flatMap(d => [d.target, d.achieved]);
+            const yMin = 0;
+            const yMax = d3.max(allValues) * 1.1;
+
+            // Scales
+            const xScale = d3.scaleBand()
+                .domain(data.map(d => d.year))
+                .range([0, width])
+                .padding(0.3);
+
+            const yScale = d3.scaleLinear()
+                .domain([yMin, yMax])
+                .range([height, 0]);
+
+            // Create axes
+            const xAxis = d3.axisBottom(xScale);
+            const yAxis = d3.axisLeft(yScale);
+
+            if (indicatorData.isLargeNumbers) {
+                yAxis.tickFormat(d3.format(".2s"));
+            } else if (indicatorData.isPercentage) {
+                yAxis.tickFormat(d => d + "%");
+            }
+
+            // Add axes
+            svg.append("g")
+                .attr("class", "x-axis")
+                .attr("transform", `translate(0,${height})`)
+                .call(xAxis)
+                .style("font-size", "12px");
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .call(yAxis)
+                .style("font-size", "12px");
+
+            // Add Y-axis label
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 0 - margin.left + 20)
+                .attr("x", 0 - (height / 2))
+                .attr("dy", "1em")
+                .style("text-anchor", "middle")
+                .style("font-weight", "bold")
+                .style("font-size", "12px")
+                .text(indicatorData.yAxisLabel);
+
+            // Add X-axis label
+            svg.append("text")
+                .attr("transform", `translate(${width/2}, ${height + margin.bottom - 20})`)
+                .style("text-anchor", "middle")
+                .style("font-weight", "bold")
+                .style("font-size", "12px")
+                .text("Year");
+
+            // Add grid lines
+            svg.append("g")
+                .attr("class", "grid")
+                .call(d3.axisLeft(yScale)
+                    .tickSize(-width)
+                    .tickFormat("")
+                )
+                .style("stroke-dasharray", "3,3")
+                .style("opacity", 0.3);
+
+            // Create target line
+            const line = d3.line()
+                .x(d => xScale(d.year) + xScale.bandwidth() / 2)
+                .y(d => yScale(d.target));
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "#22c55e")
+                .attr("stroke-width", 3)
+                .attr("d", line);
+
+            // Add target points
+            svg.selectAll(".target-dot")
+                .data(data)
+                .enter().append("circle")
+                .attr("class", "target-dot")
+                .attr("cx", d => xScale(d.year) + xScale.bandwidth() / 2)
+                .attr("cy", d => yScale(d.target))
+                .attr("r", 6)
+                .attr("fill", "#22c55e");
+
+            // Create achieved line
+            const achievedLine = d3.line()
+                .x(d => xScale(d.year) + xScale.bandwidth() / 2)
+                .y(d => yScale(d.achieved));
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "#3b82f6")
+                .attr("stroke-width", 3)
+                .attr("d", achievedLine);
+
+            // Add achieved points
+            svg.selectAll(".achieved-dot")
+                .data(data)
+                .enter().append("circle")
+                .attr("class", "achieved-dot")
+                .attr("cx", d => xScale(d.year) + xScale.bandwidth() / 2)
+                .attr("cy", d => yScale(d.achieved))
+                .attr("r", 6)
+                .attr("fill", "#3b82f6");
+
+            // Add variance arrows and text
+            data.forEach(d => {
+                const x = xScale(d.year) + xScale.bandwidth() / 2;
+                const yTarget = yScale(d.target);
+                const yAchieved = yScale(d.achieved);
+                const variance = ((d.achieved - d.target) / d.target * 100).toFixed(1);
+                
+                // Add arrow
+                const arrowColor = d.achieved > d.target ? '#ef4444' : '#f59e0b';
+                
+                svg.append("line")
+                    .attr("x1", x)
+                    .attr("y1", yTarget)
+                    .attr("x2", x)
+                    .attr("y2", yAchieved)
+                    .attr("stroke", arrowColor)
+                    .attr("stroke-width", 2)
+                    .attr("marker-end", "url(#arrowhead)");
+
+                // Add variance text
+                const midY = (yTarget + yAchieved) / 2;
+                const varianceText = variance >= 0 ? `+${variance}%` : `${variance}%`;
+                
+                svg.append("text")
+                    .attr("x", x + 15)
+                    .attr("y", midY)
+                    .attr("dy", "0.35em")
+                    .style("font-size", "11px")
+                    .style("font-weight", "bold")
+                    .style("fill", "black")
+                    .style("background", "white")
+                    .text(varianceText);
+
+                // Add value labels
+                const targetLabel = indicatorData.isLargeNumbers ? 
+                    d3.format(".2s")(d.target) : 
+                    (indicatorData.isPercentage ? `${d.target}%` : d.target.toString());
+                
+                const achievedLabel = indicatorData.isLargeNumbers ? 
+                    d3.format(".2s")(d.achieved) : 
+                    (indicatorData.isPercentage ? `${d.achieved}%` : d.achieved.toString());
+
+                // Target label
+                svg.append("text")
+                    .attr("x", x)
+                    .attr("y", yTarget - 12)
+                    .attr("text-anchor", "middle")
+                    .style("font-size", "10px")
+                    .style("font-weight", "bold")
+                    .style("fill", "#22c55e")
+                    .style("background", "white")
+                    .text(targetLabel);
+
+                // Achieved label
+                svg.append("text")
+                    .attr("x", x)
+                    .attr("y", yAchieved + 20)
+                    .attr("text-anchor", "middle")
+                    .style("font-size", "10px")
+                    .style("font-weight", "bold")
+                    .style("fill", "#3b82f6")
+                    .text(achievedLabel);
+            });
+
+            // Add arrow marker definition
+            svg.append("defs").append("marker")
+                .attr("id", "arrowhead")
+                .attr("viewBox", "0 -5 10 10")
+                .attr("refX", 5)
+                .attr("refY", 0)
+                .attr("markerWidth", 4)
+                .attr("markerHeight", 4)
+                .attr("orient", "auto")
+                .append("path")
+                .attr("d", "M0,-5L10,0L0,5")
+                .attr("class", "arrowHead");
+
+            // Add legend
+            const legend = svg.append("g")
+                .attr("class", "legend")
+                .attr("transform", `translate(${width - 120}, 20)`);
+
+            legend.append("line")
+                .attr("x1", 0)
+                .attr("y1", 0)
+                .attr("x2", 20)
+                .attr("y2", 0)
+                .attr("stroke", "#22c55e")
+                .attr("stroke-width", 3);
+
+            legend.append("circle")
+                .attr("cx", 10)
+                .attr("cy", 0)
+                .attr("r", 4)
+                .attr("fill", "#22c55e");
+
+            legend.append("text")
+                .attr("x", 25)
+                .attr("y", 0)
+                .attr("dy", "0.35em")
+                .style("font-size", "12px")
+                .text("Target");
+
+            legend.append("line")
+                .attr("x1", 0)
+                .attr("y1", 20)
+                .attr("x2", 20)
+                .attr("y2", 20)
+                .attr("stroke", "#3b82f6")
+                .attr("stroke-width", 3);
+
+            legend.append("circle")
+                .attr("cx", 10)
+                .attr("cy", 20)
+                .attr("r", 4)
+                .attr("fill", "#3b82f6");
+
+            legend.append("text")
+                .attr("x", 25)
+                .attr("y", 20)
+                .attr("dy", "0.35em")
+                .style("font-size", "12px")
+                .text("Achieved");
+        }
+
+        // Navigation functions
+        let navExpanded = true;
+
+        function toggleNav() {
+            const nav = document.getElementById('sectionNav');
+            const content = document.getElementById('navContent');
+            const toggle = document.getElementById('navToggle');
+
+            navExpanded = !navExpanded;
+
+            if (navExpanded) {
+                content.classList.add('expanded');
+                toggle.classList.add('expanded');
+            } else {
+                content.classList.remove('expanded');
+                toggle.classList.remove('expanded');
+            }
+        }
+
+        function scrollToSection(sectionId) {
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                updateActiveNavItem(sectionId);
+            }
+        }
+
+        function updateActiveNavItem(sectionId) {
+            // Clear all active states
+            document.querySelectorAll('.nav-main-item, .nav-sub-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Set active state for the target section
+            const activeItem = document.querySelector(`a[href="#${sectionId}"]`);
+            if (activeItem) {
+                activeItem.classList.add('active');
+            }
+        }
+
+        function updateScrollProgress() {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        }
+
+        // Initialize charts and navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create all charts
+            impactIndicators.forEach((indicator, index) => {
+                createChart(indicator, `chart-${index + 1}`);
+            });
+
+            // Set up scroll progress
+            window.addEventListener('scroll', updateScrollProgress);
+            updateScrollProgress();
+
+            // Handle anchor clicks
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    scrollToSection(targetId);
+                });
+            });
+
+            // Keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey || e.metaKey) {
+                    if (e.key === 'b') {
+                        e.preventDefault();
+                        toggleNav();
+                    }
+                }
+            });
+
+            // Auto-scroll to first section on page load if no hash
+            if (window.location.hash) {
+                const hash = window.location.hash.substring(1);
+                scrollToSection(hash);
+            }
+        });
+    </script>
+</body>
+</html>
