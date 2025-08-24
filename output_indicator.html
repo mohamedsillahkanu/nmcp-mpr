@@ -814,8 +814,6 @@
                 .style("stroke", "#e0e0e0")
                 .style("stroke-width", "0.5px");
 
-            // Remove vertical grid lines to match reference
-
             // Filter data for lines (only non-null achieved values)
             const validData = data.filter(d => d.achieved !== null && d.achieved !== undefined);
 
@@ -848,55 +846,30 @@
             // Add points and labels for all data (including null values)
             data.forEach(d => {
                 const x = xScale(d.year) + xScale.bandwidth() / 2;
-                const yTarget = yScale(d.target);
+                const yTarget = yScale(d.target);  // Y position for TARGET value
                 
-                // Add target point exactly like reference
+                // Add target point (green) at yTarget position
                 svg.append("circle")
                     .attr("cx", x)
                     .attr("cy", yTarget)
                     .attr("r", 5)
                     .attr("fill", "#28a745");
 
-                // Add target label with colored background box like reference
-                const targetLabel = indicatorData.isPercentage ? 
-                    `${d.target % 1 === 0 ? d.target.toFixed(0) : d.target.toFixed(1)}%` : 
-                    d.target.toString();
-
-                // Add background rectangle for target (green box)
-                const targetText = svg.append("text")
-                    .attr("x", x)
-                    .attr("y", yTarget - 15)
-                    .attr("text-anchor", "middle")
-                    .style("font-size", "11px")
-                    .style("font-weight", "bold")
-                    .text(targetLabel);
-
-                const targetBbox = targetText.node().getBBox();
-                
-                svg.append("rect")
-                    .attr("x", targetBbox.x - 3)
-                    .attr("y", targetBbox.y - 1)
-                    .attr("width", targetBbox.width + 6)
-                    .attr("height", targetBbox.height + 2)
-                    .attr("fill", "#28a745")
-                    .attr("rx", 2);
-
-                targetText.style("fill", "white").raise();
-
-                // Add achieved point and label only if not null
+                // Add achieved point and label only if achieved value exists
                 if (d.achieved !== null && d.achieved !== undefined) {
-                    const yAchieved = yScale(d.achieved);
+                    const yAchieved = yScale(d.achieved);  // Y position for ACHIEVED value
                     
+                    // Add achieved point (blue) at yAchieved position
                     svg.append("circle")
                         .attr("cx", x)
                         .attr("cy", yAchieved)
                         .attr("r", 5)
                         .attr("fill", "#007bff");
 
-                    // Add variance arrow exactly like reference
+                    // Add variance arrow between the two points
                     const variance = ((d.achieved - d.target) / d.target * 100);
                     
-                    // Draw yellow arrow line
+                    // Draw yellow arrow line from target point to achieved point
                     svg.append("line")
                         .attr("x1", x)
                         .attr("y1", yTarget)
@@ -905,13 +878,13 @@
                         .attr("stroke", "#ffc107")
                         .attr("stroke-width", 2);
 
-                    // Add arrowhead
+                    // Add arrowhead pointing to achieved value
                     const arrowDirection = yAchieved > yTarget ? 1 : -1;
                     svg.append("polygon")
                         .attr("points", `${x-4},${yAchieved - (6 * arrowDirection)} ${x+4},${yAchieved - (6 * arrowDirection)} ${x},${yAchieved}`)
                         .attr("fill", "#ffc107");
 
-                    // Add variance text in black box like reference
+                    // Add variance percentage text between the points
                     const varianceText = `${variance >= 0 ? '+' : ''}${variance.toFixed(1)}%`;
                     
                     const varianceTextEl = svg.append("text")
@@ -936,14 +909,48 @@
 
                     varianceTextEl.style("fill", "black").raise();
 
-                    // Add achieved label with blue background box like reference
+                    // Smart label positioning: higher values get labels above, lower values below
+                    const targetIsHigher = d.target > d.achieved; // Higher value = higher on chart
+                    
+                    // TARGET LABEL: Shows target value
+                    const targetLabel = indicatorData.isPercentage ? 
+                        `${d.target % 1 === 0 ? d.target.toFixed(0) : d.target.toFixed(1)}%` : 
+                        d.target.toString();
+
+                    // Position target label: above if target is higher value, below if target is lower value
+                    const targetLabelY = targetIsHigher ? yTarget - 15 : yTarget + 25;
+                    
+                    const targetText = svg.append("text")
+                        .attr("x", x)
+                        .attr("y", targetLabelY)
+                        .attr("text-anchor", "middle")
+                        .style("font-size", "11px")
+                        .style("font-weight", "bold")
+                        .text(targetLabel);
+
+                    const targetBbox = targetText.node().getBBox();
+                    
+                    svg.append("rect")
+                        .attr("x", targetBbox.x - 3)
+                        .attr("y", targetBbox.y - 1)
+                        .attr("width", targetBbox.width + 6)
+                        .attr("height", targetBbox.height + 2)
+                        .attr("fill", "#28a745")
+                        .attr("rx", 2);
+
+                    targetText.style("fill", "white").raise();
+
+                    // ACHIEVED LABEL: Shows achieved value
                     const achievedLabel = indicatorData.isPercentage ? 
                         `${d.achieved % 1 === 0 ? d.achieved.toFixed(0) : d.achieved.toFixed(1)}%` : 
                         d.achieved.toString();
 
+                    // Position achieved label: above if achieved is higher value, below if achieved is lower value
+                    const achievedLabelY = targetIsHigher ? yAchieved + 25 : yAchieved - 15;
+
                     const achievedText = svg.append("text")
                         .attr("x", x)
-                        .attr("y", yAchieved + 25)
+                        .attr("y", achievedLabelY)
                         .attr("text-anchor", "middle")
                         .style("font-size", "11px")
                         .style("font-weight", "bold")
@@ -951,20 +958,44 @@
 
                     const achievedBbox = achievedText.node().getBBox();
 
-                    // Handle special case for red background when over target
-                    const achievedBgColor = d.achieved > d.target ? "#dc3545" : "#007bff";
-                    
+                    // Always use blue background for achieved labels
                     svg.append("rect")
                         .attr("x", achievedBbox.x - 3)
                         .attr("y", achievedBbox.y - 1)
                         .attr("width", achievedBbox.width + 6)
                         .attr("height", achievedBbox.height + 2)
-                        .attr("fill", achievedBgColor)
+                        .attr("fill", "#007bff")
                         .attr("rx", 2);
 
                     achievedText.style("fill", "white").raise();
+
                 } else {
-                    // Add "No Data" text for null values
+                    // When no achieved data, only show target
+                    const targetLabel = indicatorData.isPercentage ? 
+                        `${d.target % 1 === 0 ? d.target.toFixed(0) : d.target.toFixed(1)}%` : 
+                        d.target.toString();
+
+                    const targetText = svg.append("text")
+                        .attr("x", x)
+                        .attr("y", yTarget - 15)
+                        .attr("text-anchor", "middle")
+                        .style("font-size", "11px")
+                        .style("font-weight", "bold")
+                        .text(targetLabel);
+
+                    const targetBbox = targetText.node().getBBox();
+                    
+                    svg.append("rect")
+                        .attr("x", targetBbox.x - 3)
+                        .attr("y", targetBbox.y - 1)
+                        .attr("width", targetBbox.width + 6)
+                        .attr("height", targetBbox.height + 2)
+                        .attr("fill", "#28a745")
+                        .attr("rx", 2);
+
+                    targetText.style("fill", "white").raise();
+
+                    // Add "No Data" text for null achieved values
                     svg.append("text")
                         .attr("x", x)
                         .attr("y", yTarget + 25)
@@ -976,7 +1007,7 @@
                 }
             });
 
-            // Add legend outside the plot area exactly like reference
+            // Add legend outside the plot area
             const legend = svg.append("g")
                 .attr("class", "legend")
                 .attr("transform", `translate(${width + 20}, 20)`);
