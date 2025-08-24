@@ -37,35 +37,56 @@
           "title": "Expected Benefits & Conclusion",
           "content": "<strong>Expected Benefits of the Review</strong><br>• Provide an evidence base to validate SBD as an effective strategy for achieving universal ITN coverage.<br>• Identify best practices and challenges in current malaria interventions to inform future programming.<br>• Strengthen inter-ministerial collaboration for sustained delivery of integrated services.<br>• Guide the development of a new malaria strategic plan (2026–2030), incorporating innovative, equitable, and data-driven strategies.<br><br><strong>Conclusion</strong><br>The Malaria Program Review is not just a routine assessment; it is a strategic pivot point for NMCP to enhance impact, secure sustained funding, and ultimately achieve malaria elimination goals. With interventions like the School-Based ITN Distribution gaining traction, Sierra Leone is well-positioned to redefine its malaria control architecture with a stronger emphasis on integration, innovation, and inclusiveness."
         }
-      ]    
+      ]
     },
     "impact_indicators": {
       "title": "Impact Indicators",
-      "type": "image_gallery",
+      "type": "mixed_content",
       "sections": [
         {
           "title": "Impact Indicators",
-          "images": [
-            { "src": "case incidence.png", "alt": "National Crude Incidence Trend" },
-            { "src": "Cases per 10000 population.png", "alt": "Cases per 10,000 Population" },
-            { "src": "test positivity rate.png", "alt": "Test Positivity Rate" },
-            { "src": "mortality.png", "alt": "Mortality Trends" },
-            { "src": "Inpatient death.png", "alt": "Inpatient Deaths" },
-            { "src": "cases_presume.png", "alt": "Presumed Cases" }
+          "type": "interactive_links",
+          "links": [
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/impact_indicator.html",
+              "text": "Impact Indicators",
+              "description": "Interactive dashboard showing key impact indicators for the malaria program review"
+            }
           ]
-        },
+        }
+      ]
+    },
+    "outcome_indicators": {
+      "title": "Outcome Indicators",
+      "type": "mixed_content",
+      "sections": [
         {
-          "title": "National Overview and Subplots",
-          "images": [
-            { "src": "national_crude_incidence_trend (3).png", "alt": "National Crude Incidence Trend" },
-            { "src": "crude_incidence_trend_subplots_4x4.png", "alt": "Crude Incidence Subplots 4x4" },
-            { "src": "district_change_overview_map.png", "alt": "District Change Overview Map" },
-            { "src": "national_crude_incidence_change_map.png", "alt": "National Crude Incidence Change Map" }
+          "title": "Outcome Indicators",
+          "type": "interactive_links",
+          "links": [
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/outcome_indicator.html",
+              "text": "Outcome Indicators Dashboard",
+              "description": "Interactive dashboard showing outcome indicators for malaria program evaluation"
+            }
           ]
-        },
+        }
+      ]
+    },
+    "output_indicators": {
+      "title": "Output Indicators",
+      "type": "mixed_content",
+      "sections": [
         {
-          "title": "Individual District Analysis",
-          "placeholder": "Individual district trend charts and maps for all 16 districts are available. Each district includes trend analysis and geographical mapping."
+          "title": "Output Indicators",
+          "type": "interactive_links",
+          "links": [
+            {
+              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/output_indicator.html",
+              "text": "Output Indicators",
+              "description": "Interactive dashboard showing output indicators for malaria program activities"
+            }
+          ]
         }
       ]
     },
@@ -80,87 +101,87 @@
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/sierra_leone_health_facilities_complete%20(2).html",
               "text": "National Map",
-              "description": "National level interactive map"
+              "description": "National level interactive map of health facilities and CHWs"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bo%20(24).html",
               "text": "Bo District Map",
-              "description": "Bo District interactive map"
+              "description": "Bo District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bombali%20(1).html",
               "text": "Bombali District Map",
-              "description": "Bombali District interactive map"
+              "description": "Bombali District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_bonthe.html",
               "text": "Bonthe District Map",
-              "description": "Bonthe District interactive map"
+              "description": "Bonthe District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_falaba.html",
               "text": "Falaba District Map",
-              "description": "Falaba District interactive map"
+              "description": "Falaba District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kailahun.html",
               "text": "Kailahun District Map",
-              "description": "Kailahun District interactive map"
+              "description": "Kailahun District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kambia%20(1).html",
               "text": "Kambia District Map",
-              "description": "Kambia District interactive map"
+              "description": "Kambia District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_karene.html",
               "text": "Karene District Map",
-              "description": "Karene District interactive map"
+              "description": "Karene District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kenema.html",
               "text": "Kenema District Map",
-              "description": "Kenema District interactive map"
+              "description": "Kenema District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_koinadugu.html",
               "text": "Koinadugu District Map",
-              "description": "Koinadugu District interactive map"
+              "description": "Koinadugu District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_kono%20(1).html",
               "text": "Kono District Map",
-              "description": "Kono District interactive map"
+              "description": "Kono District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_moyamba.html",
               "text": "Moyamba District Map",
-              "description": "Moyamba District interactive map"
+              "description": "Moyamba District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_port_loko.html",
               "text": "Port Loko District Map",
-              "description": "Port Loko District interactive map"
+              "description": "Port Loko District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_pujehun.html",
               "text": "Pujehun District Map",
-              "description": "Pujehun District interactive map"
+              "description": "Pujehun District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_tonkolili.html",
               "text": "Tonkolili District Map",
-              "description": "Tonkolili District interactive map"
+              "description": "Tonkolili District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_rural.html",
               "text": "Western Rural District Map",
-              "description": "Western Rural District interactive map"
+              "description": "Western Rural District interactive health facilities map"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/health_facility_map_western_urban.html",
               "text": "Western Urban District Map",
-              "description": "Western Urban District interactive map"
+              "description": "Western Urban District interactive health facilities map"
             }
           ]
         }
@@ -226,29 +247,29 @@
       "type": "mixed_content",
       "sections": [
         {
-          "title": "All outpatient visits",
+          "title": "All Outpatient Visits",
           "type": "interactive_links",
           "links": [
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/allout_trend_analysis_report.html",
-              "text": "All outpatient visits",
-              "description": "ALL outpatient visits"
-            }  
+              "text": "All Outpatient Visits Analysis",
+              "description": "Comprehensive analysis of all outpatient visits trends"
+            }
           ]
         },
         {
-          "title": "Suspected Cases",
+          "title": "Suspected Cases Analysis",
           "type": "interactive_links",
           "links": [
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/suspected_cases_analysis_report.html",
               "text": "Suspected Malaria Cases",
-              "description": "Suspected Malaria Cases"
+              "description": "Analysis of suspected malaria cases trends"
             },
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/suspected_cases_analysis_report_percentage.html",
               "text": "Proportion of Suspected Malaria Cases",
-              "description": "Proportion of Suspected Malaria Cases"
+              "description": "Percentage analysis of suspected malaria cases"
             }
           ]
         },
@@ -258,74 +279,8 @@
           "links": [
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/window_analysis.html",
-              "text": "Comparative Analysis Line Plots - Set 3",
-              "description": "Interactive comparative analysis line plots for third set of indicators"
-            }
-          ]
-        },
-        {
-          "title": "Comparative Analysis (Line Plots - Set 4)",
-          "type": "interactive_links",
-          "links": [
-            {
-              "url": "#",
-              "text": "Comparative Analysis Line Plots - Set 4",
-              "description": "Interactive comparative analysis line plots for fourth set of indicators"
-            }
-          ]
-        },
-        {
-          "title": "Comparative Analysis (Line Plots - Set 5)",
-          "type": "interactive_links",
-          "links": [
-            {
-              "url": "#",
-              "text": "Comparative Analysis Line Plots - Set 5",
-              "description": "Interactive comparative analysis line plots for fifth set of indicators"
-            }
-          ]
-        },
-        {
-          "title": "Comparative Analysis (Line Plots - Set 6)",
-          "type": "interactive_links",
-          "links": [
-            {
-              "url": "#",
-              "text": "Comparative Analysis Line Plots - Set 6",
-              "description": "Interactive comparative analysis line plots for sixth set of indicators"
-            }
-          ]
-        },
-        {
-          "title": "Comparative Analysis (Line Plots - Set 7)",
-          "type": "interactive_links",
-          "links": [
-            {
-              "url": "#",
-              "text": "Comparative Analysis Line Plots - Set 7",
-              "description": "Interactive comparative analysis line plots for seventh set of indicators"
-            }
-          ]
-        },
-        {
-          "title": "Comparative Analysis (Line Plots - Set 8)",
-          "type": "interactive_links",
-          "links": [
-            {
-              "url": "#",
-              "text": "Comparative Analysis Line Plots - Set 8",
-              "description": "Interactive comparative analysis line plots for eighth set of indicators"
-            }
-          ]
-        },
-        {
-          "title": "Comparative Analysis (Line Plots - Set 9)",
-          "type": "interactive_links",
-          "links": [
-            {
-              "url": "#",
-              "text": "Comparative Analysis Line Plots - Set 9",
-              "description": "Interactive comparative analysis line plots for ninth set of indicators"
+              "text": "Malaria Testing Analysis",
+              "description": "Comprehensive analysis of malaria tests conducted"
             }
           ]
         },
@@ -336,27 +291,27 @@
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/Incidence_comparative.html",
               "text": "Incidence Rate Comparison",
-              "description": "Incidence Rate Comparison"
+              "description": "Comparative analysis of incidence rates across regions and time periods"
             }
           ]
         }
       ]
     },
-    "conclusion": {
+    "summary_indicators": {
       "title": "Summary Indicators",
       "type": "mixed_content",
       "sections": [
         {
-          "title": "Summary Indicators",
-          "type": "interactive_links", 
+          "title": "Summary Indicators Dashboard",
+          "type": "interactive_links",
           "links": [
             {
               "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/Summary_district_chiefdom.html",
               "text": "Summary Indicators",
-              "description": "Summary Indicators"
+              "description": "Comprehensive summary of key indicators by district and chiefdom"
             }
           ]
-        }      
+        }
       ]
     }
   }
