@@ -289,191 +289,432 @@
     <script>
         // Output Indicators Data - 15 indicators as specified
         const outputIndicators = [
-            {
-                name: 'Proportion of patients with suspected malaria who received a parasitological test',
-                shortName: 'Parasitological Test - All',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.974 },
-                    { year: 2022, target: 1.0, achieved: 0.978 },
-                    { year: 2023, target: 1.0, achieved: 0.978 },
-                    { year: 2024, target: 1.0, achieved: 0.848 }
+        {
+                "name": "Proportion of patients with suspected malaria who received a parasitological test",
+                "shortName": "Parasitological Test - All",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 97.4
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 97.8
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 97.8
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 84.8
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of patients with confirmed malaria who received first-line antimalarial treatment',
-                shortName: 'First-line Treatment',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.918 },
-                    { year: 2022, target: 1.0, achieved: 0.902 },
-                    { year: 2023, target: 1.0, achieved: 0.913 },
-                    { year: 2024, target: 1.0, achieved: 0.898 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of patients with confirmed malaria who received first-line antimalarial treatment",
+                "shortName": "First-line Treatment",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 91.8
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 90.2
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 91.3
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 89.8
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of expected health facility reports received',
-                shortName: 'Facility Reports',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.829 },
-                    { year: 2022, target: 1.0, achieved: 0.839 },
-                    { year: 2023, target: 1.0, achieved: 0.709 },
-                    { year: 2024, target: 1.0, achieved: 0.822 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of expected health facility reports received",
+                "shortName": "Facility Reports",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 82.9
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 83.9
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 70.9
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 82.2
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of suspected malaria cases that receive a parasitological test at public sector health facilities',
-                shortName: 'Test - Public Facilities',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.985 },
-                    { year: 2022, target: 1.0, achieved: 0.959 },
-                    { year: 2023, target: 1.0, achieved: 0.930 },
-                    { year: 2024, target: 1.0, achieved: 0.899 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of suspected malaria cases that receive a parasitological test at public sector health facilities",
+                "shortName": "Test - Public Facilities",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 98.5
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 95.9
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 93.0
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 89.9
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of suspected malaria cases that receive a parasitological test in the community',
-                shortName: 'Test - Community',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.716 },
-                    { year: 2022, target: 1.0, achieved: 0.443 },
-                    { year: 2023, target: 1.0, achieved: 0.649 },
-                    { year: 2024, target: 1.0, achieved: 0.583 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of suspected malaria cases that receive a parasitological test in the community",
+                "shortName": "Test - Community",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 71.6
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 44.3
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 64.9
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 58.3
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of suspected malaria cases that receive a parasitological test in the private sector',
-                shortName: 'Test - Private Sector',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 1.0 },
-                    { year: 2022, target: 1.0, achieved: 0.989 },
-                    { year: 2023, target: 1.0, achieved: 1.0 },
-                    { year: 2024, target: 1.0, achieved: 0.950 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of suspected malaria cases that receive a parasitological test in the private sector",
+                "shortName": "Test - Private Sector",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 100.0
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 98.9
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 100.0
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 95.0
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of malaria cases (presumed and confirmed) that received first line antimalarial treatment at public sector health facilities',
-                shortName: 'Treatment - Public All',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.924 },
-                    { year: 2022, target: 1.0, achieved: 0.906 },
-                    { year: 2023, target: 1.0, achieved: 0.924 },
-                    { year: 2024, target: 1.0, achieved: 0.912 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of malaria cases (presumed and confirmed) that received first line antimalarial treatment at public sector health facilities",
+                "shortName": "Treatment - Public All",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 92.4
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 90.6
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 92.4
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 91.2
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of confirmed malaria cases that received first-line antimalarial treatment at public sector health facilities',
-                shortName: 'Treatment - Public Confirmed',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.923 },
-                    { year: 2022, target: 1.0, achieved: 0.902 },
-                    { year: 2023, target: 1.0, achieved: 0.918 },
-                    { year: 2024, target: 1.0, achieved: 0.907 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of confirmed malaria cases that received first-line antimalarial treatment at public sector health facilities",
+                "shortName": "Treatment - Public Confirmed",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 92.3
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 90.2
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 91.8
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 90.7
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of confirmed malaria cases that received first-line antimalarial treatment in the community',
-                shortName: 'Treatment - Community',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.787 },
-                    { year: 2022, target: 1.0, achieved: 0.706 },
-                    { year: 2023, target: 1.0, achieved: 0.873 },
-                    { year: 2024, target: 1.0, achieved: 0.842 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of confirmed malaria cases that received first-line antimalarial treatment in the community",
+                "shortName": "Treatment - Community",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 78.7
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 70.6
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 87.3
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 84.2
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of confirmed malaria cases that received first-line antimalarial treatment at private sector facilities',
-                shortName: 'Treatment - Private',
-                data: [
-                    { year: 2021, target: 1.0, achieved: 0.923 },
-                    { year: 2022, target: 1.0, achieved: 0.927 },
-                    { year: 2023, target: 1.0, achieved: 0.949 },
-                    { year: 2024, target: 1.0, achieved: 0.891 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of confirmed malaria cases that received first-line antimalarial treatment at private sector facilities",
+                "shortName": "Treatment - Private",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 100.0,
+                                "achieved": 92.3
+                        },
+                        {
+                                "year": 2022,
+                                "target": 100.0,
+                                "achieved": 92.7
+                        },
+                        {
+                                "year": 2023,
+                                "target": 100.0,
+                                "achieved": 94.9
+                        },
+                        {
+                                "year": 2024,
+                                "target": 100.0,
+                                "achieved": 89.1
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of children under 5 years with fever for whom the caretakers sought prompt care within 24 hours at the community',
-                shortName: 'Prompt Care U5',
-                data: [
-                    { year: 2021, target: 0.81, achieved: 0.742 },
-                    { year: 2022, target: 0.83, achieved: 0.742 },
-                    { year: 2023, target: 0.85, achieved: 0.659 },
-                    { year: 2024, target: 0.87, achieved: 0.684 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of children under 5 years with fever for whom the caretakers sought prompt care within 24 hours at the community",
+                "shortName": "Prompt Care U5",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 81.0,
+                                "achieved": 74.2
+                        },
+                        {
+                                "year": 2022,
+                                "target": 83.0,
+                                "achieved": 74.2
+                        },
+                        {
+                                "year": 2023,
+                                "target": 85.0,
+                                "achieved": 65.9
+                        },
+                        {
+                                "year": 2024,
+                                "target": 87.0,
+                                "achieved": 68.4
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of pregnant women who received three or more doses of IPTp for malaria in the community',
-                shortName: 'IPTp Coverage',
-                data: [
-                    { year: 2021, target: 0.12, achieved: 0.082 },
-                    { year: 2022, target: 0.13, achieved: 0.043 },
-                    { year: 2023, target: 0.14, achieved: 0.088 },
-                    { year: 2024, target: 0.15, achieved: 0.061 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of pregnant women who received three or more doses of IPTp for malaria in the community",
+                "shortName": "IPTp Coverage",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 12.0,
+                                "achieved": 8.2
+                        },
+                        {
+                                "year": 2022,
+                                "target": 13.0,
+                                "achieved": 4.3
+                        },
+                        {
+                                "year": 2023,
+                                "target": 14.0,
+                                "achieved": 8.8
+                        },
+                        {
+                                "year": 2024,
+                                "target": 15.0,
+                                "achieved": 6.1
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of population at risk protected by IRS in the previous 12 months',
-                shortName: 'IRS Population',
-                data: [
-                    { year: 2021, target: 0.85, achieved: 0.576 },
-                    { year: 2022, target: 0.85, achieved: 0.545 },
-                    { year: 2023, target: 0.85, achieved: 0.612 },
-                    { year: 2024, target: 0.85, achieved: 0.712 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of population at risk protected by IRS in the previous 12 months",
+                "shortName": "IRS Population",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 85.0,
+                                "achieved": 57.6
+                        },
+                        {
+                                "year": 2022,
+                                "target": 85.0,
+                                "achieved": 54.5
+                        },
+                        {
+                                "year": 2023,
+                                "target": 85.0,
+                                "achieved": 61.2
+                        },
+                        {
+                                "year": 2024,
+                                "target": 85.0,
+                                "achieved": 71.2
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of children under five years protected by IRS',
-                shortName: 'IRS Children U5',
-                data: [
-                    { year: 2021, target: 0.85, achieved: 0.559 },
-                    { year: 2022, target: 0.85, achieved: 0.484 },
-                    { year: 2023, target: 0.85, achieved: 0.537 },
-                    { year: 2024, target: 0.85, achieved: 0.652 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of children under five years protected by IRS",
+                "shortName": "IRS Children U5",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 85.0,
+                                "achieved": 55.9
+                        },
+                        {
+                                "year": 2022,
+                                "target": 85.0,
+                                "achieved": 48.4
+                        },
+                        {
+                                "year": 2023,
+                                "target": 85.0,
+                                "achieved": 53.7
+                        },
+                        {
+                                "year": 2024,
+                                "target": 85.0,
+                                "achieved": 65.2
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            },
-            {
-                name: 'Proportion of pregnant women protected by IRS',
-                shortName: 'IRS Pregnant Women',
-                data: [
-                    { year: 2021, target: 0.85, achieved: 0.506 },
-                    { year: 2022, target: 0.85, achieved: 0.363 },
-                    { year: 2023, target: 0.85, achieved: 0.537 },
-                    { year: 2024, target: 0.85, achieved: 0.919 }
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        },
+        {
+                "name": "Proportion of pregnant women protected by IRS",
+                "shortName": "IRS Pregnant Women",
+                "data": [
+                        {
+                                "year": 2021,
+                                "target": 85.0,
+                                "achieved": 50.6
+                        },
+                        {
+                                "year": 2022,
+                                "target": 85.0,
+                                "achieved": 36.3
+                        },
+                        {
+                                "year": 2023,
+                                "target": 85.0,
+                                "achieved": 53.7
+                        },
+                        {
+                                "year": 2024,
+                                "target": 85.0,
+                                "achieved": 91.9
+                        }
                 ],
-                yAxisLabel: 'Proportion (0-1)',
-                isPercentage: true
-            }
-        ];
+                "yAxisLabel": "Percentage (%)",
+                "isPercentage": true
+        }
+];
 
         // Function to create individual charts
         function createChart(indicatorData, chartId) {
-            const margin = { top: 40, right: 80, bottom: 60, left: 80 };
+            // Increased margins for better spacing
+            const margin = { top: 80, right: 150, bottom: 70, left: 100 };
             const width = 800 - margin.left - margin.right;
             const height = 400 - margin.top - margin.bottom;
 
@@ -485,12 +726,31 @@
                 .append("g")
                 .attr("transform", `translate(${margin.left},${margin.top})`);
 
+            // Add title with more spacing from the plot
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", -50)
+                .attr("text-anchor", "middle")
+                .style("font-size", "16px")
+                .style("font-weight", "bold")
+                .style("fill", "black")
+                .text(indicatorData.name);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", -30)
+                .attr("text-anchor", "middle")
+                .style("font-size", "14px")
+                .style("font-weight", "bold")
+                .style("fill", "black")
+                .text("Trend Analysis (2021-2024)");
+
             const data = indicatorData.data;
 
-            // Calculate individual Y-axis scale
+            // Calculate individual Y-axis scale like the reference
             const allValues = data.flatMap(d => [d.target, d.achieved]).filter(v => v !== null && v !== undefined);
             const yMin = 0;
-            const yMax = d3.max(allValues) * 1.1;
+            const yMax = Math.ceil(d3.max(allValues) / 50) * 50; // Round up to nearest 50
 
             // Scales
             const xScale = d3.scaleBand()
@@ -507,7 +767,7 @@
             const yAxis = d3.axisLeft(yScale);
 
             if (indicatorData.isPercentage) {
-                yAxis.tickFormat(d => (d * 100).toFixed(0) + "%");
+                yAxis.tickFormat(d => d.toFixed(0) + "%");
             }
 
             // Add axes
@@ -515,14 +775,15 @@
                 .attr("class", "x-axis")
                 .attr("transform", `translate(0,${height})`)
                 .call(xAxis)
-                .style("font-size", "12px");
+                .style("font-size", "14px")
+                .style("font-weight", "bold");
 
             svg.append("g")
                 .attr("class", "y-axis")
                 .call(yAxis)
-                .style("font-size", "12px");
+                .style("font-size", "14px");
 
-            // Add Y-axis label
+            // Add Y-axis label with more spacing from the axis
             svg.append("text")
                 .attr("transform", "rotate(-90)")
                 .attr("y", 0 - margin.left + 20)
@@ -530,26 +791,30 @@
                 .attr("dy", "1em")
                 .style("text-anchor", "middle")
                 .style("font-weight", "bold")
-                .style("font-size", "12px")
+                .style("font-size", "14px")
+                .style("fill", "#2c3e50")
                 .text(indicatorData.yAxisLabel);
 
-            // Add X-axis label
+            // Add X-axis label with more spacing
             svg.append("text")
                 .attr("transform", `translate(${width/2}, ${height + margin.bottom - 20})`)
                 .style("text-anchor", "middle")
                 .style("font-weight", "bold")
-                .style("font-size", "12px")
+                .style("font-size", "14px")
+                .style("fill", "#2c3e50")
                 .text("Year");
 
-            // Add grid lines
+            // Add grid lines exactly like reference
             svg.append("g")
                 .attr("class", "grid")
                 .call(d3.axisLeft(yScale)
                     .tickSize(-width)
                     .tickFormat("")
                 )
-                .style("stroke-dasharray", "3,3")
-                .style("opacity", 0.3);
+                .style("stroke", "#e0e0e0")
+                .style("stroke-width", "0.5px");
+
+            // Remove vertical grid lines to match reference
 
             // Filter data for lines (only non-null achieved values)
             const validData = data.filter(d => d.achieved !== null && d.achieved !== undefined);
@@ -563,8 +828,8 @@
                 svg.append("path")
                     .datum(validData)
                     .attr("fill", "none")
-                    .attr("stroke", "#22c55e")
-                    .attr("stroke-width", 3)
+                    .attr("stroke", "#28a745")
+                    .attr("stroke-width", 4)
                     .attr("d", line);
 
                 // Create achieved line
@@ -575,8 +840,8 @@
                 svg.append("path")
                     .datum(validData)
                     .attr("fill", "none")
-                    .attr("stroke", "#3b82f6")
-                    .attr("stroke-width", 3)
+                    .attr("stroke", "#007bff")
+                    .attr("stroke-width", 4)
                     .attr("d", achievedLine);
             }
 
@@ -585,26 +850,38 @@
                 const x = xScale(d.year) + xScale.bandwidth() / 2;
                 const yTarget = yScale(d.target);
                 
-                // Add target point
+                // Add target point exactly like reference
                 svg.append("circle")
                     .attr("cx", x)
                     .attr("cy", yTarget)
-                    .attr("r", 6)
-                    .attr("fill", "#22c55e");
+                    .attr("r", 5)
+                    .attr("fill", "#28a745");
 
-                // Add target label
+                // Add target label with colored background box like reference
                 const targetLabel = indicatorData.isPercentage ? 
-                    `${(d.target * 100).toFixed(1)}%` : 
+                    `${d.target % 1 === 0 ? d.target.toFixed(0) : d.target.toFixed(1)}%` : 
                     d.target.toString();
 
-                svg.append("text")
+                // Add background rectangle for target (green box)
+                const targetText = svg.append("text")
                     .attr("x", x)
-                    .attr("y", yTarget - 12)
+                    .attr("y", yTarget - 15)
                     .attr("text-anchor", "middle")
-                    .style("font-size", "10px")
+                    .style("font-size", "11px")
                     .style("font-weight", "bold")
-                    .style("fill", "#22c55e")
                     .text(targetLabel);
+
+                const targetBbox = targetText.node().getBBox();
+                
+                svg.append("rect")
+                    .attr("x", targetBbox.x - 3)
+                    .attr("y", targetBbox.y - 1)
+                    .attr("width", targetBbox.width + 6)
+                    .attr("height", targetBbox.height + 2)
+                    .attr("fill", "#28a745")
+                    .attr("rx", 2);
+
+                targetText.style("fill", "white").raise();
 
                 // Add achieved point and label only if not null
                 if (d.achieved !== null && d.achieved !== undefined) {
@@ -613,48 +890,79 @@
                     svg.append("circle")
                         .attr("cx", x)
                         .attr("cy", yAchieved)
-                        .attr("r", 6)
-                        .attr("fill", "#3b82f6");
+                        .attr("r", 5)
+                        .attr("fill", "#007bff");
 
-                    // Add variance arrow
-                    const variance = ((d.achieved - d.target) / d.target * 100).toFixed(1);
-                    const arrowColor = d.achieved > d.target ? '#ef4444' : '#f59e0b';
+                    // Add variance arrow exactly like reference
+                    const variance = ((d.achieved - d.target) / d.target * 100);
                     
+                    // Draw yellow arrow line
                     svg.append("line")
                         .attr("x1", x)
                         .attr("y1", yTarget)
                         .attr("x2", x)
                         .attr("y2", yAchieved)
-                        .attr("stroke", arrowColor)
-                        .attr("stroke-width", 2)
-                        .attr("marker-end", "url(#arrowhead)");
+                        .attr("stroke", "#ffc107")
+                        .attr("stroke-width", 2);
 
-                    // Add variance text
-                    const midY = (yTarget + yAchieved) / 2;
-                    const varianceText = variance >= 0 ? `+${variance}%` : `${variance}%`;
+                    // Add arrowhead
+                    const arrowDirection = yAchieved > yTarget ? 1 : -1;
+                    svg.append("polygon")
+                        .attr("points", `${x-4},${yAchieved - (6 * arrowDirection)} ${x+4},${yAchieved - (6 * arrowDirection)} ${x},${yAchieved}`)
+                        .attr("fill", "#ffc107");
+
+                    // Add variance text in black box like reference
+                    const varianceText = `${variance >= 0 ? '+' : ''}${variance.toFixed(1)}%`;
                     
-                    svg.append("text")
-                        .attr("x", x + 15)
-                        .attr("y", midY)
+                    const varianceTextEl = svg.append("text")
+                        .attr("x", x + 20)
+                        .attr("y", (yTarget + yAchieved) / 2)
                         .attr("dy", "0.35em")
-                        .style("font-size", "11px")
-                        .style("font-weight", "bold")
-                        .style("fill", "black")
-                        .text(varianceText);
-
-                    // Add achieved label
-                    const achievedLabel = indicatorData.isPercentage ? 
-                        `${(d.achieved * 100).toFixed(1)}%` : 
-                        d.achieved.toString();
-
-                    svg.append("text")
-                        .attr("x", x)
-                        .attr("y", yAchieved + 20)
-                        .attr("text-anchor", "middle")
                         .style("font-size", "10px")
                         .style("font-weight", "bold")
-                        .style("fill", "#3b82f6")
+                        .text(varianceText);
+
+                    const varianceBbox = varianceTextEl.node().getBBox();
+
+                    svg.append("rect")
+                        .attr("x", varianceBbox.x - 2)
+                        .attr("y", varianceBbox.y - 1)
+                        .attr("width", varianceBbox.width + 4)
+                        .attr("height", varianceBbox.height + 2)
+                        .attr("fill", "white")
+                        .attr("stroke", "black")
+                        .attr("stroke-width", 1)
+                        .attr("rx", 1);
+
+                    varianceTextEl.style("fill", "black").raise();
+
+                    // Add achieved label with blue background box like reference
+                    const achievedLabel = indicatorData.isPercentage ? 
+                        `${d.achieved % 1 === 0 ? d.achieved.toFixed(0) : d.achieved.toFixed(1)}%` : 
+                        d.achieved.toString();
+
+                    const achievedText = svg.append("text")
+                        .attr("x", x)
+                        .attr("y", yAchieved + 25)
+                        .attr("text-anchor", "middle")
+                        .style("font-size", "11px")
+                        .style("font-weight", "bold")
                         .text(achievedLabel);
+
+                    const achievedBbox = achievedText.node().getBBox();
+
+                    // Handle special case for red background when over target
+                    const achievedBgColor = d.achieved > d.target ? "#dc3545" : "#007bff";
+                    
+                    svg.append("rect")
+                        .attr("x", achievedBbox.x - 3)
+                        .attr("y", achievedBbox.y - 1)
+                        .attr("width", achievedBbox.width + 6)
+                        .attr("height", achievedBbox.height + 2)
+                        .attr("fill", achievedBgColor)
+                        .attr("rx", 2);
+
+                    achievedText.style("fill", "white").raise();
                 } else {
                     // Add "No Data" text for null values
                     svg.append("text")
@@ -668,117 +976,42 @@
                 }
             });
 
-            // Add arrow marker definition
-            svg.append("defs").append("marker")
-                .attr("id", "arrowhead")
-                .attr("viewBox", "0 -5 10 10")
-                .attr("refX", 5)
-                .attr("refY", 0)
-                .attr("markerWidth", 4)
-                .attr("markerHeight", 4)
-                .attr("orient", "auto")
-                .append("path")
-                .attr("d", "M0,-5L10,0L0,5")
-                .attr("class", "arrowHead");
-
-            // Add legend
+            // Add legend outside the plot area exactly like reference
             const legend = svg.append("g")
                 .attr("class", "legend")
-                .attr("transform", `translate(${width - 120}, 20)`);
+                .attr("transform", `translate(${width + 20}, 20)`);
 
-            legend.append("line")
-                .attr("x1", 0)
-                .attr("y1", 0)
-                .attr("x2", 20)
-                .attr("y2", 0)
-                .attr("stroke", "#22c55e")
-                .attr("stroke-width", 3);
-
+            // Target legend
             legend.append("circle")
-                .attr("cx", 10)
+                .attr("cx", 5)
                 .attr("cy", 0)
-                .attr("r", 4)
-                .attr("fill", "#22c55e");
+                .attr("r", 5)
+                .attr("fill", "#28a745");
 
             legend.append("text")
-                .attr("x", 25)
+                .attr("x", 15)
                 .attr("y", 0)
                 .attr("dy", "0.35em")
                 .style("font-size", "12px")
+                .style("font-weight", "bold")
+                .style("fill", "black")
                 .text("Target");
 
-            legend.append("line")
-                .attr("x1", 0)
-                .attr("y1", 20)
-                .attr("x2", 20)
-                .attr("y2", 20)
-                .attr("stroke", "#3b82f6")
-                .attr("stroke-width", 3);
-
+            // Achieved legend
             legend.append("circle")
-                .attr("cx", 10)
+                .attr("cx", 5)
                 .attr("cy", 20)
-                .attr("r", 4)
-                .attr("fill", "#3b82f6");
+                .attr("r", 5)
+                .attr("fill", "#007bff");
 
             legend.append("text")
-                .attr("x", 25)
+                .attr("x", 15)
                 .attr("y", 20)
                 .attr("dy", "0.35em")
                 .style("font-size", "12px")
+                .style("font-weight", "bold")
+                .style("fill", "black")
                 .text("Achieved");
-        }
-
-        // Function to calculate performance summary
-        function calculatePerformanceSummary() {
-            const summaryData = outputIndicators.map(indicator => {
-                const validData = indicator.data.filter(d => d.achieved !== null && d.achieved !== undefined);
-                if (validData.length === 0) return null;
-
-                const avgPerformance = validData.reduce((sum, d) => sum + (d.achieved / d.target), 0) / validData.length;
-                const trend = validData.length > 1 ? 
-                    (validData[validData.length - 1].achieved / validData[validData.length - 1].target) - 
-                    (validData[0].achieved / validData[0].target) : 0;
-
-                let performanceCategory = 'poor';
-                if (avgPerformance >= 0.9) performanceCategory = 'good';
-                else if (avgPerformance >= 0.7) performanceCategory = 'fair';
-
-                return {
-                    name: indicator.shortName,
-                    fullName: indicator.name,
-                    avgPerformance: avgPerformance,
-                    performanceCategory: performanceCategory,
-                    trend: trend,
-                    dataPoints: validData.length
-                };
-            }).filter(item => item !== null);
-
-            return summaryData;
-        }
-
-        // Function to create summary cards
-        function createSummaryCards() {
-            const summaryData = calculatePerformanceSummary();
-            const summaryGrid = document.getElementById('summaryGrid');
-            
-            // Sort by performance
-            summaryData.sort((a, b) => b.avgPerformance - a.avgPerformance);
-            
-            summaryGrid.innerHTML = summaryData.map(item => `
-                <div class="summary-card">
-                    <h4>${item.name}</h4>
-                    <p><strong>Average Performance:</strong> ${(item.avgPerformance * 100).toFixed(1)}%
-                        <span class="performance-indicator performance-${item.performanceCategory}">
-                            ${item.performanceCategory.toUpperCase()}
-                        </span>
-                    </p>
-                    <p><strong>Trend:</strong> ${item.trend > 0 ? '↗' : item.trend < 0 ? '↘' : '→'} 
-                        ${item.trend > 0 ? 'Improving' : item.trend < 0 ? 'Declining' : 'Stable'}
-                    </p>
-                    <p><strong>Data Points:</strong> ${item.dataPoints} years</p>
-                </div>
-            `).join('');
         }
 
         // Navigation functions
