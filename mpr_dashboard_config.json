@@ -215,7 +215,7 @@
       ]
     },
     "incidence_trends": {
-      "title": "Incidence Trends",
+      "title": "Incidence",
       "type": "mixed_content",
       "sections": [
         {
@@ -234,7 +234,7 @@
           "type": "interactive_links",
           "links": [
             {
-              "url": "https://raw.githack.com/mohamedsillahkanu/nmcp-mpr/main/incidence_maps.html",
+              "url": "https://mohamedsillahkanu.github.io/incidence-maps/",
               "text": "Incidence Maps",
               "description": "Interactive incidence trends maps"
             }
