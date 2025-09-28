@@ -36,7 +36,7 @@
       ]
     },
     "reports": {
-      "title": "Reports",
+      "title": "SNT",
       "type": "mixed_content", 
       "sections": [
         {
@@ -44,7 +44,7 @@
           "type": "interactive_links",
           "links": [
             {
-              "url": "https://github.com/mohamedsillahkanu/nmcp-mpr/raw/b8779e1529ec0eb193d616618685a9ebfe338e70/Final%20SNT%20SUMMIT%20Presentation.pdf",
+              "url": "https://docs.google.com/presentation/d/e/2PACX-1vR2dafp4YVDyuuVWEFgGXqUs3_QUSvaPOPqqPcgSTKf7oz2RSMK7S0eOtNHRgFP50jbsxhcdlY43gcn/pub?start=false&loop=false&delayms=3000&slide=id.p4",
               "text": "SNT", 
               "description": "Sub National Tailoring"
             }
