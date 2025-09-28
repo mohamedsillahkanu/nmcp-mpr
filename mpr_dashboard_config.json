@@ -35,6 +35,23 @@
         }
       ]
     },
+    "reports": {
+      "title": "Reports",
+      "type": "mixed_content", 
+      "sections": [
+        {
+          "title": "PDF Reports",
+          "type": "interactive_links",
+          "links": [
+            {
+              "url": "https://your-pdf-url.com/report.pdf",
+              "text": "Annual Report 2024", 
+              "description": "Complete annual malaria program report"
+            }
+          ]
+        }
+      ]
+    },
     "impact_indicators": {
       "title": "Impact Indicators",
       "type": "mixed_content",
