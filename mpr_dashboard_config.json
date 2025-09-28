@@ -40,14 +40,20 @@
       "type": "mixed_content", 
       "sections": [
         {
-          "title": "SNT",
+          "title": "Sub National Tailoring Resources",
           "type": "interactive_links",
           "links": [
             {
               "url": "https://docs.google.com/presentation/d/e/2PACX-1vR2dafp4YVDyuuVWEFgGXqUs3_QUSvaPOPqqPcgSTKf7oz2RSMK7S0eOtNHRgFP50jbsxhcdlY43gcn/pub?start=false&loop=false&delayms=3000&slide=id.p4",
-              "text": "SNT", 
-              "description": "Sub National Tailoring"
+              "text": "SNT Presentation", 
+              "description": "Sub National Tailoring presentation slides"
+            },
+            {
+              "url": "#",
+              "text": "SNT Report",
+              "description": "Strategic framework for sub national tailoring of malaria interventions"
             }
+            
           ]
         }
       ]
