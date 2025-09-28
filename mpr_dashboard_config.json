@@ -1,9 +1,9 @@
 {  
   "dashboard_config": {
-    "title": "Malaria Program Review (MPR): 2021-2024",
+    "title": "Sub National Tailoring (SNT) of Malaria Interventions",
     "subtitle": "Presentation",
     "organization": "By",
-    "tagline": "Dr. Abdul Mac-Falama (Program Manager, NMCP)<br>Musa Sillah Kanu (SME Lead, NMCP)<br>Thomas K. Ansumana (SME Officer, NMCP)<br>John Seppeh (SME Officer, NMCP)<br>Frederick Yamba (SME Officer, NMCP)<br>Stanley Ansumana (SME Officer, NMCP)<br>Philip Brewa (SME Officer, NMCP)",  
+    "tagline": "Dr. Abdul Mac-Falama (Program Manager, NMCP)",  
     "logos": [
       { "src": "NMCP.png", "alt": "NMCP Logo" },
       { "src": "WHO.png", "alt": "WHO Logo" },
