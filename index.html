@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Program Review (MPR)</title>
+    <style>
+        :root {
+            --blue:   #2c6793;
+            --white:  #ffffff;
+            --shadow: var(--shadow);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--blue);
+            min-height: 100vh;
+            color: var(--blue);
+        }
+
+        /* ── HEADER ── */
+        .header {
+            background: var(--blue);
+            border-bottom: 3px solid var(--blue);
+            padding: 28px 0;
+            margin-bottom: 36px;
+            box-shadow: 0 3px 14px var(--shadow);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 2.8em;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.25em;
+            color: rgba(255,255,255,0.88);
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+
+        /* ── MAIN CONTAINER ── */
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto 50px;
+            background: rgba(255,255,255,0.96);
+            border-radius: 16px;
+            padding: 44px;
+            box-shadow: 0 12px 40px var(--shadow);
+            border: 1px solid rgba(44,103,147,0.18);
+        }
+
+        /* ── TAB TOGGLE ── */
+        .tab-toggle-btn {
+            background: var(--blue);
+            color: var(--white);
+            border: none;
+            padding: 10px 22px;
+            border-radius: 22px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.95em;
+            margin-bottom: 18px;
+            transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+            box-shadow: 0 4px 14px var(--shadow);
+        }
+
+        .tab-toggle-btn:hover {
+            background: var(--blue);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px var(--shadow);
+        }
+
+        /* ── TAB NAVIGATION ── */
+        .tab-navigation {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 3px solid var(--blue);
+            margin-bottom: 38px;
+            gap: 5px;
+        }
+
+        .tab-navigation.collapsed { display: none; }
+
+        .tab-button {
+            background: rgba(44,103,147,0.10);
+            border: 2px solid transparent;
+            padding: 13px 22px;
+            cursor: pointer;
+            font-size: 0.97em;
+            font-weight: 600;
+            color: var(--blue);
+            border-radius: 10px 10px 0 0;
+            transition: all 0.25s;
+            margin-bottom: -3px;
+            min-width: 170px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .tab-button:hover {
+            background: rgba(44,103,147,0.18);
+            color: var(--blue);
+        }
+
+        .tab-button.active {
+            background: var(--blue);
+            color: var(--white);
+            border-bottom: 3px solid var(--blue);
+            transform: translateY(3px);
+        }
+
+        /* ── TAB CONTENT ── */
+        .tab-content { display: none; animation: fadeIn 0.3s ease; }
+        .tab-content.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── SECTION HEADER ── */
+        .section-header {
+            color: var(--blue);
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 28px;
+            text-align: center;
+            padding: 18px;
+            background: rgba(44,103,147,0.10);
+            border-radius: 12px;
+            border-left: 5px solid var(--blue);
+        }
+
+        /* ── COLLAPSIBLE ── */
+        .collapsible-section {
+            margin-bottom: 26px;
+            border: 2px solid rgba(44,103,147,0.22);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px var(--shadow);
+        }
+
+        .section-toggle {
+            background: var(--blue);
+            color: var(--white);
+            border: none;
+            padding: 18px 20px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background 0.25s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-toggle:hover {
+            background: var(--blue);
+        }
+
+        .section-toggle::after {
+            content: '▼';
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+
+        .section-toggle.collapsed::after { transform: rotate(-90deg); }
+
+        .section-content {
+            background: rgba(255,255,255,0.97);
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.45s ease;
+            padding: 0;
+        }
+
+        .section-content.expanded {
+            max-height: none;
+            padding: 18px;
+        }
+
+        .content-text {
+            font-size: 1.08em;
+            line-height: 1.65;
+            color: var(--blue);
+            margin-bottom: 22px;
+            padding: 18px;
+            background: rgba(255,255,255,0.75);
+            border-radius: 10px;
+            border-left: 4px solid var(--blue);
+        }
+
+        .placeholder-content {
+            text-align: center;
+            padding: 55px 20px;
+            background: rgba(44,103,147,0.10);
+            border-radius: 12px;
+            border: 2px dashed var(--blue);
+            color: var(--blue);
+            font-size: 1.15em;
+        }
+
+        /* ── IMAGE GALLERY ── */
+        .content-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+            margin-top: 36px;
+        }
+
+        .content-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .dashboard-image {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 28px var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: block;
+        }
+
+        .dashboard-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 14px 38px var(--shadow);
+        }
+
+        /* ── INTERACTIVE LINKS ── */
+        .interactive-links {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            align-items: stretch;
+            padding: 18px;
+            width: 100%;
+        }
+
+        .interactive-link {
+            display: block;
+            padding: 12px 22px;
+            background: var(--blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.25s;
+            box-shadow: 0 4px 13px var(--shadow);
+            border: 2px solid var(--blue);
+            width: 100%;
+            text-align: left;
+        }
+
+        .interactive-link:hover {
+            background: var(--blue);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px var(--shadow);
+        }
+
+        /* ── STATES ── */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--blue);
+            font-size: 1.2em;
+        }
+
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: var(--blue);
+            background: rgba(44,103,147,0.08);
+            border-radius: 10px;
+            border: 2px solid rgba(44,103,147,0.2);
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            .main-title  { font-size: 2em; }
+            .subtitle    { font-size: 1.1em; }
+            .dashboard-container { padding: 28px; }
+            .tab-navigation { flex-direction: column; }
+            .tab-button {
+                border-radius: 10px;
+                margin-bottom: 5px;
+                min-width: auto;
+                width: 100%;
+            }
+            .tab-button.active { transform: none; }
+        }
+
+        @media (max-width: 480px) {
+            .main-title { font-size: 1.7em; }
+            .dashboard-container { padding: 16px; }
+            .tab-button { padding: 10px 14px; font-size: 0.82em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-content" id="titleSection">
+            <h1 class="main-title">Retrospective Analysis</h1>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <button class="tab-toggle-btn" onclick="toggleTabs()">☰ Toggle Navigation Tabs</button>
+
+        <div class="tab-navigation collapsed" id="tabNavigation"></div>
+        <div id="tabContents"></div>
+
+        <div id="loadingState" class="loading">Loading dashboard configuration…</div>
+        <div id="errorState" class="error" style="display:none;">
+            Error loading configuration. Please ensure <strong>mpr_dashboard_config.json</strong> is available.
+        </div>
+    </div>
+
+    <script>
+        let dashboardConfig = null;
+        let currentActiveTab = 'overview';
+
+        async function loadConfig() {
+            try {
+                const response = await fetch('mpr_dashboard_config.json');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                dashboardConfig = await response.json();
+                initializeDashboard();
+            } catch (err) {
+                console.error('Config load error:', err);
+                document.getElementById('loadingState').style.display = 'none';
+                document.getElementById('errorState').style.display  = 'block';
+            }
+        }
+
+        function initializeDashboard() {
+            if (!dashboardConfig) return;
+            const config = dashboardConfig.dashboard_config;
+            const tabs   = dashboardConfig.tabs;
+
+            loadHeaderContent(config);
+            loadTabs(tabs);
+            loadTabContents(tabs);
+
+            document.getElementById('loadingState').style.display = 'none';
+            openTabById('overview');
+        }
+
+        function loadHeaderContent(config) {
+            document.getElementById('titleSection').innerHTML = `
+                <h1 class="main-title">${config.title}</h1>
+                <h2 class="subtitle">${config.subtitle}</h2>
+                <h2 class="subtitle">${config.organization}</h2>
+                <h2 class="subtitle"><em>${config.tagline}</em></h2>
+            `;
+        }
+
+        function loadTabs(tabs) {
+            document.getElementById('tabNavigation').innerHTML =
+                Object.entries(tabs).map(([id, data], i) =>
+                    `<button class="tab-button ${i === 0 ? 'active' : ''}" onclick="openTabById('${id}')">
+                        ${data.title}
+                    </button>`
+                ).join('');
+        }
+
+        function loadTabContents(tabs) {
+            document.getElementById('tabContents').innerHTML =
+                Object.entries(tabs).map(([id, data], i) =>
+                    `<div id="${id}" class="tab-content ${i === 0 ? 'active' : ''}">
+                        <div class="section-header">${data.title}</div>
+                        ${generateTabContent(data)}
+                    </div>`
+                ).join('');
+        }
+
+        function generateTabContent(tabData) {
+            switch (tabData.type) {
+                case 'collapsible_sections': return generateCollapsibleSections(tabData.sections);
+                case 'image_gallery':        return generateImageGallery(tabData.sections);
+                case 'mixed_content':        return generateMixedContent(tabData.sections);
+                default: return '<div class="placeholder-content">Content type not recognized</div>';
+            }
+        }
+
+        function generateCollapsibleSections(sections) {
+            return sections.map(s => `
+                <div class="collapsible-section">
+                    <button class="section-toggle collapsed" onclick="toggleSection(this)">${s.title}</button>
+                    <div class="section-content">
+                        <div class="content-text">${s.content}</div>
+                    </div>
+                </div>`).join('');
+        }
+
+        function generateImageGallery(sections) {
+            return sections.map(s => {
+                const body = s.images
+                    ? `<div class="content-grid">${s.images.map(img =>
+                        `<div class="content-row"><div class="image-container">
+                            <img src="${img.src}" alt="${img.alt}" class="dashboard-image">
+                        </div></div>`).join('')}</div>`
+                    : `<div class="placeholder-content">${s.placeholder || ''}</div>`;
+                return `
+                    <div class="collapsible-section">
+                        <button class="section-toggle collapsed" onclick="toggleSection(this)">${s.title}</button>
+                        <div class="section-content">${body}</div>
+                    </div>`;
+            }).join('');
+        }
+
+        function generateMixedContent(sections) {
+            return sections.map(s => {
+                let body = '';
+                if (s.type === 'interactive_links' && s.links) {
+                    body = `<div class="interactive-links">
+                        ${s.links.map(l => `<a href="${l.url}" class="interactive-link">${l.text}</a>`).join('')}
+                        <div style="margin-top:12px;color:var(--blue);font-style:italic;text-align:center;">Click any tab above</div>
+                    </div>`;
+                } else if (s.type === 'image' && s.image) {
+                    body = `<div class="content-grid"><div class="content-row"><div class="image-container">
+                        <img src="${s.image.src}" alt="${s.image.alt}" class="dashboard-image" style="max-width:600px;">
+                    </div></div></div>`;
+                } else if (s.content) {
+                    body = `<div class="content-text">${s.content}</div>`;
+                } else {
+                    body = `<div class="placeholder-content">${s.placeholder || ''}</div>`;
+                }
+                return `
+                    <div class="collapsible-section">
+                        <button class="section-toggle collapsed" onclick="toggleSection(this)">${s.title}</button>
+                        <div class="section-content">${body}</div>
+                    </div>`;
+            }).join('');
+        }
+
+        function openTabById(tabId) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+            const tab = document.getElementById(tabId);
+            if (tab) tab.classList.add('active');
+            const keys = Object.keys(dashboardConfig.tabs);
+            document.querySelectorAll('.tab-button').forEach((btn, i) => {
+                if (keys[i] === tabId) btn.classList.add('active');
+            });
+            currentActiveTab = tabId;
+            document.getElementById('tabNavigation').classList.add('collapsed');
+        }
+
+        function toggleTabs() {
+            document.getElementById('tabNavigation').classList.toggle('collapsed');
+        }
+
+        function toggleSection(btn) {
+            const content = btn.nextElementSibling;
+            const open = content.classList.contains('expanded');
+            content.classList.toggle('expanded', !open);
+            btn.classList.toggle('collapsed', !open);
+        }
+
+        document.addEventListener('DOMContentLoaded', loadConfig);
+    </script>
+
+    <footer style="
+        background: var(--blue);
+        color: rgba(255,255,255,0.75);
+        text-align: center;
+        padding: 18px 20px;
+        font-size: 0.88em;
+        letter-spacing: 0.4px;
+        border-top: 2px solid rgba(255,255,255,0.2);
+        margin-top: 10px;
+    ">
+        Designed &amp; Developed by &nbsp;
+        <strong style="color:#ffffff;">Informatics Consultancy Firm (ICF-SL)</strong>
+        &nbsp;|&nbsp; &copy; <span id="footerYear"></span> All Rights Reserved
+    </footer>
+    <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>
